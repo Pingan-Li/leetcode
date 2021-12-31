@@ -11,7 +11,7 @@
 
 #include "two_sum.h"
 namespace leetcode {
-std::vector<int> twoSum(std::vector<int>& nums, int target) {
+std::vector<int> twoSum(std::vector<int> &nums, int target) {
   std::vector<int> ret;
   bool found{false};
   for (size_t i = 0; i < nums.size(); ++i) {
@@ -29,4 +29,4 @@ std::vector<int> twoSum(std::vector<int>& nums, int target) {
   }
   return ret;
 }
-}  // namespace leetcode
+} // namespace leetcode

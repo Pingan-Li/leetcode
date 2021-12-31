@@ -13,6 +13,9 @@
  * Definition for singly-linked list.
  */
 
+#ifndef __LIST_NODE_H__
+#define __LIST_NODE_H__
+
 #include <vector>
 namespace leetcode {
 struct ListNode {
@@ -27,7 +30,9 @@ void printList(const ListNode *head);
 
 ListNode *spawList(const std::vector<int> &elements);
 
-bool equal(const ListNode * list1, const ListNode *list2);
+bool equal(const ListNode *list1, const ListNode *list2);
 
-size_t length(const ListNode* list);
-}  // namespace leetcode
+size_t length(const ListNode *list);
+} // namespace leetcode
+
+#endif // __LIST_NODE_H__

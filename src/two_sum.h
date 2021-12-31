@@ -9,7 +9,12 @@
  *
  */
 
+#ifndef __TWO_SUM_H__
+#define __TWO_SUM_H__
+
 #include <vector>
 namespace leetcode {
-std::vector<int> twoSum(std::vector<int>& nums, int target);
-}  // namespace leetcode
+std::vector<int> twoSum(std::vector<int> &nums, int target);
+} // namespace leetcode
+
+#endif // __TWO_SUM_H__

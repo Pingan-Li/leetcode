@@ -13,8 +13,8 @@
 
 #include <iostream>
 namespace leetcode {
-void printList(const ListNode* head) {
-  const ListNode* iter = head;
+void printList(const ListNode *head) {
+  const ListNode *iter = head;
   while (iter) {
     std::cout << iter->val << " ";
     iter = iter->next;
@@ -22,17 +22,17 @@ void printList(const ListNode* head) {
   std::cout << std::endl;
 }
 
-ListNode* spawList(const std::vector<int>& elements) {
-  ListNode* head = new ListNode;
-  ListNode* iter = head;
-  for (const auto& e : elements) {
+ListNode *spawList(const std::vector<int> &elements) {
+  ListNode *head = new ListNode;
+  ListNode *iter = head;
+  for (const auto &e : elements) {
     iter->next = new ListNode(e);
     iter = iter->next;
   }
   return head->next;
 }
 
-bool equal(const ListNode* list1, const ListNode* list2) {
+bool equal(const ListNode *list1, const ListNode *list2) {
   if (list1 == nullptr || list2 == nullptr) {
     return false;
   } else {
@@ -49,7 +49,7 @@ bool equal(const ListNode* list1, const ListNode* list2) {
   }
 }
 
-size_t length(const ListNode* list) {
+size_t length(const ListNode *list) {
   if (list) {
     auto iter = list;
     size_t len{0};
@@ -61,4 +61,4 @@ size_t length(const ListNode* list) {
   return 0;
 }
 
-}  // namespace leetcode
+} // namespace leetcode

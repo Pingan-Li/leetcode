@@ -13,12 +13,15 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/two_sum.cpp
   src/add_two_numbers.cpp
   src/list_node.cpp
+  src/length_of_longest_substring.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
 
-link_libraries(leetcode gtest gtest_main gmock gmock_main)
+link_libraries(leetcode gtest gmock gtest_main  gmock_main)
 
 add_executable(two_sum_unittest test/two_sum_unittest.cpp)
 
 add_executable(add_two_numbers_unittest test/add_two_numbers_unittest.cpp)
+
+add_executable(length_of_longest_substring_unittest test/length_of_longest_substring_unittest.cpp)

@@ -9,8 +9,12 @@
  *
  */
 
+#ifndef __ADD_TWO_NUMBERS_H__
+#define __ADD_TWO_NUMBERS_H__
+
 #include "list_node.h"
 namespace leetcode {
-ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
+} // namespace leetcode
 
-}  // namespace leetcode
+#endif // __ADD_TWO_NUMBERS_H__
