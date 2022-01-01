@@ -14,6 +14,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/add_two_numbers.cpp
   src/list_node.cpp
   src/length_of_longest_substring.cpp
+  src/longest_common_prefix.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -25,3 +26,5 @@ add_executable(two_sum_unittest test/two_sum_unittest.cpp)
 add_executable(add_two_numbers_unittest test/add_two_numbers_unittest.cpp)
 
 add_executable(length_of_longest_substring_unittest test/length_of_longest_substring_unittest.cpp)
+
+add_executable(longest_common_prefix_unittest test/longest_common_prefix_unittest.cpp)
