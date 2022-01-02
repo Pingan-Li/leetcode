@@ -16,6 +16,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/length_of_longest_substring.cpp
   src/longest_common_prefix.cpp
   src/remove_nth_from_end.cpp
+  src/str_str.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -31,3 +32,5 @@ add_executable(length_of_longest_substring_unittest test/length_of_longest_subst
 add_executable(longest_common_prefix_unittest test/longest_common_prefix_unittest.cpp)
 
 add_executable(remove_nth_from_end_unittest test/remove_nth_from_end_unittest.cpp)
+
+add_executable(str_str_unittest test/str_str_unittest.cpp)
