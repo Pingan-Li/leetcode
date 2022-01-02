@@ -28,7 +28,9 @@ struct ListNode {
 
 void printList(const ListNode *head);
 
-ListNode *spawList(const std::vector<int> &elements);
+ListNode *spawnList(const std::vector<int> &elements);
+
+size_t freeList(ListNode *head);
 
 bool equal(const ListNode *list1, const ListNode *list2);
 

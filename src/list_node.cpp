@@ -14,15 +14,16 @@
 #include <iostream>
 namespace leetcode {
 void printList(const ListNode *head) {
-  const ListNode *iter = head;
-  while (iter) {
-    std::cout << iter->val << " ";
-    iter = iter->next;
+  if (head != nullptr) {
+    while (head) {
+      std::cout << head->val << " ";
+      head = head->next;
+    }
+    std::cout << std::endl;
   }
-  std::cout << std::endl;
 }
 
-ListNode *spawList(const std::vector<int> &elements) {
+ListNode *spawnList(const std::vector<int> &elements) {
   ListNode *head = new ListNode;
   ListNode *iter = head;
   for (const auto &e : elements) {
@@ -30,6 +31,18 @@ ListNode *spawList(const std::vector<int> &elements) {
     iter = iter->next;
   }
   return head->next;
+}
+
+size_t freeList(ListNode *head) {
+  size_t count{0};
+  ListNode *temp;
+  while (head) {
+    temp = head->next;
+    free(head);
+    head = temp;
+    ++count;
+  }
+  return count;
 }
 
 bool equal(const ListNode *list1, const ListNode *list2) {
