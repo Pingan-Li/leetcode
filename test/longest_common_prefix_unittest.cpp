@@ -13,7 +13,7 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-TEST(longest_common_prefix_unittest, case_0) {
+TEST(longest_common_prefix, case_0) {
   std::vector<std::string> strs;
   strs.push_back("flower");
   strs.push_back("flow");
