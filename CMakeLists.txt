@@ -19,6 +19,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/str_str.cpp
   src/merge_two_lists.cpp
   src/merge_k_sorted_lists.cpp
+  src/reverse.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -40,3 +41,5 @@ add_executable(str_str_unittest test/str_str_unittest.cpp)
 add_executable(merge_two_lists_unittests test/merge_two_lists_unittests.cpp)
 
 add_executable(merge_k_sorted_lists_unittest test/merge_k_sorted_lists_unittest.cpp)
+
+add_executable(reverse_unittest test/reverse_unittest.cpp)
