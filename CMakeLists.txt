@@ -20,6 +20,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/merge_two_lists.cpp
   src/merge_k_sorted_lists.cpp
   src/reverse.cpp
+  src/moving_average.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -43,3 +44,5 @@ add_executable(merge_two_lists_unittests test/merge_two_lists_unittests.cpp)
 add_executable(merge_k_sorted_lists_unittest test/merge_k_sorted_lists_unittest.cpp)
 
 add_executable(reverse_unittest test/reverse_unittest.cpp)
+
+add_executable(moving_average_unittest test/moving_average_unittest.cpp)
