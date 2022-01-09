@@ -20,9 +20,9 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/merge_two_lists.cpp
   src/merge_k_sorted_lists.cpp
   src/reverse.cpp
-  src/moving_average.cpp
   src/swap_pairs.cpp
   src/get_intersection_node.cpp
+  src/delete_duplicates.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -47,8 +47,8 @@ add_executable(merge_k_sorted_lists_unittest test/merge_k_sorted_lists_unittest.
 
 add_executable(reverse_unittest test/reverse_unittest.cpp)
 
-add_executable(moving_average_unittest test/moving_average_unittest.cpp)
-
 add_executable(swap_pairs_unittest test/swap_paris_unittest.cpp)
 
 add_executable(get_intersection_node_unittest test/get_intersection_node_unittest.cpp)
+
+add_executable(delete_duplicates_unittest test/delete_duplicates_unittest.cpp)
