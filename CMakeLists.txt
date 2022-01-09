@@ -22,6 +22,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/reverse.cpp
   src/moving_average.cpp
   src/swap_pairs.cpp
+  src/get_intersection_node.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -49,3 +50,5 @@ add_executable(reverse_unittest test/reverse_unittest.cpp)
 add_executable(moving_average_unittest test/moving_average_unittest.cpp)
 
 add_executable(swap_pairs_unittest test/swap_paris_unittest.cpp)
+
+add_executable(get_intersection_node_unittest test/get_intersection_node_unittest.cpp)
