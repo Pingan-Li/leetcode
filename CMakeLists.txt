@@ -25,6 +25,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/delete_duplicates.cpp
   src/delete_duplicates2.cpp
   src/reverse_list.cpp
+  src/delete_middle.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -58,3 +59,5 @@ add_executable(delete_duplicates_unittest test/delete_duplicates_unittest.cpp)
 add_executable(delete_duplicates2_unittest test/delete_duplicates2_unittest.cpp)
 
 add_executable(reverse_list_unittest test/reverse_list_unittest.cpp)
+
+add_executable(delete_middle_unittest test/delete_middle_unittest.cpp)
