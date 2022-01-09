@@ -23,6 +23,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/swap_pairs.cpp
   src/get_intersection_node.cpp
   src/delete_duplicates.cpp
+  src/delete_duplicates2.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -52,3 +53,5 @@ add_executable(swap_pairs_unittest test/swap_paris_unittest.cpp)
 add_executable(get_intersection_node_unittest test/get_intersection_node_unittest.cpp)
 
 add_executable(delete_duplicates_unittest test/delete_duplicates_unittest.cpp)
+
+add_executable(delete_duplicates2_unittest test/delete_duplicates2_unittest.cpp)
