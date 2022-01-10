@@ -27,6 +27,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/reverse_list.cpp
   src/delete_middle.cpp
   src/delete_node.cpp
+  src/odd_even_list.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -64,3 +65,5 @@ add_executable(reverse_list_unittest test/reverse_list_unittest.cpp)
 add_executable(delete_middle_unittest test/delete_middle_unittest.cpp)
 
 add_executable(delete_node_unittest test/delete_node_unittest.cpp)
+
+add_executable(odd_even_list_unittest test/odd_even_list_unittest.cpp)
