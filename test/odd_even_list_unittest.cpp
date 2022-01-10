@@ -14,8 +14,8 @@
 
 TEST(odd_even_list, case_0) {
   leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{1,2,3});
+      leetcode::spawnList(std::vector<int>{1,2,3,3,4,2,1,2,4});
   leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::oddEvenList(head);
+  leetcode::ListNode *ret = leetcode::oddEvenList2(head);
   leetcode::printList(ret);
 }

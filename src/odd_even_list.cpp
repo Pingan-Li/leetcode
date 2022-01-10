@@ -36,4 +36,22 @@ ListNode *splitEvenNode(ListNode *head) {
     return nullptr;
   }
 }
+
+ListNode *oddEvenList2(ListNode *head) {
+  if (head) {
+    ListNode *evenHead = head->next;
+    ListNode *evenIter = evenHead;
+    ListNode *oddIter = head;
+    while (evenIter && evenIter->next) {
+      oddIter->next = evenIter->next;
+      oddIter = oddIter->next;
+      evenIter->next = oddIter->next;
+      evenIter = evenIter->next;
+    }
+    oddIter->next = evenHead;
+    return head;
+  } else {
+    return nullptr;
+  }
+}
 } // namespace leetcode
