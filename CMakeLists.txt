@@ -32,6 +32,8 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/reverse_print.cpp
   src/delete_node2.cpp
   src/kth_to_last.cpp
+  src/tree_node.cpp
+  src/pre_order_transversal.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -79,3 +81,5 @@ add_executable(reverse_print_unittest test/reverse_print_unittest.cpp)
 add_executable(delete_node2_unittest test/delete_node2_unittest.cpp)
 
 add_executable(kth_to_last_unittest test/kth_to_last_unittest.cpp)
+
+add_executable(pre_order_traversal_unittest test/pre_order_traversal_unittest.cpp)
