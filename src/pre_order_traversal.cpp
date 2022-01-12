@@ -10,10 +10,11 @@
  */
 
 #include "pre_order_traversal.h"
+#include "stack"
 
 namespace leetcode {
 
-std::vector<int> preorderTraversal(TreeNode *root) {
+std::vector<int> preOrderTraversal(TreeNode *root) {
   std::vector<int> ret;
   recursivePreorderTraversal(root, ret);
   return ret;
@@ -25,6 +26,26 @@ void recursivePreorderTraversal(TreeNode *node, std::vector<int> &vector) {
     recursivePreorderTraversal(node->right, vector);
   } else {
     return;
+  }
+}
+
+std::vector<int> preOrderTraversal2(TreeNode *root) {
+  if (root) {
+    std::vector<int> ret;
+    std::stack<TreeNode *> stack;
+    while (root || !stack.empty()) {
+      while (root) {
+        ret.emplace_back(root->val);
+        stack.emplace(root);
+        root = root->left;
+      }
+      root = stack.top();
+      stack.pop();
+      root = root->right;
+    }
+    return ret;
+  } else {
+    return {};
   }
 }
 } // namespace leetcode

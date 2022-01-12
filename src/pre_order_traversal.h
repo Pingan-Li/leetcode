@@ -11,12 +11,20 @@
 
 #ifndef __LEETCODE_PRE_ORDER_TRAVERAL_H__
 #define __LEETCODE_PRE_ORDER_TRAVERAL_H__
-#include <vector>
 #include "tree_node.h"
+#include <vector>
 namespace leetcode {
-std::vector<int> preorderTraversal(TreeNode *root);
+/**
+ * @brief pre order: root->left->right.
+ *
+ * @param root
+ * @return std::vector<int>
+ */
+std::vector<int> preOrderTraversal(TreeNode *root);
 
-void recursivePreorderTraversal(TreeNode*node, std::vector<int> &ret);
+void recursivePreorderTraversal(TreeNode *node, std::vector<int> &ret);
+
+std::vector<int> preOrderTraversal2(TreeNode *root);
 } // namespace leetcode
 
 #endif
