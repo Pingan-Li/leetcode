@@ -84,3 +84,5 @@ add_executable(delete_node2_unittest test/delete_node2_unittest.cpp)
 add_executable(kth_to_last_unittest test/kth_to_last_unittest.cpp)
 
 add_executable(pre_order_traversal_unittest test/pre_order_traversal_unittest.cpp)
+
+add_executable(in_order_traversal_unittest test/in_order_traversal_unittest.cpp)
