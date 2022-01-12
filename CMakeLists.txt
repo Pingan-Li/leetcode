@@ -33,7 +33,8 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/delete_node2.cpp
   src/kth_to_last.cpp
   src/tree_node.cpp
-  src/pre_order_transversal.cpp
+  src/pre_order_traversal.cpp
+  src/in_order_traversal.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})

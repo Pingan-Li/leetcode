@@ -1,5 +1,5 @@
 /**
- * @file pre_order_transversal.cpp
+ * @file pre_order_traversal.cpp
  * @author lipingan (lipingan.dev@outlook.com)
  * @brief
  * @version 0.1
@@ -9,7 +9,7 @@
  *
  */
 
-#include "pre_order_transversal.h"
+#include "pre_order_traversal.h"
 
 namespace leetcode {
 

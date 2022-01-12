@@ -9,7 +9,7 @@
  *
  */
 
-#include "pre_order_transversal.h"
+#include "pre_order_traversal.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 TEST(pre_order_traversal, case_0) {
