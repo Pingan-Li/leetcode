@@ -17,7 +17,18 @@ TEST(post_order_traversal, case_0) {
   root->right = new leetcode::TreeNode{2};
   root->left = nullptr;
   root->right->left = new leetcode::TreeNode{3};
-  std::vector<int> ret = leetcode::postorderTraversal(root);
+  std::vector<int> ret = leetcode::postOrderTraversal(root);
+  for (auto iter = ret.begin(); iter != ret.end(); iter++) {
+    std::cout << *(iter) << std::endl;
+  }
+}
+
+TEST(post_order_traversal, case_1) {
+  leetcode::TreeNode *root = new leetcode::TreeNode{1};
+  root->right = new leetcode::TreeNode{2};
+  root->left = nullptr;
+  root->right->left = new leetcode::TreeNode{3};
+  std::vector<int> ret = leetcode::postOrderTraversal2(root);
   for (auto iter = ret.begin(); iter != ret.end(); iter++) {
     std::cout << *(iter) << std::endl;
   }

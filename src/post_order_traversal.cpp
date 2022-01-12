@@ -10,9 +10,10 @@
  */
 
 #include "post_order_traversal.h"
+#include "stack"
 
 namespace leetcode {
-std::vector<int> postorderTraversal(TreeNode *root) {
+std::vector<int> postOrderTraversal(TreeNode *root) {
   std::vector<int> ret;
   recursivePostorderTraversal(root, ret);
   return ret;
@@ -25,6 +26,32 @@ void recursivePostorderTraversal(TreeNode *node, std::vector<int> &vector) {
     vector.push_back(node->val);
   } else {
     return;
+  }
+}
+std::vector<int> postOrderTraversal2(TreeNode *root) {
+  if (root) {
+    std::vector<int> ret;
+    std::stack<TreeNode *> stack;
+    TreeNode *prev = nullptr;
+    while (root || !stack.empty()) {
+      while (root != nullptr) {
+        stack.emplace(root);
+        root = root->left;
+      }
+      root = stack.top();
+      stack.pop();
+      if (root->right == nullptr || root->right == prev) {
+        ret.emplace_back(root->val);
+        prev = root;
+        root = nullptr;
+      } else {
+        stack.emplace(root);
+        root = root->right;
+      }
+    }
+    return ret;
+  } else {
+    return {};
   }
 }
 } // namespace leetcode
