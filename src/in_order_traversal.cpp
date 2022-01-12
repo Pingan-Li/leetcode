@@ -10,8 +10,9 @@
  */
 
 #include "in_order_traversal.h"
+#include "stack"
 namespace leetcode {
-std::vector<int> inorderTraversal(TreeNode *root) {
+std::vector<int> inOrderTraversal(TreeNode *root) {
   std::vector<int> ret;
   recursiveInorderTraversal(root, ret);
   return ret;
@@ -24,6 +25,25 @@ void recursiveInorderTraversal(TreeNode *node, std::vector<int> &vector) {
     recursiveInorderTraversal(node->right, vector);
   } else {
     return;
+  }
+}
+std::vector<int> inOrderTraversal2(TreeNode *root) {
+  if (root) {
+    std::vector<int> ret;
+    std::stack<TreeNode *> stack;
+    while (root || !stack.empty()) {
+      while (root) {
+        stack.push(root);
+        root = root->left;
+      }
+      root = stack.top();
+      stack.pop();
+      ret.emplace_back(root->val);
+      root = root->right;
+    }
+    return ret;
+  } else {
+    return {};
   }
 }
 } // namespace leetcode

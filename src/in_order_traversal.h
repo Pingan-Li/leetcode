@@ -14,9 +14,17 @@
 #include "tree_node.h"
 #include "vector"
 namespace leetcode {
-std::vector<int> inorderTraversal(TreeNode *root);
+    /**
+     * @brief left->root->right
+     * 
+     * @param root 
+     * @return std::vector<int> 
+     */
+std::vector<int> inOrderTraversal(TreeNode *root);
 
 void recursiveInorderTraversal(TreeNode*node, std::vector<int> &ret);
+
+std::vector<int> inOrderTraversal2(TreeNode *root);
 } // namespace leetcode
 
 #endif
