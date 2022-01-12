@@ -35,6 +35,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/tree_node.cpp
   src/pre_order_traversal.cpp
   src/in_order_traversal.cpp
+  src/post_order_traversal.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -86,3 +87,5 @@ add_executable(kth_to_last_unittest test/kth_to_last_unittest.cpp)
 add_executable(pre_order_traversal_unittest test/pre_order_traversal_unittest.cpp)
 
 add_executable(in_order_traversal_unittest test/in_order_traversal_unittest.cpp)
+
+add_executable(post_order_traversal_unittest test/post_order_traversal_unittest.cpp)
