@@ -13,6 +13,12 @@
 
 #include <iostream>
 namespace leetcode {
+ListNode::ListNode() : val(0), next(nullptr) {}
+
+ListNode::ListNode(int x) : val(x), next(nullptr) {}
+
+ListNode::ListNode(int x, ListNode *next) : val(x), next(next) {}
+
 void printList(const ListNode *head) {
   if (head != nullptr) {
     while (head) {
