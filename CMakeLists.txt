@@ -38,6 +38,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/post_order_traversal.cpp
   src/is_palindrome.cpp
   src/split_list_to_parts.cpp
+  src/has_cycle.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -95,3 +96,5 @@ add_executable(post_order_traversal_unittest test/post_order_traversal_unittest.
 add_executable(is_palindrome_unittest test/is_palindrome_unittest.cpp)
 
 add_executable(split_list_to_parts_unittest test/split_list_to_parts_unittest.cpp)
+
+add_executable(has_cycle_unittest test/has_cycle_unittest.cpp)
