@@ -41,6 +41,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/has_cycle.cpp
   src/get_kth_from_end.cpp
   src/detect_cycle.cpp
+  src/remove_elements.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -104,3 +105,5 @@ add_executable(has_cycle_unittest test/has_cycle_unittest.cpp)
 add_executable(get_kth_from_end_unittest test/get_kth_from_end_unittest.cpp)
 
 add_executable(detect_cycle_unittest test/detect_cycle_unittest.cpp)
+
+add_executable(remove_elements_unittest test/remove_elements_unittest.cpp)
