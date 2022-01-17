@@ -12,5 +12,8 @@
 #include "has_cycle.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
+namespace leetcode
+{
+    TEST(has_cycle, case_0) {}
+} // namespace leetcode
 
-TEST(has_cycle, case_0) {}

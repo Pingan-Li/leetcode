@@ -13,10 +13,14 @@
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
-TEST(reverse_list, case_0) {
+namespace leetcode
+{
+  TEST(reverse_list, case_0) {
   std::vector<int> vec{1, 2, 3, 4, 5};
-  leetcode::ListNode *head = leetcode::spawnList(vec);
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::reverseList(head);
-  leetcode::printList(ret);
+   ListNode *head =  spawnList(vec);
+   printList(head);
+   ListNode *ret =  reverseList(head);
+   printList(ret);
 }
+} // namespace leetcode
+

@@ -13,26 +13,30 @@
 #include "swap_pairs.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
+
+namespace leetcode {
 TEST(swap_paris, case_0) {
   std::vector<int> vector{1, 2, 3, 4, 5};
-  leetcode::ListNode *list = leetcode::spawnList(vector);
-  leetcode::printList(list);
-  leetcode::ListNode *ret = leetcode::swapPairs(list);
-  leetcode::printList(ret);
+  ListNode *list = spawnList(vector);
+  printList(list);
+  ListNode *ret = swapPairs(list);
+  printList(ret);
 }
 
 TEST(swap_paris, case_1) {
   std::vector<int> vector{1};
-  leetcode::ListNode *list = leetcode::spawnList(vector);
-  leetcode::printList(list);
-  leetcode::ListNode *ret = leetcode::swapPairs(list);
-  leetcode::printList(ret);
+  ListNode *list = spawnList(vector);
+  printList(list);
+  ListNode *ret = swapPairs(list);
+  printList(ret);
 }
 
 TEST(swap_paris, case_2) {
   std::vector<int> vector{1, 2};
-  leetcode::ListNode *list = leetcode::spawnList(vector);
-  leetcode::printList(list);
-  leetcode::ListNode *ret = leetcode::swapPairs(list);
-  leetcode::printList(ret);
+  ListNode *list = spawnList(vector);
+  printList(list);
+  ListNode *ret = swapPairs(list);
+  printList(ret);
 }
+
+} // namespace leetcode

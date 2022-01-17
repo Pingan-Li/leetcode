@@ -12,10 +12,11 @@
 #include "delete_node.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-
-TEST(delete_node, case_0){
-    leetcode::ListNode * head = leetcode::spawnList(std::vector<int>{4,1,5,9});
-    leetcode::printList(head);
-    leetcode::deleteNode(head->next);
-    leetcode::printList(head);
+namespace leetcode {
+TEST(delete_node, case_0) {
+  ListNode *head = spawnList(std::vector<int>{4, 1, 5, 9});
+  printList(head);
+  deleteNode(head->next);
+  printList(head);
 }
+} // namespace leetcode

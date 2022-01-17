@@ -12,31 +12,28 @@
 #include "is_palindrome.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-
+namespace leetcode {
 TEST(is_palindrome, case_0) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{1, 2, 3, 2, 1});
-  bool result = leetcode::isPalindrome(head);
+  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 2, 1});
+  bool result = isPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_1) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{1});
-  bool result = leetcode::isPalindrome(head);
+  ListNode *head = spawnList(std::vector<int>{1});
+  bool result = isPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_2) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{});
-  bool result = leetcode::isPalindrome(head);
+  ListNode *head = spawnList(std::vector<int>{});
+  bool result = isPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_3) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{1,2,3});
-  bool result = leetcode::isPalindrome(head);
+  ListNode *head = spawnList(std::vector<int>{1, 2, 3});
+  bool result = isPalindrome(head);
   EXPECT_FALSE(result);
 }
+} // namespace leetcode

@@ -13,5 +13,8 @@
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
+namespace leetcode
+{
+    TEST(detect_cycle, case_0) {}
+} // namespace leetcode
 
-TEST(detect_cycle, case_0) {}
