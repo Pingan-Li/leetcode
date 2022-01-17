@@ -13,7 +13,9 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 #include <iostream>
+namespace leetcode {
 TEST(reverse, case_0) {
-  int ret = leetcode::reverse(-123);
+  int ret = reverse(-123);
   std::cout << ret;
 }
+} // namespace leetcode

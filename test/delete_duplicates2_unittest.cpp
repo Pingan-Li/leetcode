@@ -14,34 +14,37 @@
 #include "gtest/gtest.h"
 
 #include "list_node.h"
+
+namespace leetcode {
 TEST(delete_duplicates2, case_0) {
   std::vector<int> vecotr{};
-  leetcode::ListNode *head = leetcode::spawnList(vecotr);
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteDuplicates2(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(vecotr);
+  printList(head);
+  ListNode *ret = deleteDuplicates2(head);
+  printList(ret);
 }
 
 TEST(delete_duplicates2, case_1) {
-  std::vector<int> vecotr{1,2,2,2,2,2,2,3};
-  leetcode::ListNode *head = leetcode::spawnList(vecotr);
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteDuplicates2(head);
-  leetcode::printList(ret);
+  std::vector<int> vecotr{1, 2, 2, 2, 2, 2, 2, 3};
+  ListNode *head = spawnList(vecotr);
+  printList(head);
+  ListNode *ret = deleteDuplicates2(head);
+  printList(ret);
 }
 
 TEST(delete_duplicates2, case_3) {
   std::vector<int> vecotr{1};
-  leetcode::ListNode *head = leetcode::spawnList(vecotr);
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteDuplicates2(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(vecotr);
+  printList(head);
+  ListNode *ret = deleteDuplicates2(head);
+  printList(ret);
 }
 
 TEST(delete_duplicates2, case_4) {
   std::vector<int> vecotr{1};
-  leetcode::ListNode *head = leetcode::spawnList(vecotr);
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteDuplicates2(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(vecotr);
+  printList(head);
+  ListNode *ret = deleteDuplicates2(head);
+  printList(ret);
 }
+} // namespace leetcode

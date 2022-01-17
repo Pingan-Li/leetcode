@@ -12,8 +12,9 @@
 #include "str_str.h"
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
+namespace leetcode {
 TEST(str_str, case_0) {
-  auto ret = leetcode::strStr("heck", "fs");
+  auto ret = strStr("heck", "fs");
   std::cout << ret;
 }
+} // namespace leetcode

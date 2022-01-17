@@ -12,23 +12,24 @@
 #include "merge_k_sorted_lists.h"
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
+namespace leetcode {
 TEST(merge_k_sorted_lists, case_0) {
   std::vector<int> list1{1, 2, 3, 4, 5};
   std::vector<int> list2{6, 7, 8, 9, 10};
   std::vector<int> list3{1, 2, 3, 4, 5, 6, 7};
-  leetcode::ListNode *l1 = leetcode::spawnList(list1);
-  leetcode::ListNode *l2 = leetcode::spawnList(list2);
-  leetcode::ListNode *l3 = leetcode::spawnList(list3);
-  std::vector<leetcode::ListNode *> lists{l1, l2, l3};
-  leetcode::printList(l1);
-  leetcode::printList(l2);
-  leetcode::printList(l3);
-  leetcode::ListNode *ret = leetcode::mergeKSortedLists(lists);
-  leetcode::printList(ret);
+  ListNode *l1 = spawnList(list1);
+  ListNode *l2 = spawnList(list2);
+  ListNode *l3 = spawnList(list3);
+  std::vector<ListNode *> lists{l1, l2, l3};
+  printList(l1);
+  printList(l2);
+  printList(l3);
+  ListNode *ret = mergeKSortedLists(lists);
+  printList(ret);
 }
 
 TEST(merge_k_sorted_lists, case_1) {
-  std::vector<leetcode::ListNode *> lists;
-  leetcode::ListNode *ret = leetcode::mergeKSortedLists(lists);
+  std::vector<ListNode *> lists;
+  ListNode *ret = mergeKSortedLists(lists);
 }
+} // namespace leetcode

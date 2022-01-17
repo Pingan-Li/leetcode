@@ -12,17 +12,16 @@
 #include "delete_node2.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-
+namespace leetcode {
 TEST(delete_node2, case_0) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{1});
-  leetcode::ListNode *ret = leetcode::deleteNode2(head, 1);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{1});
+  ListNode *ret = deleteNode2(head, 1);
+  printList(ret);
 }
 
 TEST(delete_node2, case_1) {
-  leetcode::ListNode *head =
-      leetcode::spawnList(std::vector<int>{-3, 5, -99});
-  leetcode::ListNode *ret = leetcode::deleteNode2(head, 1);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{-3, 5, -99});
+  ListNode *ret = deleteNode2(head, 1);
+  printList(ret);
 }
+} // namespace leetcode

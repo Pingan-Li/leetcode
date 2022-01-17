@@ -12,11 +12,12 @@
 #include "remove_elements.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-
+namespace leetcode {
 TEST(remove_elemenets, case_0) {
-  leetcode::ListNode *head = leetcode::spawnList(std::vector<int>{
-      1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1});
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::removeElements(head, 1);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+                                              1, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1});
+  printList(head);
+  ListNode *ret = removeElements(head, 1);
+  printList(ret);
 }
+} // namespace leetcode

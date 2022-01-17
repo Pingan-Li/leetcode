@@ -12,3 +12,8 @@
 #include "get_intersection_node.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
+
+namespace leetcode
+{
+    
+} // namespace leetcode

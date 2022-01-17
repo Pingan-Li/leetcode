@@ -13,24 +13,25 @@
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
+namespace leetcode {
 TEST(delete_middle, case_0) {
-  leetcode::ListNode *head = leetcode::spawnList(std::vector<int>{2, 1});
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteMiddle(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{2, 1});
+  printList(head);
+  ListNode *ret = deleteMiddle(head);
+  printList(ret);
 }
 
 TEST(delete_middle, case_1) {
-  leetcode::ListNode *head = leetcode::spawnList(std::vector<int>{1,2,3});
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteMiddle(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{1, 2, 3});
+  printList(head);
+  ListNode *ret = deleteMiddle(head);
+  printList(ret);
 }
 
 TEST(delete_middle, case_2) {
-  leetcode::ListNode *head = leetcode::spawnList(std::vector<int>{1,2,3,4});
-  leetcode::printList(head);
-  leetcode::ListNode *ret = leetcode::deleteMiddle(head);
-  leetcode::printList(ret);
+  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 4});
+  printList(head);
+  ListNode *ret = deleteMiddle(head);
+  printList(ret);
 }
-
+} // namespace leetcode

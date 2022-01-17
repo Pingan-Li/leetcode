@@ -12,8 +12,9 @@
 #include "kth_to_last.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-
+namespace leetcode {
 TEST(kth_to_last, case_0) {
-  leetcode::ListNode *head = leetcode::spawnList(std::vector{1, 2, 3, 4, 5});
-  std::cout << leetcode::kthToLast(head, 1);
+  ListNode *head = spawnList(std::vector{1, 2, 3, 4, 5});
+  std::cout << kthToLast(head, 1);
 }
+} // namespace leetcode

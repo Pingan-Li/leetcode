@@ -12,13 +12,16 @@
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
+namespace leetcode {
 TEST(merge_two_lists, case_0) {
-  std::vector<int> list1{1,2,3,4,5};
-  std::vector<int> list2{6,7,8,9,10};
-  leetcode::ListNode *l1 = leetcode::spawnList(list1);
-  leetcode::ListNode *l2 = leetcode::spawnList(list2);
-  leetcode::printList(l1);
-  leetcode::printList(l2);
-  leetcode::ListNode *ret = leetcode::mergeTwoLists(l1, l2);
-  leetcode::printList(ret);
+  std::vector<int> list1{1, 2, 3, 4, 5};
+  std::vector<int> list2{6, 7, 8, 9, 10};
+  ListNode *l1 = spawnList(list1);
+  ListNode *l2 = spawnList(list2);
+  printList(l1);
+  printList(l2);
+  ListNode *ret = mergeTwoLists(l1, l2);
+  printList(ret);
 }
+
+} // namespace leetcode

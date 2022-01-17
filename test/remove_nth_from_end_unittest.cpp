@@ -13,10 +13,14 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-TEST(remove_nth_from_end, case_0) {
+namespace leetcode
+{
+  TEST(remove_nth_from_end, case_0) {
   std::vector<int> list{1, 2, 3, 4, 5};
-  leetcode::ListNode *head = leetcode::spawnList(list);
-  leetcode::printList(head);
-  auto result = leetcode::removeNthFromEnd(head, 5);
-  leetcode::printList(result);
+   ListNode *head =  spawnList(list);
+   printList(head);
+  auto result =  removeNthFromEnd(head, 5);
+   printList(result);
 }
+} // namespace leetcode
+

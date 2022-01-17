@@ -13,9 +13,10 @@
 #include <gtest/gtest.h>
 
 #include "length_of_longest_substring.h"
-
+namespace leetcode {
 TEST(length_of_longest_substring, case_0) {
   std::string str{"aabbcc"};
-  int result = leetcode::lengthOfLongestSubstring(str);
+  int result = lengthOfLongestSubstring(str);
   std::cout << result;
 }
+} // namespace leetcode

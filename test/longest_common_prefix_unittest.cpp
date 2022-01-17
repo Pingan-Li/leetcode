@@ -12,12 +12,14 @@
 #include "longest_common_prefix.h"
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
+namespace leetcode {
 TEST(longest_common_prefix, case_0) {
   std::vector<std::string> strs;
   strs.push_back("flower");
   strs.push_back("flow");
   strs.push_back("flight");
-  auto ret = leetcode::longestCommonPrefix(strs);
+  auto ret = longestCommonPrefix(strs);
   std::cout << ret.size();
 }
+
+} // namespace leetcode
