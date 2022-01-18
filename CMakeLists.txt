@@ -43,6 +43,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   src/detect_cycle.cpp
   src/remove_elements.cpp
   src/convert_to_title.cpp
+  src/get_decimal_value.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
@@ -110,3 +111,5 @@ add_executable(detect_cycle_unittest test/detect_cycle_unittest.cpp)
 add_executable(remove_elements_unittest test/remove_elements_unittest.cpp)
 
 add_executable(conver_to_title_unittest test/convert_to_title_unittest.cpp)
+
+add_executable(get_decimal_value_unittest test/get_decimal_value_unittest.cpp)
