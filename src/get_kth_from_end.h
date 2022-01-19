@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2022
  *
  */
-#ifndef __LEETCODE_GET_KTH_FORM_END_H__
+#ifndef __LEETCODE_GET_KTH_FROM_END_H__
 #define __LEETCODE_GET_KTH_FROM_END_H__
 #include "list_node.h"
 namespace leetcode {
