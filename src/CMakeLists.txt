@@ -40,6 +40,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   convert_to_title.cpp
   get_decimal_value.cpp
   middle_node.cpp
+  remove_duplicate_nodes.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
