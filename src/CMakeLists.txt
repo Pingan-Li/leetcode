@@ -43,6 +43,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   remove_duplicate_nodes.cpp
   detect_capital_use.cpp
   length_of_last_word.cpp
+  reverse_string.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})

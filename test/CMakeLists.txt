@@ -82,3 +82,5 @@ add_executable(remove_duplicate_nodes remove_duplicate_nodes_unittest.cpp)
 add_executable(detect_capital_use_unittest detect_capital_use_unittest.cpp)
 
 add_executable(length_of_last_word_unittest length_of_last_word_unittest.cpp)
+
+add_executable(reverse_string_unittest reverse_string_unittest.cpp)
