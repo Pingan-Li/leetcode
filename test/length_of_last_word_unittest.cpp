@@ -15,11 +15,11 @@
 #include "gtest/gtest.h"
 
 namespace leetcode {
-TEST(length_of_last_world, case_0) {
+TEST(length_of_last_word, case_0) {
   int size = lengthOfLastWord("fly me to the moonn      ");
   EXPECT_EQ(size, 5);
 }
-TEST(length_of_last_world, case_1) {
+TEST(length_of_last_word, case_1) {
   int size = lengthOfLastWord("a");
   EXPECT_EQ(size, 1);
 }
