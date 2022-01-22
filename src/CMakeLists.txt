@@ -42,6 +42,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   middle_node.cpp
   remove_duplicate_nodes.cpp
   detect_capital_use.cpp
+  length_of_last_word.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
