@@ -45,6 +45,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   length_of_last_word.cpp
   reverse_string.cpp
   max_area.cpp
+  contains_duplicate.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})

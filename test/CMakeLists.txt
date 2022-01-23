@@ -86,3 +86,5 @@ add_executable(length_of_last_word_unittest length_of_last_word_unittest.cpp)
 add_executable(reverse_string_unittest reverse_string_unittest.cpp)
 
 add_executable(max_area_unittest max_area_unittest.cpp)
+
+add_executable(contains_duplicate_unittest contains_duplicate_unittest.cpp)
