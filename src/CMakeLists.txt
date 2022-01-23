@@ -44,6 +44,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   detect_capital_use.cpp
   length_of_last_word.cpp
   reverse_string.cpp
+  max_area.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})

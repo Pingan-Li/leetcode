@@ -84,3 +84,5 @@ add_executable(detect_capital_use_unittest detect_capital_use_unittest.cpp)
 add_executable(length_of_last_word_unittest length_of_last_word_unittest.cpp)
 
 add_executable(reverse_string_unittest reverse_string_unittest.cpp)
+
+add_executable(max_area_unittest max_area_unittest.cpp)
