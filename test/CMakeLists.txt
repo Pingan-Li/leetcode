@@ -88,3 +88,5 @@ add_executable(reverse_string_unittest reverse_string_unittest.cpp)
 add_executable(max_area_unittest max_area_unittest.cpp)
 
 add_executable(contains_duplicate_unittest contains_duplicate_unittest.cpp)
+
+add_executable(max_sub_array_unittest max_sub_array_unittest.cpp)

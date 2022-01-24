@@ -46,6 +46,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   reverse_string.cpp
   max_area.cpp
   contains_duplicate.cpp
+  max_sub_array.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
