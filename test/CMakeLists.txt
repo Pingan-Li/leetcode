@@ -92,3 +92,5 @@ add_executable(contains_duplicate_unittest contains_duplicate_unittest.cpp)
 add_executable(max_sub_array_unittest max_sub_array_unittest.cpp)
 
 add_executable(merge_unittest merge_unittest.cpp)
+
+add_executable(matrix_reshape_unittest matrix_reshape_unittest.cpp)

@@ -48,6 +48,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   contains_duplicate.cpp
   max_sub_array.cpp
   merge.cpp
+  matrix_reshape.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})
