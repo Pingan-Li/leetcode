@@ -50,6 +50,7 @@ LIST(APPEND LEETCODE_SOURCE_FILES
   merge.cpp
   matrix_reshape.cpp
   generate.cpp
+  max_profit.cpp
 )
 
 add_library(leetcode SHARED ${LEETCODE_SOURCE_FILES})

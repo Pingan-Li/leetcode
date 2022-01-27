@@ -96,3 +96,5 @@ add_executable(merge_unittest merge_unittest.cpp)
 add_executable(matrix_reshape_unittest matrix_reshape_unittest.cpp)
 
 add_executable(generate_unittest generate_unittest.cpp)
+
+add_executable(max_profit_unittest max_profit_unittest.cpp)
