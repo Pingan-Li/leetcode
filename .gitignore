@@ -36,3 +36,5 @@
 # Founder sucks.
 /.DS_Store/
 */.DS_Store/
+
+/out
