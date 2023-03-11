@@ -18,6 +18,6 @@ namespace leetcode {
 ListNode *removeElements(ListNode *head, int val);
 
 ListNode *removeElements2(ListNode *head, int val);
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

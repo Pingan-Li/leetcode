@@ -24,4 +24,4 @@ bool containsDuplicate(std::vector<int> &nums) {
   }
   return false;
 }
-} // namespace leetcode
+}  // namespace leetcode

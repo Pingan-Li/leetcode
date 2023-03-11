@@ -33,4 +33,4 @@ ListNode *swapPairs(ListNode *head) {
   }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

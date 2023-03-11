@@ -9,13 +9,14 @@
  *
  */
 
-#ifndef __LEETCODE_GET_INTERSECTION_NODE_H__
-#define __LEETCODE_GET_INTERSECTION_NODE_H__
+#ifndef LEETCODE_GET_INTERSECTION_NODE_H_
+#define LEETCODE_GET_INTERSECTION_NODE_H_
+
 #include "solutions/list_node.h"
 
 namespace leetcode {
-    
+
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
 
-} // namespace leetcode
-#endif
+}  // namespace leetcode
+#endif // LEETCODE_GET_INTERSECTION_NODE_H_

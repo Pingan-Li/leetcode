@@ -11,12 +11,13 @@
 
 #ifndef LEETCODE_CONVERT_TO_TITLE_H_
 #define LEETCODE_CONVERT_TO_TITLE_H_
+
 #include <string>
 
 namespace leetcode {
 
 std::string convertToTitle(int columnNumber);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_CONVERT_TO_TITLE_H_

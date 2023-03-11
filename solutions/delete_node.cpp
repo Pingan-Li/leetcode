@@ -10,11 +10,14 @@
  */
 
 #include "delete_node.h"
+
 namespace leetcode {
+
 void deleteNode(ListNode *node) {
   ListNode *temp = node->next;
   node->val = node->next->val;
   node->next = node->next->next;
   delete temp;
 }
-} // namespace leetcode
+
+}  // namespace leetcode

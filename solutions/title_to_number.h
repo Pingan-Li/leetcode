@@ -18,6 +18,6 @@ namespace leetcode {
 
 int titleToNumber(std::string columnTitle);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_TITLE_TO_NUMBER_H_

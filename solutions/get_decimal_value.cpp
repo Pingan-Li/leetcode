@@ -21,4 +21,4 @@ int getDecimalValue(ListNode *head) {
   return ret;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

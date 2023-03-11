@@ -41,4 +41,4 @@ std::vector<int> reversePrint2(ListNode *head) {
     return {};
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

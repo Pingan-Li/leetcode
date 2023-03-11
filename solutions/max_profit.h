@@ -16,6 +16,6 @@
 
 namespace leetcode {
 int maxProfit(std::vector<int> &prices);
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

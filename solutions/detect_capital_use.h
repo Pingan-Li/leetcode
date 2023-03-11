@@ -18,6 +18,6 @@ namespace leetcode {
 
 bool detectCapitalUse(std::string word);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif // LEETCODE_DETECT_CAPITAL_USE_H_

@@ -22,4 +22,4 @@ std::string convertToTitle(int number) {
   }
   return {temp.rbegin(), temp.rend()};
 }
-} // namespace leetcode
+}  // namespace leetcode

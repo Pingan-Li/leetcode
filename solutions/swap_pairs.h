@@ -15,8 +15,8 @@
 #include "solutions/list_node.h"
 
 namespace leetcode {
-    
+
 ListNode *swapPairs(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 #endif

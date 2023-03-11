@@ -18,6 +18,6 @@ namespace leetcode {
 
 void reverseString(std::vector<char> &s);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

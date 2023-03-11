@@ -11,12 +11,13 @@
 
 #ifndef LEETCODE_GENERATE_H_
 #define LEETCODE_GENERATE_H_
+
 #include <vector>
 
 namespace leetcode {
 
 std::vector<std::vector<int>> generate(int numRows);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_GENERATE_H_

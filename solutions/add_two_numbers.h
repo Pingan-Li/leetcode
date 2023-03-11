@@ -9,12 +9,15 @@
  *
  */
 
-#ifndef __ADD_TWO_NUMBERS_H__
-#define __ADD_TWO_NUMBERS_H__
+#ifndef ADD_TWO_NUMBERS_H_
+#define ADD_TWO_NUMBERS_H_
 
 #include "solutions/list_node.h"
-namespace leetcode {
-ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
-} // namespace leetcode
 
-#endif // __ADD_TWO_NUMBERS_H__
+namespace leetcode {
+
+ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
+
+}  // namespace leetcode
+
+#endif  // ADD_TWO_NUMBERS_H_

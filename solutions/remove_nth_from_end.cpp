@@ -46,4 +46,4 @@ ListNode *removeNthFromEnd(ListNode *head, int n) {
   }
   return head;
 }
-} // namespace leetcode
+}  // namespace leetcode

@@ -22,6 +22,6 @@ ListNode *splitEvenNode(ListNode *head);
 
 ListNode *oddEvenList2(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

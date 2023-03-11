@@ -12,15 +12,17 @@
 #ifndef LEETCODE_REVERSE_PRINT_H_
 #define LEETCODE_REVERSE_PRINT_H_
 
-#include "solutions/list_node.h"
-
 #include <vector>
 
+#include "solutions/list_node.h"
+
 namespace leetcode {
+
 void recursiveGet(ListNode *head, std::vector<int> &vec);
 std::vector<int> reversePrint(ListNode *head);
 
 std::vector<int> reversePrint2(ListNode *head);
-} // namespace leetcode
+
+}  // namespace leetcode
 
 #endif

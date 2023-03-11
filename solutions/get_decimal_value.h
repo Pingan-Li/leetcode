@@ -17,6 +17,6 @@ namespace leetcode {
 
 int getDecimalValue(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_GET_DECIMAL_VALUE_H_

@@ -49,4 +49,4 @@ std::vector<int> preOrderTraversal2(TreeNode *root) {
     return {};
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

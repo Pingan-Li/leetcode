@@ -26,4 +26,4 @@ int strStr(const std::string &heckStack, const std::string &needle) {
   }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

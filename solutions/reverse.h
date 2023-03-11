@@ -14,6 +14,6 @@
 
 namespace leetcode {
 int reverse(int x);
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

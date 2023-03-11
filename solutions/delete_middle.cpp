@@ -30,4 +30,4 @@ ListNode *deleteMiddle(ListNode *head) {
     return nullptr;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

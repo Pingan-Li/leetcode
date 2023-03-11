@@ -36,6 +36,6 @@ std::size_t freeList(ListNode *head);
 bool equal(const ListNode *list1, const ListNode *list2);
 
 std::size_t length(const ListNode *list);
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif // LIST_NODE_H_
+#endif  // LIST_NODE_H_

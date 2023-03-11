@@ -18,6 +18,6 @@ namespace leetcode {
 
 int maxArea(std::vector<int> &height);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

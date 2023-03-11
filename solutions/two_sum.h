@@ -18,6 +18,6 @@ namespace leetcode {
 
 std::vector<int> twoSum(std::vector<int> &nums, int target);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif // __TWO_SUM_H__
+#endif  // TWO_SUM_H__

@@ -14,9 +14,9 @@
 
 #include <vector>
 namespace leetcode {
-    
+
 bool containsDuplicate(std::vector<int> &nums);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_CONTAINS_DUPLICATES_H_

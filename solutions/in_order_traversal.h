@@ -12,23 +12,23 @@
 #ifndef LEETCODE_IN_ORDER_TRAVERSAL_H_
 #define LEETCODE_IN_ORDER_TRAVERSAL_H_
 
+#include <vector>
+
 #include "solutions/tree_node.h"
 
-#include "vector"
-
 namespace leetcode {
-    /**
-     * @brief left->root->right
-     * 
-     * @param root 
-     * @return std::vector<int> 
-     */
+/**
+ * @brief left->root->right
+ *
+ * @param root
+ * @return std::vector<int>
+ */
 std::vector<int> inOrderTraversal(TreeNode *root);
 
-void recursiveInorderTraversal(TreeNode*node, std::vector<int> &ret);
+void recursiveInorderTraversal(TreeNode *node, std::vector<int> &ret);
 
 std::vector<int> inOrderTraversal2(TreeNode *root);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_IN_ORDER_TRAVERSAL_H_

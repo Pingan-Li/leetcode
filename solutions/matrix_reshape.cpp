@@ -28,4 +28,4 @@ std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>> &mat,
   return ans;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

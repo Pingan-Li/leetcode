@@ -12,7 +12,7 @@
 #include "solutions/kth_to_last.h"
 
 namespace leetcode {
-  
+
 int kthToLast(ListNode *head, int k) {
   ListNode *fast = head;
   ListNode *slow = head;
@@ -26,4 +26,4 @@ int kthToLast(ListNode *head, int k) {
   return slow->val;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

@@ -25,4 +25,4 @@ int maxProfit(std::vector<int> &prices) {
   return higestProfit;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

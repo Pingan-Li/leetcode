@@ -18,6 +18,6 @@ namespace leetcode {
 
 void deleteNode(ListNode *node);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_DELETE_NODE_H_

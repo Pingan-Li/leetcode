@@ -30,4 +30,4 @@ int maxSubArray(std::vector<int> &nums) {
   }
   return result;
 }
-} // namespace leetcode
+}  // namespace leetcode

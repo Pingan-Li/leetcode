@@ -18,6 +18,6 @@ namespace leetcode {
 
 int lengthOfLongestSubstring(const std::string &);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif // LENGTH_OF_LONGEST_SUBSTRING_H_
+#endif  // LENGTH_OF_LONGEST_SUBSTRING_H_

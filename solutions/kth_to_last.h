@@ -18,6 +18,6 @@ namespace leetcode {
 
 int kthToLast(ListNode *head, int k);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_KTH_TO_LAST_H_

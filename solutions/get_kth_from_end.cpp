@@ -24,4 +24,4 @@ ListNode *getKthFromEnd(ListNode *head, int k) {
   return head;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

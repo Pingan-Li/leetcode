@@ -27,4 +27,4 @@ ListNode *removeDuplicateNodes(ListNode *head) {
   }
   return head;
 }
-} // namespace leetcode
+}  // namespace leetcode

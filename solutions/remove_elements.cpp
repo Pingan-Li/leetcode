@@ -33,4 +33,4 @@ ListNode *removeElements2(ListNode *head, int val) {
     return nullptr;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

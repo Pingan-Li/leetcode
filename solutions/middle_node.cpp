@@ -15,12 +15,11 @@ namespace leetcode {
 ListNode *middleNode(ListNode *head) {
   ListNode *fast = head;
   ListNode *slow = head;
-  while (fast && fast->next)
-  {
-      fast = fast->next;
-      fast = fast->next;
-      slow = slow->next;
+  while (fast && fast->next) {
+    fast = fast->next;
+    fast = fast->next;
+    slow = slow->next;
   }
   return slow;
 }
-} // namespace leetcode
+}  // namespace leetcode

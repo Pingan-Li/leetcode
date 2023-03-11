@@ -33,4 +33,4 @@ bool isPalindrome(ListNode *head) {
   return true;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

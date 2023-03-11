@@ -12,15 +12,16 @@
 #ifndef LEETCODE_POST_ORDER_TRAVERSAL_H_
 #define LEETCODE_POST_ORDER_TRAVERSAL_H_
 
-#include "solutions/tree_node.h"
 #include <vector>
+
+#include "solutions/tree_node.h"
 
 namespace leetcode {
 std::vector<int> postOrderTraversal(TreeNode *root);
 
-void recursivePostorderTraversal(TreeNode*node, std::vector<int> &ret);
+void recursivePostorderTraversal(TreeNode *node, std::vector<int> &ret);
 
 std::vector<int> postOrderTraversal2(TreeNode *root);
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

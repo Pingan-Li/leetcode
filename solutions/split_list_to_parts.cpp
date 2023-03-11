@@ -35,4 +35,4 @@ std::vector<ListNode *> splitListToParts(ListNode *head, int k) {
   }
   return ret;
 }
-} // namespace leetcode
+}  // namespace leetcode

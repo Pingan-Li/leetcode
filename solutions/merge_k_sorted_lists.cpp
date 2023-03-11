@@ -58,4 +58,4 @@ ListNode *mergeTwoSortedLists(ListNode *list1, ListNode *list2) {
   }
   return list1 ? list1 : list2;
 }
-} // namespace leetcode
+}  // namespace leetcode

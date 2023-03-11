@@ -18,6 +18,6 @@ namespace leetcode {
 
 int maxSubArray(std::vector<int> &nums);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

@@ -48,4 +48,4 @@ std::vector<int> inOrderTraversal2(TreeNode *root) {
     return {};
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

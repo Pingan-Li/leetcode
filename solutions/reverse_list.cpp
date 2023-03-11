@@ -32,4 +32,4 @@ ListNode *reverseList(ListNode *head) {
   }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

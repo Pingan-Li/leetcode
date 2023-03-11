@@ -30,4 +30,4 @@ ListNode *detectCycle(ListNode *head) {
     return nullptr;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

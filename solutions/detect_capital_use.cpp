@@ -25,4 +25,4 @@ bool detectCapitalUse(std::string word) {
   return true;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

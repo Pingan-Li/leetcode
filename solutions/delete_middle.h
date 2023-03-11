@@ -18,6 +18,6 @@ namespace leetcode {
 
 ListNode *deleteMiddle(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif // LEETCODE_DELETE_MIDDLE_H_

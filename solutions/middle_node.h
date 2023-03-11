@@ -18,6 +18,6 @@ namespace leetcode {
 
 ListNode *middleNode(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

@@ -18,6 +18,6 @@ namespace leetcode {
 
 bool isPalindrome(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_IS_PALINDROME_H_

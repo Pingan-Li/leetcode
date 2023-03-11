@@ -24,7 +24,7 @@ ListNode *deleteNode2(ListNode *head, int val) {
       } else {
         head = curr->next;
       }
-      delete temp;// leetcode doesn't require free or delete
+      delete temp;  // leetcode doesn't require free or delete
       break;
     }
     prev = curr;
@@ -33,4 +33,4 @@ ListNode *deleteNode2(ListNode *head, int val) {
   return head;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

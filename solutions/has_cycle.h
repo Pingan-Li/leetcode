@@ -18,6 +18,6 @@ namespace leetcode {
 
 bool hasCycle(ListNode *head);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_HAS_CYCLE_H_

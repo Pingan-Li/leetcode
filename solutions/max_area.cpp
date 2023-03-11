@@ -29,4 +29,4 @@ int maxArea(std::vector<int> &height) {
   }
   return maxArea;
 }
-} // namespace leetcode
+}  // namespace leetcode

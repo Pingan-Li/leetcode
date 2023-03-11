@@ -54,4 +54,4 @@ ListNode *oddEvenList2(ListNode *head) {
     return nullptr;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

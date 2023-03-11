@@ -16,6 +16,6 @@ namespace leetcode {
 
 ListNode *mergeTwoLists(ListNode *list1, ListNode *list2);
 
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // MERGE_TWO_LITSTS_H_

@@ -12,7 +12,7 @@
 #include "solutions/has_cycle.h"
 
 namespace leetcode {
-  
+
 bool hasCycle(ListNode *head) {
   ListNode *fast = head;
   ListNode *slow = head;
@@ -27,4 +27,4 @@ bool hasCycle(ListNode *head) {
   return false;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

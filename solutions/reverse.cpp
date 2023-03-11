@@ -30,4 +30,4 @@ int reverse(int x) {
   return ret;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

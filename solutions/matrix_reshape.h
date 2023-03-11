@@ -16,8 +16,9 @@
 
 namespace leetcode {
 
-std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>> &mat, int r, int c);
+std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>> &mat,
+                                            int r, int c);
 
-} // namespace leetcode
+}  // namespace leetcode
 
 #endif

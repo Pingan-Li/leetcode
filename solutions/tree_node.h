@@ -23,5 +23,5 @@ struct TreeNode {
   TreeNode(int x, TreeNode *left, TreeNode *right);
 };
 
-} // namespace leetcode
-#endif
+}  // namespace leetcode
+#endif  // LEETCODE_TREE_NODE_H_

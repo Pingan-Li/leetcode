@@ -22,4 +22,4 @@ void merge(std::vector<int> &nums1, int m, std::vector<int> &nums2, int n) {
   std::sort(nums1.begin(), nums1.end());
 }
 
-} // namespace leetcode
+}  // namespace leetcode

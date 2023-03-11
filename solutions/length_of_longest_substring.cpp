@@ -41,4 +41,4 @@ int lengthOfLongestSubstring(const std::string &string) {
   }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

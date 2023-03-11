@@ -12,6 +12,7 @@
 #include "solutions/reverse_string.h"
 
 namespace leetcode {
+
 void reverseString(std::vector<char> &s) {
   std::size_t index{0};
   std::size_t rIndex{s.size() - 1};
@@ -25,4 +26,5 @@ void reverseString(std::vector<char> &s) {
     --rIndex;
   }
 }
-} // namespace leetcode
+
+}  // namespace leetcode

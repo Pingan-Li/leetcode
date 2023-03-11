@@ -9,9 +9,9 @@
  *
  */
 
-#include <vector>
-
 #include "solutions/generate.h"
+
+#include <vector>
 
 namespace leetcode {
 
@@ -28,4 +28,4 @@ std::vector<std::vector<int>> generate(int numRows) {
   return ret;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

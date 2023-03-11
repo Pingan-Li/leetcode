@@ -12,11 +12,12 @@
 #ifndef LEETCODE_SPLIT_LIST_TO_PARTS_H_
 #define LEETCODE_SPLIT_LIST_TO_PARTS_H_
 
-#include "solutions/list_node.h"
 #include <vector>
+
+#include "solutions/list_node.h"
 
 namespace leetcode {
 std::vector<ListNode *> splitListToParts(ListNode *head, int k);
-} // namespace leetcode
+}  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_SPLIT_LIST_TO_PARTS_H_

@@ -51,4 +51,4 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
   }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

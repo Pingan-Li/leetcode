@@ -55,4 +55,4 @@ std::vector<int> postOrderTraversal2(TreeNode *root) {
     return {};
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

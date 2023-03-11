@@ -27,4 +27,4 @@ int lengthOfLastWord(std::string s) {
   return len;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

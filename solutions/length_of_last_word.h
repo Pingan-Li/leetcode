@@ -18,5 +18,6 @@ namespace leetcode {
 
 int lengthOfLastWord(std::string s);
 
-} // namespace leetcode
-#endif
+}  // namespace leetcode
+
+#endif  // LEETCODE_LENGTH_OF_LAST_WORD_H_

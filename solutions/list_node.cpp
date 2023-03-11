@@ -81,4 +81,4 @@ size_t length(const ListNode *list) {
   return 0;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

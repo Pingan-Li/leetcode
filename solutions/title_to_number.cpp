@@ -10,6 +10,7 @@
  */
 
 #include "solutions/title_to_number.h"
+
 #include <string>
 
 namespace leetcode {
@@ -26,4 +27,4 @@ int titleToNumber(std::string columnTitle) {
   return ret;
 }
 
-} // namespace leetcode
+}  // namespace leetcode

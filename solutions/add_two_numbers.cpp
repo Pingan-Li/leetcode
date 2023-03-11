@@ -10,6 +10,7 @@
  */
 
 #include "solutions/add_two_numbers.h"
+
 namespace leetcode {
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
   if (l1 && l2) {
@@ -75,4 +76,4 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     return l1;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode
