@@ -9,10 +9,13 @@
  *
  */
 
-#include "is_palindrome.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/is_palindrome.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(is_palindrome, case_0) {
   ListNode *head = spawnList(std::vector<int>{1, 2, 3, 2, 1});
   bool result = isPalindrome(head);
@@ -36,4 +39,5 @@ TEST(is_palindrome, case_3) {
   bool result = isPalindrome(head);
   EXPECT_FALSE(result);
 }
-} // namespace leetcode
+
+}  // namespace leetcode

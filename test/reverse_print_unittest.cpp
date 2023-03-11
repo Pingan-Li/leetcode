@@ -8,10 +8,13 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "reverse_print.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/reverse_print.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(reverse_print, case_0) {
   std::vector<int> input{1, 2, 3, 4, 5};
   ListNode *head = spawnList(input);
@@ -29,4 +32,5 @@ TEST(reverse_print, case_1) {
     std::cout << *(iter) << ", ";
   }
 }
-} // namespace leetcode
+
+}  // namespace leetcode

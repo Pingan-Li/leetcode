@@ -9,9 +9,9 @@
  *
  */
 
-#include "get_decimal_value.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/get_decimal_value.h"
+
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(get_decimal_value, case_0) {
@@ -31,7 +31,7 @@ TEST(get_decimal_value, case_1) {
 }
 
 TEST(get_decimal_value, case_2) {
-  std::vector<int> vec{1,0,1,0,1};
+  std::vector<int> vec{1, 0, 1, 0, 1};
   ListNode *head = spawnList(vec);
   int expect = 21;
   int result = getDecimalValue(head);
@@ -39,10 +39,10 @@ TEST(get_decimal_value, case_2) {
 }
 
 TEST(get_decimal_value, case_3) {
-  std::vector<int> vec{1,0,0,1,0,0,1,1,1,0,0,0,0,0,0};
+  std::vector<int> vec{1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0};
   ListNode *head = spawnList(vec);
   int expect = 18880;
   int result = getDecimalValue(head);
   EXPECT_EQ(expect, result);
 }
-} // namespace leetcode
+}  // namespace leetcode

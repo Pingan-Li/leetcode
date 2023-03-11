@@ -9,9 +9,10 @@
  *
  */
 
-#include "contains_duplicate.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/contains_duplicate.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(contains_duplicate, case_0) {
@@ -21,7 +22,7 @@ TEST(contains_duplicate, case_0) {
 }
 
 TEST(contains_duplicate, case_1) {
-  std::vector<int> vec{1,2,3};
+  std::vector<int> vec{1, 2, 3};
   auto flag = containsDuplicate(vec);
   EXPECT_FALSE(flag);
 }
@@ -37,4 +38,4 @@ TEST(contains_duplicate, case_3) {
   auto flag = containsDuplicate(vec);
   EXPECT_FALSE(flag);
 }
-} // namespace leetcode
+}  // namespace leetcode

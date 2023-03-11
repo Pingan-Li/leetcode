@@ -9,10 +9,10 @@
  *
  */
 
-#include "length_of_last_word.h"
+#include "solutions/length_of_last_word.h"
 
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(length_of_last_word, case_0) {
@@ -23,4 +23,4 @@ TEST(length_of_last_word, case_1) {
   int size = lengthOfLastWord("a");
   EXPECT_EQ(size, 1);
 }
-} // namespace leetcode
+}  // namespace leetcode

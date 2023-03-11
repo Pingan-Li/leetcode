@@ -9,13 +9,17 @@
  *
  */
 
-#include "max_profit.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/max_profit.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(max_profit, case_0) {
   std::vector<int> p{12, 2, 3, 4, 3, 3, 6, 9, 7, 34, 4, 2, 23};
   int profit = maxProfit(p);
   EXPECT_EQ(profit, 32);
 }
-} // namespace leetcode
+
+}  // namespace leetcode

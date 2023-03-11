@@ -9,10 +9,13 @@
  *
  */
 
-#include "generate.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/generate.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(generate, case_0) {
   std::vector<std::vector<int>> result = generate(25);
   for (auto &vec : result) {
@@ -22,4 +25,5 @@ TEST(generate, case_0) {
     std::cout << '\n';
   }
 }
-} // namespace leetcode
+
+}  // namespace leetcode

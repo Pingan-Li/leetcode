@@ -9,10 +9,13 @@
  *
  */
 
-#include "remove_elements.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/remove_elements.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(remove_elemenets, case_0) {
   ListNode *head = spawnList(std::vector<int>{1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
                                               1, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1});
@@ -20,4 +23,5 @@ TEST(remove_elemenets, case_0) {
   ListNode *ret = removeElements(head, 1);
   printList(ret);
 }
-} // namespace leetcode
+
+}  // namespace leetcode

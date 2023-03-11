@@ -8,9 +8,10 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "merge_two_lists.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
+#include "solutions/merge_two_lists.h"
 
 namespace leetcode {
 TEST(merge_two_lists, case_0) {
@@ -24,4 +25,4 @@ TEST(merge_two_lists, case_0) {
   printList(ret);
 }
 
-} // namespace leetcode
+}  // namespace leetcode

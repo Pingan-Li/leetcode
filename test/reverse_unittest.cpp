@@ -9,13 +9,16 @@
  *
  */
 
-#include "reverse.h"
+#include "solutions/reverse.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
+
 #include <iostream>
+
 namespace leetcode {
 TEST(reverse, case_0) {
   int ret = reverse(-123);
   std::cout << ret;
 }
-} // namespace leetcode
+}  // namespace leetcode

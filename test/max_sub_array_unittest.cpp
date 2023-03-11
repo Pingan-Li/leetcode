@@ -8,9 +8,11 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "max_sub_array.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/max_sub_array.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(max_sub_array, case_0) {
   std::vector<int> vector{-2, 1, -3, 4, -1, 2, 1, -5, 4};
@@ -29,4 +31,4 @@ TEST(max_sub_array, case_2) {
   int result = maxSubArray(vector);
   EXPECT_EQ(result, 1);
 }
-} // namespace leetcode
+}  // namespace leetcode

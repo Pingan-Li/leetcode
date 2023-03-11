@@ -9,11 +9,13 @@
  *
  */
 
-#include "reverse_string.h"
-#include "vector"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
-#include "iostream"
+#include "solutions/reverse_string.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
+#include <iostream>
+#include <vector>
 namespace leetcode {
 TEST(reverse_string, case_0) {
   std::vector<char> s{'a', 'b', 'c'};
@@ -23,4 +25,4 @@ TEST(reverse_string, case_0) {
   }
   std::cout << '\n';
 }
-} // namespace leetcode
+}  // namespace leetcode

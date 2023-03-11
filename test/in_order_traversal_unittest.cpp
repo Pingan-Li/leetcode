@@ -9,9 +9,11 @@
  *
  */
 
-#include "in_order_traversal.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/in_order_traversal.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(in_order_traversal, case_0) {
   TreeNode *root = new TreeNode{1};
@@ -34,4 +36,4 @@ TEST(in_order_traversal, case_1) {
     std::cout << *(iter) << std::endl;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

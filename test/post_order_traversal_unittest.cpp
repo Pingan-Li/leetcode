@@ -9,9 +9,10 @@
  *
  */
 
-#include "post_order_traversal.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/post_order_traversal.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(post_order_traversal, case_0) {
@@ -35,4 +36,4 @@ TEST(post_order_traversal, case_1) {
     std::cout << *(iter) << std::endl;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

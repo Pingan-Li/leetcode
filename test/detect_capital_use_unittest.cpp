@@ -9,9 +9,10 @@
  *
  */
 
-#include "detect_capital_use.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/detect_capital_use.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(detect_capitail_use, case_0) {
@@ -23,4 +24,4 @@ TEST(detect_capitail_use, case_1) {
   bool result = detectCapitalUse("aPPLE");
   EXPECT_FALSE(result);
 }
-} // namespace leetcode
+}  // namespace leetcode

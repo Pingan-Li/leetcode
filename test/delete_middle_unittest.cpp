@@ -9,9 +9,10 @@
  *
  */
 
-#include "delete_middle.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/delete_middle.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(delete_middle, case_0) {
@@ -34,4 +35,4 @@ TEST(delete_middle, case_2) {
   ListNode *ret = deleteMiddle(head);
   printList(ret);
 }
-} // namespace leetcode
+}  // namespace leetcode

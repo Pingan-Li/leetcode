@@ -9,10 +9,13 @@
  *
  */
 
-#include "longest_common_prefix.h"
+#include "solutions/longest_common_prefix.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
+
 namespace leetcode {
+
 TEST(longest_common_prefix, case_0) {
   std::vector<std::string> strs;
   strs.push_back("flower");
@@ -22,4 +25,4 @@ TEST(longest_common_prefix, case_0) {
   std::cout << ret.size();
 }
 
-} // namespace leetcode
+}  // namespace leetcode

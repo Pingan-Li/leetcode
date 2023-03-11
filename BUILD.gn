@@ -1,5 +1,558 @@
-executable("main") {
-  sources = [ "main.cc" ]
+executable("add_two_numbers_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/add_two_numbers_unittest.cpp" ]
 
   deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("contains_duplicate_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/contains_duplicate_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("convert_to_title_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/convert_to_title_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("delete_duplicates_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/delete_duplicates_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("delete_duplicates2_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/delete_duplicates2_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("delete_middle_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/delete_middle_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("delete_node_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/delete_node_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("delete_node2_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/delete_node2_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("detect_capital_use_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/detect_capital_use_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("detect_cycle_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/detect_cycle_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("generate_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/generate_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("get_decimal_value_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/get_decimal_value_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("get_intersection_node_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/get_intersection_node_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("get_kth_from_end_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/get_kth_from_end_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("has_cycle_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/has_cycle_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("in_order_traversal_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/in_order_traversal_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("is_palindrome_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/is_palindrome_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("kth_to_last_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/kth_to_last_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("length_of_last_word_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/length_of_last_word_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("longest_common_prefix_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/longest_common_prefix_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("matrix_reshape_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/matrix_reshape_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("max_area_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/max_area_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("max_profit_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/max_profit_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("max_sub_array_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/max_sub_array_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("merge_k_sorted_lists_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/merge_k_sorted_lists_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("merge_two_lists_unittests") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/merge_two_lists_unittests.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("merge_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/merge_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("middle_node_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/middle_node_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("odd_even_list_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/odd_even_list_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("post_order_traversal_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/post_order_traversal_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("pre_order_traversal_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/pre_order_traversal_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("remove_duplicate_nodes_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/remove_duplicate_nodes_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("remove_elements_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/remove_elements_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("remove_nth_from_end_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/remove_nth_from_end_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("reverse_list_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/reverse_list_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("reverse_print_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/reverse_print_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("reverse_string_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/reverse_string_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("reverse_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/reverse_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("split_list_to_parts_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/split_list_to_parts_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("str_str_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/str_str_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("swap_paris_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/swap_paris_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("title_to_number_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/title_to_number_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
+executable("two_sum_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/two_sum_unittest.cpp" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
 }

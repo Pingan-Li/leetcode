@@ -9,11 +9,12 @@
  *
  */
 
-#include "delete_duplicates2.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/delete_duplicates2.h"
 
-#include "list_node.h"
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
+#include "solutions/list_node.h"
 
 namespace leetcode {
 TEST(delete_duplicates2, case_0) {
@@ -47,4 +48,4 @@ TEST(delete_duplicates2, case_4) {
   ListNode *ret = deleteDuplicates2(head);
   printList(ret);
 }
-} // namespace leetcode
+}  // namespace leetcode

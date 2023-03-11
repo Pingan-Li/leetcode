@@ -9,7 +9,7 @@
  *
  */
 
-#include "two_sum.h"
+#include "solutions/two_sum.h"
 
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
@@ -40,4 +40,4 @@ TEST(two_sum, case_2) {
   std::vector<int> expect{0, 1};
   EXPECT_EQ(result, expect);
 }
-} // namespace leetcode
+}  // namespace leetcode

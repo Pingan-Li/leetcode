@@ -9,9 +9,10 @@
  *
  */
 
-#include "max_area.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/max_area.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(max_area, case_0) {
@@ -3418,4 +3419,4 @@ TEST(max_area, case_3) {
   int result = maxArea(vecotor);
   EXPECT_EQ(result, 402471897);
 }
-} // namespace leetcode
+}  // namespace leetcode

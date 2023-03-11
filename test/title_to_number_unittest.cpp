@@ -9,11 +9,13 @@
  *
  */
 
-#include "title_to_number.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/title_to_number.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(title_to_number, case_0) { std::cout << titleToNumber("Z"); }
 
 TEST(title_to_number, case_1) { std::cout << titleToNumber("FXSHRXW"); }
-} // namespace leetcode
+}  // namespace leetcode

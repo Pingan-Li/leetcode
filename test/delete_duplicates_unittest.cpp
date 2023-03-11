@@ -9,9 +9,10 @@
  *
  */
 
-#include "delete_duplicates.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/delete_duplicates.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 
@@ -24,4 +25,4 @@ TEST(delete_duplicates, case_0) {
   printList(head);
 }
 
-} // namespace leetcode
+}  // namespace leetcode

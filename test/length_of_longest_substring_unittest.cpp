@@ -9,11 +9,13 @@
  *
  */
 
+#include "solutions/length_of_longest_substring.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "length_of_longest_substring.h"
 namespace leetcode {
+
 TEST(length_of_longest_substring, case_0) {
   std::string str{"a"};
   int result = lengthOfLongestSubstring(str);
@@ -62,4 +64,5 @@ TEST(length_of_longest_substring, case_7) {
   int expect = 7;
   EXPECT_EQ(result, expect);
 }
-} // namespace leetcode
+
+}  // namespace leetcode

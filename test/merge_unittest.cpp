@@ -9,9 +9,10 @@
  *
  */
 
-#include "merge.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/merge.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 namespace leetcode {
 TEST(merge, case_0) {
@@ -49,4 +50,4 @@ TEST(merge, case_3) {
     std::cout << *iter;
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

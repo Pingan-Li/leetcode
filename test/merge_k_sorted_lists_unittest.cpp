@@ -9,9 +9,11 @@
  *
  */
 
-#include "merge_k_sorted_lists.h"
+#include "solutions/merge_k_sorted_lists.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(merge_k_sorted_lists, case_0) {
   std::vector<int> list1{1, 2, 3, 4, 5};
@@ -32,4 +34,4 @@ TEST(merge_k_sorted_lists, case_1) {
   std::vector<ListNode *> lists;
   ListNode *ret = mergeKSortedLists(lists);
 }
-} // namespace leetcode
+}  // namespace leetcode

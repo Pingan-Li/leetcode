@@ -9,9 +9,11 @@
  *
  */
 
-#include "split_list_to_parts.h"
+#include "solutions/split_list_to_parts.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(split_list_to_parts, case_0) {
   ListNode *head = spawnList(std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
@@ -28,4 +30,4 @@ TEST(split_list_to_parts, case_1) {
     printList(*iter);
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

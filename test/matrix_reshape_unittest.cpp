@@ -9,9 +9,11 @@
  *
  */
 
-#include "matrix_reshape.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/matrix_reshape.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(matrix_reshape, heck) {
   std::vector<std::vector<int>> fuck(3, std::vector<int>{1, 2, 3, 4});
@@ -31,4 +33,4 @@ TEST(matrix_reshape, heck) {
     std::cout << '\n';
   }
 }
-} // namespace leetcode
+}  // namespace leetcode

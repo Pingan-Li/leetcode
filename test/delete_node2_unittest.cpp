@@ -9,9 +9,11 @@
  *
  */
 
-#include "delete_node2.h"
-#include "gmock/gmock.h"
-#include "gtest/gtest.h"
+#include "solutions/delete_node2.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
 namespace leetcode {
 TEST(delete_node2, case_0) {
   ListNode *head = spawnList(std::vector<int>{1});
@@ -24,4 +26,4 @@ TEST(delete_node2, case_1) {
   ListNode *ret = deleteNode2(head, 1);
   printList(ret);
 }
-} // namespace leetcode
+}  // namespace leetcode
