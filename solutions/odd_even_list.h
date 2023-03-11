@@ -24,4 +24,4 @@ ListNode *oddEvenList2(ListNode *head);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_ODD_EVEN_LIST_H_

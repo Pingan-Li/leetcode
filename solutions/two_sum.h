@@ -20,4 +20,4 @@ std::vector<int> twoSum(std::vector<int> &nums, int target);
 
 }  // namespace leetcode
 
-#endif  // TWO_SUM_H__
+#endif  // TWO_SUM_H_

@@ -20,4 +20,4 @@ void merge(std::vector<int> &nums1, int m, std::vector<int> &nums2, int n);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_MERGE_H_

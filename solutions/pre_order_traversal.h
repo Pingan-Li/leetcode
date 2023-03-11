@@ -29,4 +29,4 @@ void recursivePreorderTraversal(TreeNode *node, std::vector<int> &ret);
 std::vector<int> preOrderTraversal2(TreeNode *root);
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_PRE_ORDER_TRAVERAL_H_

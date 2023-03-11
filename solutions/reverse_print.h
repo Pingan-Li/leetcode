@@ -25,4 +25,4 @@ std::vector<int> reversePrint2(ListNode *head);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_REVERSE_PRINT_H_

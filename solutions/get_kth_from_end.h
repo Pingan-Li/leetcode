@@ -18,4 +18,5 @@ namespace leetcode {
 ListNode *getKthFromEnd(ListNode *head, int k);
 
 }  // namespace leetcode
+
 #endif  // LEETCODE_GET_KTH_FROM_END_H_

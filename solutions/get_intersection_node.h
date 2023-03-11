@@ -19,4 +19,5 @@ namespace leetcode {
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
 
 }  // namespace leetcode
-#endif // LEETCODE_GET_INTERSECTION_NODE_H_
+
+#endif  // LEETCODE_GET_INTERSECTION_NODE_H_

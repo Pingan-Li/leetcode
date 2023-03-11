@@ -20,4 +20,4 @@ ListNode *removeNthFromEnd(ListNode *head, int n);
 
 }  // namespace leetcode
 
-#endif
+#endif  // REMOVE_NTH_FROM_END_

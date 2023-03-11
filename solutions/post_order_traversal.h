@@ -24,4 +24,4 @@ void recursivePostorderTraversal(TreeNode *node, std::vector<int> &ret);
 std::vector<int> postOrderTraversal2(TreeNode *root);
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_POST_ORDER_TRAVERSAL_H_

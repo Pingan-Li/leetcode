@@ -21,4 +21,4 @@ std::string longestCommonPrefix(std::vector<std::string> &strs);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LONGEST_COMMON_PREFIX_H_

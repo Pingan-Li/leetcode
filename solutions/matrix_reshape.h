@@ -21,4 +21,4 @@ std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>> &mat,
 
 }  // namespace leetcode
 
-#endif
+#endif  // MATRIX_RESHAPE_H_

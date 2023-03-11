@@ -18,4 +18,4 @@ namespace leetcode {
 ListNode *removeDuplicateNodes(ListNode *head);
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_REMOVE_DUPLICATE_NODES_H_

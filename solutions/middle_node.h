@@ -20,4 +20,4 @@ ListNode *middleNode(ListNode *head);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_MIDDLE_NODE_H_

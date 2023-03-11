@@ -20,4 +20,4 @@ ListNode *reverseList(ListNode *head);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_REVERSE_LIST_H_

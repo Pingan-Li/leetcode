@@ -20,4 +20,4 @@ void reverseString(std::vector<char> &s);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_REVERSE_STRING_H_

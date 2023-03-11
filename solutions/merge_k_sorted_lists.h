@@ -19,4 +19,4 @@ namespace leetcode {
 ListNode *mergeKSortedLists(std::vector<ListNode *> &lists);
 }  // namespace leetcode
 
-#endif
+#endif  // MERGE_K_SORTED_LISTS_H_

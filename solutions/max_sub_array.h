@@ -20,4 +20,4 @@ int maxSubArray(std::vector<int> &nums);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_MAX_SUB_ARRAY_H_

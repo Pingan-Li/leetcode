@@ -20,4 +20,4 @@ int maxArea(std::vector<int> &height);
 
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_MAX_AREA_H_

@@ -20,4 +20,4 @@ ListNode *removeElements(ListNode *head, int val);
 ListNode *removeElements2(ListNode *head, int val);
 }  // namespace leetcode
 
-#endif
+#endif  // LEETCODE_REMOVE_ELEMENTS_H_

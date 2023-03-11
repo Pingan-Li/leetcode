@@ -18,4 +18,4 @@ namespace leetcode {
 int strStr(const std::string &heckStack, const std::string &needle);
 }  // namespace leetcode
 
-#endif
+#endif  // STR_STR_H_

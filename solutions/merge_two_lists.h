@@ -11,7 +11,9 @@
 
 #ifndef MERGE_TWO_LITSTS_H_
 #define MERGE_TWO_LITSTS_H_
+
 #include "solutions/list_node.h"
+
 namespace leetcode {
 
 ListNode *mergeTwoLists(ListNode *list1, ListNode *list2);
