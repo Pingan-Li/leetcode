@@ -12,26 +12,29 @@
 #include "solutions/merge_k_sorted_lists.h"
 
 namespace leetcode {
-ListNode *mergeTwoSortedLists(ListNode *list1, ListNode *list2);
+
+ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2);
 /**
  * @brief needs optimization.
  *
  * @param lists
  * @return ListNode*
  */
-ListNode *mergeKSortedLists(std::vector<ListNode *> &lists) {
+
+ListNode *MergeKSortedLists(std::vector<ListNode *> &lists) {
   ListNode *merged;
   if (lists.empty()) {
     merged = nullptr;
   } else {
     merged = lists.front();
     for (std::size_t index = 1; index < lists.size(); ++index) {
-      merged = mergeTwoSortedLists(merged, lists[index]);
+      merged = MergeTwoSortedLists(merged, lists[index]);
     }
   }
   return merged;
 }
-ListNode *mergeTwoSortedLists(ListNode *list1, ListNode *list2) {
+
+ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2) {
   if (list1 && list2) {
     ListNode *real;
     ListNode *iter;
@@ -58,4 +61,5 @@ ListNode *mergeTwoSortedLists(ListNode *list1, ListNode *list2) {
   }
   return list1 ? list1 : list2;
 }
+
 }  // namespace leetcode

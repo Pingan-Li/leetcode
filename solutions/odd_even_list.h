@@ -16,11 +16,11 @@
 
 namespace leetcode {
 
-ListNode *oddEvenList(ListNode *head);
+ListNode *OddEvenList(ListNode *head);
 
-ListNode *splitEvenNode(ListNode *head);
+ListNode *SplitEvenNode(ListNode *head);
 
-ListNode *oddEvenList2(ListNode *head);
+ListNode *OddEvenList2(ListNode *head);
 
 }  // namespace leetcode
 

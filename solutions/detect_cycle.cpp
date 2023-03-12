@@ -14,7 +14,7 @@
 #include <set>
 
 namespace leetcode {
-ListNode *detectCycle(ListNode *head) {
+ListNode *DetectCycle(ListNode *head) {
   if (head) {
     std::set<ListNode *> set;
     while (head) {

@@ -16,7 +16,7 @@
 
 namespace leetcode {
 TEST(get_kth_from_end, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 4, 5});
-  printList(getKthFromEnd(head, 2));
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3, 4, 5});
+  PrintList(GetKthFromEnd(head, 2));
 }
 }  // namespace leetcode

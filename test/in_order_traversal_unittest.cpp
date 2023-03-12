@@ -20,7 +20,7 @@ TEST(in_order_traversal, case_0) {
   root->right = new TreeNode{2};
   root->left = nullptr;
   root->right->left = new TreeNode{3};
-  std::vector<int> ret = inOrderTraversal(root);
+  std::vector<int> ret = InOrderTraversal(root);
   for (auto iter = ret.begin(); iter != ret.end(); iter++) {
     std::cout << *(iter) << std::endl;
   }
@@ -31,7 +31,7 @@ TEST(in_order_traversal, case_1) {
   root->right = new TreeNode{2};
   root->left = nullptr;
   root->right->left = new TreeNode{3};
-  std::vector<int> ret = inOrderTraversal2(root);
+  std::vector<int> ret = InOrderTraversal2(root);
   for (auto iter = ret.begin(); iter != ret.end(); iter++) {
     std::cout << *(iter) << std::endl;
   }

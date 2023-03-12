@@ -16,14 +16,14 @@
 
 namespace leetcode {
 TEST(delete_node2, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1});
-  ListNode *ret = deleteNode2(head, 1);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{1});
+  ListNode *ret = DeleteNode2(head, 1);
+  PrintList(ret);
 }
 
 TEST(delete_node2, case_1) {
-  ListNode *head = spawnList(std::vector<int>{-3, 5, -99});
-  ListNode *ret = deleteNode2(head, 1);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{-3, 5, -99});
+  ListNode *ret = DeleteNode2(head, 1);
+  PrintList(ret);
 }
 }  // namespace leetcode

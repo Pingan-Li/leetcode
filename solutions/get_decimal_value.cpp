@@ -12,7 +12,7 @@
 #include "solutions/get_decimal_value.h"
 
 namespace leetcode {
-int getDecimalValue(ListNode *head) {
+int GetDecimalValue(ListNode *head) {
   int ret{0};
   while (head) {
     ret = ret * 2 + head->val;

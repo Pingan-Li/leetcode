@@ -12,10 +12,10 @@
 #include "solutions/reverse_print.h"
 
 namespace leetcode {
-void recursiveGet(ListNode *head, std::vector<int> &vec) {
+void RecursiveGet(ListNode *head, std::vector<int> &vec) {
   if (head) {
     // call first.
-    recursiveGet(head->next, vec);
+    RecursiveGet(head->next, vec);
     // then push.
     vec.push_back(head->val);
     return;
@@ -23,13 +23,13 @@ void recursiveGet(ListNode *head, std::vector<int> &vec) {
     return;
   }
 }
-std::vector<int> reversePrint(ListNode *head) {
+std::vector<int> ReversePrint(ListNode *head) {
   std::vector<int> ret;
-  recursiveGet(head, ret);
+  RecursiveGet(head, ret);
   return ret;
 }
 
-std::vector<int> reversePrint2(ListNode *head) {
+std::vector<int> ReversePrint2(ListNode *head) {
   if (head) {
     std::vector<int> ret;
     while (head) {

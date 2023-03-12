@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-bool hasCycle(ListNode *head);
+bool HasCycle(ListNode *head);
 
 }  // namespace leetcode
 

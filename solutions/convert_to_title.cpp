@@ -12,7 +12,7 @@
 #include "solutions/convert_to_title.h"
 
 namespace leetcode {
-std::string convertToTitle(int number) {
+std::string ConvertToTitle(int number) {
   std::string temp;
   char k;
   while (number > 0) {

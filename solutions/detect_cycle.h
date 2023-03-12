@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-ListNode *detectCycle(ListNode *head);
+ListNode *DetectCycle(ListNode *head);
 
 }  // namespace leetcode
 

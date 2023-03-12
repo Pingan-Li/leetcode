@@ -17,7 +17,7 @@
 namespace leetcode {
 
 TEST(generate, case_0) {
-  std::vector<std::vector<int>> result = generate(25);
+  std::vector<std::vector<int>> result = Generate(25);
   for (auto &vec : result) {
     for (auto &i : vec) {
       std::cout << i << " ";

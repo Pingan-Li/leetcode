@@ -12,7 +12,7 @@
 #include "solutions/split_list_to_parts.h"
 
 namespace leetcode {
-std::vector<ListNode *> splitListToParts(ListNode *head, int k) {
+std::vector<ListNode *> SplitListToParts(ListNode *head, int k) {
   std::size_t length{0};
   ListNode *iter = head;
   while (iter) {

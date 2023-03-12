@@ -23,11 +23,11 @@ namespace leetcode {
  * @param root
  * @return std::vector<int>
  */
-std::vector<int> inOrderTraversal(TreeNode *root);
+std::vector<int> InOrderTraversal(TreeNode *root);
 
-void recursiveInorderTraversal(TreeNode *node, std::vector<int> &ret);
+void RecursiveInorderTraversal(TreeNode *node, std::vector<int> &ret);
 
-std::vector<int> inOrderTraversal2(TreeNode *root);
+std::vector<int> InOrderTraversal2(TreeNode *root);
 
 }  // namespace leetcode
 

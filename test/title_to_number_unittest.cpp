@@ -15,7 +15,7 @@
 #include <gtest/gtest.h>
 
 namespace leetcode {
-TEST(title_to_number, case_0) { std::cout << titleToNumber("Z"); }
+TEST(title_to_number, case_0) { std::cout << TitleToNumber("Z"); }
 
-TEST(title_to_number, case_1) { std::cout << titleToNumber("FXSHRXW"); }
+TEST(title_to_number, case_1) { std::cout << TitleToNumber("FXSHRXW"); }
 }  // namespace leetcode

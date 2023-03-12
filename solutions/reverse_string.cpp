@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-void reverseString(std::vector<char> &s) {
+void ReverseString(std::vector<char> &s) {
   std::size_t index{0};
   std::size_t rIndex{s.size() - 1};
   std::size_t mid{s.size() / 2};

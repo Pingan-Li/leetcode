@@ -27,15 +27,15 @@ struct ListNode {
   ListNode(int x, ListNode *next);
 };
 
-void printList(const ListNode *head);
+void PrintList(const ListNode *head);
 
-ListNode *spawnList(const std::vector<int> &elements);
+ListNode *SpawnList(const std::vector<int> &elements);
 
-std::size_t freeList(ListNode *head);
+std::size_t FreeList(ListNode *head);
 
-bool equal(const ListNode *list1, const ListNode *list2);
+bool Equal(const ListNode *list1, const ListNode *list2);
 
-std::size_t length(const ListNode *list);
+std::size_t Length(const ListNode *list);
 }  // namespace leetcode
 
 #endif  // LIST_NODE_H_

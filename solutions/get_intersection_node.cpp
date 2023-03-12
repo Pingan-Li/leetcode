@@ -28,7 +28,7 @@ namespace leetcode {
 //                           /
 // 0 > 1 > 2 > 0 > 1 > 2 > 3
 
-ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+ListNode *GetIntersectionNode(ListNode *headA, ListNode *headB) {
   if (headA && headB) {
     ListNode *iterA = headA;
     ListNode *iterB = headB;

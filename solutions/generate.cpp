@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-std::vector<std::vector<int>> generate(int numRows) {
+std::vector<std::vector<int>> Generate(int numRows) {
   std::vector<std::vector<int>> ret(numRows);
   for (std::size_t i = 0; i < numRows; ++i) {
     ret[i].resize(i + 1);

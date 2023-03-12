@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-void deleteNode(ListNode *node) {
+void DeleteNode(ListNode *node) {
   ListNode *temp = node->next;
   node->val = node->next->val;
   node->next = node->next->next;

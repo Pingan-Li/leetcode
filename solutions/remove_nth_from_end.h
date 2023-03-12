@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *removeNthFromEnd(ListNode *head, int n);
+ListNode *RemoveNthFromEnd(ListNode *head, int n);
 
 }  // namespace leetcode
 

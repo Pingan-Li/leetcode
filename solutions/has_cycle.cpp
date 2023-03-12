@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-bool hasCycle(ListNode *head) {
+bool HasCycle(ListNode *head) {
   ListNode *fast = head;
   ListNode *slow = head;
   while (fast && fast->next) {

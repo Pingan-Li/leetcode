@@ -14,22 +14,22 @@
 #include <stack>
 
 namespace leetcode {
-std::vector<int> inOrderTraversal(TreeNode *root) {
+std::vector<int> InOrderTraversal(TreeNode *root) {
   std::vector<int> ret;
-  recursiveInorderTraversal(root, ret);
+  RecursiveInorderTraversal(root, ret);
   return ret;
 }
 
-void recursiveInorderTraversal(TreeNode *node, std::vector<int> &vector) {
+void RecursiveInorderTraversal(TreeNode *node, std::vector<int> &vector) {
   if (node) {
-    recursiveInorderTraversal(node->left, vector);
+    RecursiveInorderTraversal(node->left, vector);
     vector.push_back(node->val);
-    recursiveInorderTraversal(node->right, vector);
+    RecursiveInorderTraversal(node->right, vector);
   } else {
     return;
   }
 }
-std::vector<int> inOrderTraversal2(TreeNode *root) {
+std::vector<int> InOrderTraversal2(TreeNode *root) {
   if (root) {
     std::vector<int> ret;
     std::stack<TreeNode *> stack;

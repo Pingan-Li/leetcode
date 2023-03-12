@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-int strStr(const std::string &heckStack, const std::string &needle) {
+int StrStr(const std::string &heckStack, const std::string &needle) {
   if (needle.empty()) {
     return 0;
   } else {

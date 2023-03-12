@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-std::vector<int> twoSum(std::vector<int> &nums, int target);
+std::vector<int> TwoSum(std::vector<int> &nums, int target);
 
 }  // namespace leetcode
 

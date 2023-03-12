@@ -17,9 +17,9 @@
 namespace leetcode {
 TEST(reverse_list, case_0) {
   std::vector<int> vec{1, 2, 3, 4, 5};
-  ListNode *head = spawnList(vec);
-  printList(head);
-  ListNode *ret = reverseList(head);
-  printList(ret);
+  ListNode *head = SpawnList(vec);
+  PrintList(head);
+  ListNode *ret = ReverseList(head);
+  PrintList(ret);
 }
 }  // namespace leetcode

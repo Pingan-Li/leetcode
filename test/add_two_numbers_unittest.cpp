@@ -17,28 +17,28 @@ namespace leetcode {
 TEST(add_two_numers, case_0) {
   std::vector vec1{9};
   std::vector vec2{9};
-  auto list1 = spawnList(vec1);
-  auto list2 = spawnList(vec2);
-  printList(list1);
-  printList(list2);
-  auto ret = addTwoNumbers(list1, list2);
-  printList(ret);
+  auto list1 = SpawnList(vec1);
+  auto list2 = SpawnList(vec2);
+  PrintList(list1);
+  PrintList(list2);
+  auto ret = AddTwoNumbers(list1, list2);
+  PrintList(ret);
 }
 
 TEST(add_two_numers, case_1) {
   std::vector vec2{9};
-  auto list2 = spawnList(vec2);
-  printList(list2);
-  auto ret = addTwoNumbers(nullptr, list2);
-  printList(ret);
+  auto list2 = SpawnList(vec2);
+  PrintList(list2);
+  auto ret = AddTwoNumbers(nullptr, list2);
+  PrintList(ret);
 }
 
 TEST(add_two_numers, case_3) {
   std::vector vec2{9};
-  auto list2 = spawnList(vec2);
-  printList(list2);
-  auto ret = addTwoNumbers(nullptr, nullptr);
-  printList(ret);
+  auto list2 = SpawnList(vec2);
+  PrintList(list2);
+  auto ret = AddTwoNumbers(nullptr, nullptr);
+  PrintList(ret);
 }
 
 }  // namespace leetcode

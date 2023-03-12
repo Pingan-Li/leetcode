@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-ListNode *swapPairs(ListNode *head) {
+ListNode *SwapPairs(ListNode *head) {
   if (head && head->next) {
     ListNode *dummy = new ListNode{0, head};
     ListNode *iter = dummy;

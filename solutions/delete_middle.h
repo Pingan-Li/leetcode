@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *deleteMiddle(ListNode *head);
+ListNode *DeleteMiddle(ListNode *head);
 
 }  // namespace leetcode
 

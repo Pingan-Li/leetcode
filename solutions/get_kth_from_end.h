@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-ListNode *getKthFromEnd(ListNode *head, int k);
+ListNode *GetKthFromEnd(ListNode *head, int k);
 
 }  // namespace leetcode
 

@@ -16,12 +16,12 @@
 
 namespace leetcode {
 TEST(detect_capitail_use, case_0) {
-  bool result = detectCapitalUse("APPLE");
+  bool result = DetectCapitalUse("APPLE");
   EXPECT_TRUE(result);
 }
 
 TEST(detect_capitail_use, case_1) {
-  bool result = detectCapitalUse("aPPLE");
+  bool result = DetectCapitalUse("aPPLE");
   EXPECT_FALSE(result);
 }
 }  // namespace leetcode

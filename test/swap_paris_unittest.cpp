@@ -17,26 +17,26 @@
 namespace leetcode {
 TEST(swap_paris, case_0) {
   std::vector<int> vector{1, 2, 3, 4, 5};
-  ListNode *list = spawnList(vector);
-  printList(list);
-  ListNode *ret = swapPairs(list);
-  printList(ret);
+  ListNode *list = SpawnList(vector);
+  PrintList(list);
+  ListNode *ret = SwapPairs(list);
+  PrintList(ret);
 }
 
 TEST(swap_paris, case_1) {
   std::vector<int> vector{1};
-  ListNode *list = spawnList(vector);
-  printList(list);
-  ListNode *ret = swapPairs(list);
-  printList(ret);
+  ListNode *list = SpawnList(vector);
+  PrintList(list);
+  ListNode *ret = SwapPairs(list);
+  PrintList(ret);
 }
 
 TEST(swap_paris, case_2) {
   std::vector<int> vector{1, 2};
-  ListNode *list = spawnList(vector);
-  printList(list);
-  ListNode *ret = swapPairs(list);
-  printList(ret);
+  ListNode *list = SpawnList(vector);
+  PrintList(list);
+  ListNode *ret = SwapPairs(list);
+  PrintList(ret);
 }
 
 }  // namespace leetcode

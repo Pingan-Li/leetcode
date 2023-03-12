@@ -14,7 +14,7 @@
 #include <unordered_set>
 
 namespace leetcode {
-bool containsDuplicate(std::vector<int> &nums) {
+bool ContainsDuplicate(std::vector<int> &nums) {
   std::unordered_set<int> set;
   for (auto n : nums) {
     auto pair = set.insert(n);

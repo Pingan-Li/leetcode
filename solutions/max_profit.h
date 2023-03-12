@@ -15,7 +15,7 @@
 #include <vector>
 
 namespace leetcode {
-int maxProfit(std::vector<int> &prices);
+int MaxProfit(std::vector<int> &prices);
 }  // namespace leetcode
 
 #endif  // LEETCODE_MAX_PROFIX_H_

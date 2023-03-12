@@ -12,9 +12,9 @@
 #include "solutions/odd_even_list.h"
 
 namespace leetcode {
-ListNode *oddEvenList(ListNode *head) {
+ListNode *OddEvenList(ListNode *head) {
   if (head && head->next) {
-    ListNode *even = splitEvenNode(head);
+    ListNode *even = SplitEvenNode(head);
     ListNode *odd = head;
     while (odd->next) {
       odd = odd->next;
@@ -26,18 +26,18 @@ ListNode *oddEvenList(ListNode *head) {
   }
 }
 
-ListNode *splitEvenNode(ListNode *head) {
+ListNode *SplitEvenNode(ListNode *head) {
   if (head && head->next) {
     ListNode *temp = head->next;
     head->next = temp->next;
-    temp->next = splitEvenNode(temp->next);
+    temp->next = SplitEvenNode(temp->next);
     return temp;
   } else {
     return nullptr;
   }
 }
 
-ListNode *oddEvenList2(ListNode *head) {
+ListNode *OddEvenList2(ListNode *head) {
   if (head) {
     ListNode *evenHead = head->next;
     ListNode *evenIter = evenHead;

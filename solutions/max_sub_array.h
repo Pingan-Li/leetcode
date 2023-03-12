@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-int maxSubArray(std::vector<int> &nums);
+int MaxSubArray(std::vector<int> &nums);
 
 }  // namespace leetcode
 

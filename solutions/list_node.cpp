@@ -20,7 +20,7 @@ ListNode::ListNode(int x) : val(x), next(nullptr) {}
 
 ListNode::ListNode(int x, ListNode *next) : val(x), next(next) {}
 
-void printList(const ListNode *head) {
+void PrintList(const ListNode *head) {
   if (head != nullptr) {
     while (head) {
       std::cout << head->val << " ";
@@ -30,7 +30,7 @@ void printList(const ListNode *head) {
   }
 }
 
-ListNode *spawnList(const std::vector<int> &elements) {
+ListNode *SpawnList(const std::vector<int> &elements) {
   ListNode *head = new ListNode;
   ListNode *iter = head;
   for (const auto &e : elements) {
@@ -40,7 +40,7 @@ ListNode *spawnList(const std::vector<int> &elements) {
   return head->next;
 }
 
-size_t freeList(ListNode *head) {
+size_t FreeList(ListNode *head) {
   size_t count{0};
   ListNode *temp;
   while (head) {
@@ -52,7 +52,7 @@ size_t freeList(ListNode *head) {
   return count;
 }
 
-bool equal(const ListNode *list1, const ListNode *list2) {
+bool Equal(const ListNode *list1, const ListNode *list2) {
   if (list1 == nullptr || list2 == nullptr) {
     return false;
   } else {
@@ -69,7 +69,7 @@ bool equal(const ListNode *list1, const ListNode *list2) {
   }
 }
 
-size_t length(const ListNode *list) {
+size_t Length(const ListNode *list) {
   if (list) {
     auto iter = list;
     size_t len{0};

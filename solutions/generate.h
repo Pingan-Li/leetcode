@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-std::vector<std::vector<int>> generate(int numRows);
+std::vector<std::vector<int>> Generate(int numRows);
 
 }  // namespace leetcode
 

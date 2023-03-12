@@ -12,7 +12,7 @@
 #include "solutions/delete_duplicates.h"
 
 namespace leetcode {
-ListNode *deleteDuplicates(ListNode *head) {
+ListNode *DeleteDuplicates(ListNode *head) {
   if (head) {
     ListNode *iter = head;
     ListNode *temp = iter;

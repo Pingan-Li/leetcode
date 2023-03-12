@@ -17,7 +17,7 @@
 #include "solutions/list_node.h"
 
 namespace leetcode {
-std::vector<ListNode *> splitListToParts(ListNode *head, int k);
+std::vector<ListNode *> SplitListToParts(ListNode *head, int k);
 }  // namespace leetcode
 
 #endif  // LEETCODE_SPLIT_LIST_TO_PARTS_H_

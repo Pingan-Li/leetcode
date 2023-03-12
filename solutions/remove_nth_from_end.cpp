@@ -12,7 +12,7 @@
 #include "solutions/remove_nth_from_end.h"
 
 namespace leetcode {
-ListNode *removeNthFromEnd(ListNode *head, int n) {
+ListNode *RemoveNthFromEnd(ListNode *head, int n) {
   if (head) {
     ListNode *fast = head;
     ListNode *slow = head;

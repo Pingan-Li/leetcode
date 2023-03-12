@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
+ListNode *GetIntersectionNode(ListNode *headA, ListNode *headB);
 
 }  // namespace leetcode
 

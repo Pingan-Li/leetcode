@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-bool detectCapitalUse(std::string word);
+bool DetectCapitalUse(std::string word);
 
 }  // namespace leetcode
 

@@ -16,10 +16,10 @@
 namespace leetcode {
 
 TEST(odd_even_list, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 3, 4, 2, 1, 2, 4});
-  printList(head);
-  ListNode *ret = oddEvenList2(head);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3, 3, 4, 2, 1, 2, 4});
+  PrintList(head);
+  ListNode *ret = OddEvenList2(head);
+  PrintList(ret);
 }
 
 }  // namespace leetcode

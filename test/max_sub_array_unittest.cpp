@@ -16,19 +16,19 @@
 namespace leetcode {
 TEST(max_sub_array, case_0) {
   std::vector<int> vector{-2, 1, -3, 4, -1, 2, 1, -5, 4};
-  int result = maxSubArray(vector);
+  int result = MaxSubArray(vector);
   EXPECT_EQ(result, 6);
 }
 
 TEST(max_sub_array, case_1) {
   std::vector<int> vector{1, 2, 3, 4, 5, 6, 7, 8, 9};
-  int result = maxSubArray(vector);
+  int result = MaxSubArray(vector);
   EXPECT_EQ(result, 45);
 }
 
 TEST(max_sub_array, case_2) {
   std::vector<int> vector{-1, 1, -1, 1, -1, 1};
-  int result = maxSubArray(vector);
+  int result = MaxSubArray(vector);
   EXPECT_EQ(result, 1);
 }
 }  // namespace leetcode

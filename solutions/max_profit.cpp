@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-int maxProfit(std::vector<int> &prices) {
+int MaxProfit(std::vector<int> &prices) {
   int lowestPrice = INT_MAX;
   int higestProfit = 0;
   for (auto p : prices) {

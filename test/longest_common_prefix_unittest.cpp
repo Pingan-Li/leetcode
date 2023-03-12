@@ -21,7 +21,7 @@ TEST(longest_common_prefix, case_0) {
   strs.push_back("flower");
   strs.push_back("flow");
   strs.push_back("flight");
-  auto ret = longestCommonPrefix(strs);
+  auto ret = LongestCommonPrefix(strs);
   std::cout << ret.size();
 }
 

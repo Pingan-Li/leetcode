@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-int lengthOfLastWord(std::string s) {
+int LengthOfLastWord(std::string s) {
   int len{0};
   auto iter = s.rbegin();
   while (std::isspace(*iter) && iter != s.rend()) {

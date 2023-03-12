@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-std::vector<int> twoSum(std::vector<int> &nums, int target) {
+std::vector<int> TwoSum(std::vector<int> &nums, int target) {
   std::vector<int> ret;
   bool found{false};
   for (std::size_t i = 0; i < nums.size(); ++i) {

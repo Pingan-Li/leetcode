@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-void reverseString(std::vector<char> &s);
+void ReverseString(std::vector<char> &s);
 
 }  // namespace leetcode
 

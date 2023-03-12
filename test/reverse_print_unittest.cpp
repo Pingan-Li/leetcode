@@ -17,8 +17,8 @@ namespace leetcode {
 
 TEST(reverse_print, case_0) {
   std::vector<int> input{1, 2, 3, 4, 5};
-  ListNode *head = spawnList(input);
-  std::vector<int> ret = reversePrint(head);
+  ListNode *head = SpawnList(input);
+  std::vector<int> ret = ReversePrint(head);
   for (auto iter = ret.begin(); iter != ret.end(); ++iter) {
     std::cout << *iter << ", ";
   }
@@ -26,8 +26,8 @@ TEST(reverse_print, case_0) {
 
 TEST(reverse_print, case_1) {
   std::vector<int> input{1, 2, 3, 4, 5};
-  ListNode *head = spawnList(input);
-  std::vector<int> ret = reversePrint2(head);
+  ListNode *head = SpawnList(input);
+  std::vector<int> ret = ReversePrint2(head);
   for (auto iter = ret.begin(); iter != ret.end(); ++iter) {
     std::cout << *(iter) << ", ";
   }

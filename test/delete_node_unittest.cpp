@@ -17,10 +17,10 @@
 namespace leetcode {
 
 TEST(delete_node, case_0) {
-  ListNode *head = spawnList(std::vector<int>{4, 1, 5, 9});
-  printList(head);
-  deleteNode(head->next);
-  printList(head);
+  ListNode *head = SpawnList(std::vector<int>{4, 1, 5, 9});
+  PrintList(head);
+  DeleteNode(head->next);
+  PrintList(head);
 }
 
 }  // namespace leetcode

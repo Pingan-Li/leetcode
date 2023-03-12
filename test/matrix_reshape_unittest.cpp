@@ -17,7 +17,7 @@
 namespace leetcode {
 TEST(matrix_reshape, heck) {
   std::vector<std::vector<int>> fuck(3, std::vector<int>{1, 2, 3, 4});
-  auto result = matrixReshape(fuck, 2, 6);
+  auto result = MatrixReshape(fuck, 2, 6);
 
   for (auto &vec : fuck) {
     for (auto &val : vec) {

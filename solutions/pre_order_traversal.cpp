@@ -15,22 +15,22 @@
 
 namespace leetcode {
 
-std::vector<int> preOrderTraversal(TreeNode *root) {
+std::vector<int> PreOrderTraversal(TreeNode *root) {
   std::vector<int> ret;
-  recursivePreorderTraversal(root, ret);
+  RecursivePreorderTraversal(root, ret);
   return ret;
 }
-void recursivePreorderTraversal(TreeNode *node, std::vector<int> &vector) {
+void RecursivePreorderTraversal(TreeNode *node, std::vector<int> &vector) {
   if (node) {
     vector.push_back(node->val);
-    recursivePreorderTraversal(node->left, vector);
-    recursivePreorderTraversal(node->right, vector);
+    RecursivePreorderTraversal(node->left, vector);
+    RecursivePreorderTraversal(node->right, vector);
   } else {
     return;
   }
 }
 
-std::vector<int> preOrderTraversal2(TreeNode *root) {
+std::vector<int> PreOrderTraversal2(TreeNode *root) {
   if (root) {
     std::vector<int> ret;
     std::stack<TreeNode *> stack;

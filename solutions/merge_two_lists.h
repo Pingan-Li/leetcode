@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *mergeTwoLists(ListNode *list1, ListNode *list2);
+ListNode *MergeTwoLists(ListNode *list1, ListNode *list2);
 
 }  // namespace leetcode
 

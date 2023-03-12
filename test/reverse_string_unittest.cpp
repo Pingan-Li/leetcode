@@ -19,7 +19,7 @@
 namespace leetcode {
 TEST(reverse_string, case_0) {
   std::vector<char> s{'a', 'b', 'c'};
-  reverseString(s);
+  ReverseString(s);
   for (auto ch : s) {
     std::cout << ch << ',';
   }

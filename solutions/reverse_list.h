@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *reverseList(ListNode *head);
+ListNode *ReverseList(ListNode *head);
 
 }  // namespace leetcode
 

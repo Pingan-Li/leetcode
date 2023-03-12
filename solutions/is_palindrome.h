@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-bool isPalindrome(ListNode *head);
+bool IsPalindrome(ListNode *head);
 
 }  // namespace leetcode
 

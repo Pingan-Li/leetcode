@@ -15,7 +15,7 @@
 #include "solutions/list_node.h"
 namespace leetcode {
 
-int getDecimalValue(ListNode *head);
+int GetDecimalValue(ListNode *head);
 
 }  // namespace leetcode
 

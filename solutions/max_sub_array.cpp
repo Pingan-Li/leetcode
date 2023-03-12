@@ -19,7 +19,7 @@ namespace leetcode {
  * @param nums
  * @return int
  */
-int maxSubArray(std::vector<int> &nums) {
+int MaxSubArray(std::vector<int> &nums) {
   int prev{0};
   int result{nums.front()};
   int temp{0};

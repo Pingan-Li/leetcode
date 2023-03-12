@@ -12,7 +12,7 @@
 #include "solutions/remove_elements.h"
 
 namespace leetcode {
-ListNode *removeElements(ListNode *head, int val) {
+ListNode *RemoveElements(ListNode *head, int val) {
   struct ListNode *dummy = new ListNode(0, head);
   struct ListNode *iter = dummy;
   while (iter->next) {
@@ -25,9 +25,9 @@ ListNode *removeElements(ListNode *head, int val) {
   return dummy->next;
 }
 
-ListNode *removeElements2(ListNode *head, int val) {
+ListNode *RemoveElements2(ListNode *head, int val) {
   if (head) {
-    head->next = removeElements2(head->next, val);
+    head->next = RemoveElements2(head->next, val);
     return head->val == val ? head->next : head;
   } else {
     return nullptr;

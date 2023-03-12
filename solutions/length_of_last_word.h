@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-int lengthOfLastWord(std::string s);
+int LengthOfLastWord(std::string s);
 
 }  // namespace leetcode
 

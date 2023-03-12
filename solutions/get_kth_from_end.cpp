@@ -12,7 +12,7 @@
 #include "solutions/list_node.h"
 
 namespace leetcode {
-ListNode *getKthFromEnd(ListNode *head, int k) {
+ListNode *GetKthFromEnd(ListNode *head, int k) {
   ListNode *rush = head;
   while (k--) {
     rush = rush->next;

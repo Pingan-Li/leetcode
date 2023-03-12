@@ -16,8 +16,8 @@
 
 namespace leetcode {
 TEST(middle_node_unittest, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3});
-  ListNode *result = middleNode(head);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3});
+  ListNode *result = MiddleNode(head);
   EXPECT_EQ(head->next, result);
 }
 }  // namespace leetcode

@@ -18,7 +18,7 @@ namespace leetcode {
 
 TEST(max_profit, case_0) {
   std::vector<int> p{12, 2, 3, 4, 3, 3, 6, 9, 7, 34, 4, 2, 23};
-  int profit = maxProfit(p);
+  int profit = MaxProfit(p);
   EXPECT_EQ(profit, 32);
 }
 

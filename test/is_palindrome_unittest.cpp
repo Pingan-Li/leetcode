@@ -17,26 +17,26 @@
 namespace leetcode {
 
 TEST(is_palindrome, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 2, 1});
-  bool result = isPalindrome(head);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3, 2, 1});
+  bool result = IsPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_1) {
-  ListNode *head = spawnList(std::vector<int>{1});
-  bool result = isPalindrome(head);
+  ListNode *head = SpawnList(std::vector<int>{1});
+  bool result = IsPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_2) {
-  ListNode *head = spawnList(std::vector<int>{});
-  bool result = isPalindrome(head);
+  ListNode *head = SpawnList(std::vector<int>{});
+  bool result = IsPalindrome(head);
   EXPECT_TRUE(result);
 }
 
 TEST(is_palindrome, case_3) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3});
-  bool result = isPalindrome(head);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3});
+  bool result = IsPalindrome(head);
   EXPECT_FALSE(result);
 }
 

@@ -15,7 +15,9 @@
 #include <string>
 
 namespace leetcode {
-int strStr(const std::string &heckStack, const std::string &needle);
+
+int StrStr(const std::string &heckStack, const std::string &needle);
+
 }  // namespace leetcode
 
 #endif  // STR_STR_H_

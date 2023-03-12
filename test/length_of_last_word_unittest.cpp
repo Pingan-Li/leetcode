@@ -16,11 +16,11 @@
 
 namespace leetcode {
 TEST(length_of_last_word, case_0) {
-  int size = lengthOfLastWord("fly me to the moonn      ");
+  int size = LengthOfLastWord("fly me to the moonn      ");
   EXPECT_EQ(size, 5);
 }
 TEST(length_of_last_word, case_1) {
-  int size = lengthOfLastWord("a");
+  int size = LengthOfLastWord("a");
   EXPECT_EQ(size, 1);
 }
 }  // namespace leetcode

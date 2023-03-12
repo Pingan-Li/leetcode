@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *deleteNode2(ListNode *head, int val);
+ListNode *DeleteNode2(ListNode *head, int val);
 
 }  // namespace leetcode
 

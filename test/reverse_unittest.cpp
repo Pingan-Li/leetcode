@@ -18,7 +18,7 @@
 
 namespace leetcode {
 TEST(reverse, case_0) {
-  int ret = reverse(-123);
+  int ret = Reverse(-123);
   std::cout << ret;
 }
 }  // namespace leetcode

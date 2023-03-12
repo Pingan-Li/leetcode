@@ -15,8 +15,11 @@
 #include <vector>
 
 #include "solutions/list_node.h"
+
 namespace leetcode {
-ListNode *mergeKSortedLists(std::vector<ListNode *> &lists);
+
+ListNode *MergeKSortedLists(std::vector<ListNode *> &lists);
+
 }  // namespace leetcode
 
 #endif  // MERGE_K_SORTED_LISTS_H_

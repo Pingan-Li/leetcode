@@ -17,9 +17,9 @@
 namespace leetcode {
 TEST(remove_nth_from_end, case_0) {
   std::vector<int> list{1, 2, 3, 4, 5};
-  ListNode *head = spawnList(list);
-  printList(head);
-  auto result = removeNthFromEnd(head, 5);
-  printList(result);
+  ListNode *head = SpawnList(list);
+  PrintList(head);
+  auto result = RemoveNthFromEnd(head, 5);
+  PrintList(result);
 }
 }  // namespace leetcode

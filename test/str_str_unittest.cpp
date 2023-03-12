@@ -16,7 +16,7 @@
 
 namespace leetcode {
 TEST(str_str, case_0) {
-  auto ret = strStr("heck", "fs");
+  auto ret = StrStr("heck", "fs");
   std::cout << ret;
 }
 }  // namespace leetcode

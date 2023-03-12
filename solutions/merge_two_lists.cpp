@@ -12,7 +12,7 @@
 #include "solutions/merge_two_lists.h"
 
 namespace leetcode {
-ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
+ListNode *MergeTwoLists(ListNode *list1, ListNode *list2) {
   //   ListNode *dummy = new ListNode;
   //   ListNode *iter = dummy;
   //   while (list1 != nullptr && list2 != nullptr) {

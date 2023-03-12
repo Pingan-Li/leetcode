@@ -16,23 +16,23 @@
 
 namespace leetcode {
 TEST(delete_middle, case_0) {
-  ListNode *head = spawnList(std::vector<int>{2, 1});
-  printList(head);
-  ListNode *ret = deleteMiddle(head);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{2, 1});
+  PrintList(head);
+  ListNode *ret = DeleteMiddle(head);
+  PrintList(ret);
 }
 
 TEST(delete_middle, case_1) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3});
-  printList(head);
-  ListNode *ret = deleteMiddle(head);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3});
+  PrintList(head);
+  ListNode *ret = DeleteMiddle(head);
+  PrintList(ret);
 }
 
 TEST(delete_middle, case_2) {
-  ListNode *head = spawnList(std::vector<int>{1, 2, 3, 4});
-  printList(head);
-  ListNode *ret = deleteMiddle(head);
-  printList(ret);
+  ListNode *head = SpawnList(std::vector<int>{1, 2, 3, 4});
+  PrintList(head);
+  ListNode *ret = DeleteMiddle(head);
+  PrintList(ret);
 }
 }  // namespace leetcode

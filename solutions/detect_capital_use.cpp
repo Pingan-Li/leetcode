@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-bool detectCapitalUse(std::string word) {
+bool DetectCapitalUse(std::string word) {
   if (word.size() >= 2 && std::islower(word[0]) && std::isupper(word[1])) {
     return false;
   }

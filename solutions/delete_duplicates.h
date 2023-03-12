@@ -14,7 +14,7 @@
 
 #include "solutions/list_node.h"
 namespace leetcode {
-ListNode *deleteDuplicates(ListNode *head);
+ListNode *DeleteDuplicates(ListNode *head);
 }  // namespace leetcode
 
 #endif  // LEETCODE_DELETE_DUPLICATES_H_

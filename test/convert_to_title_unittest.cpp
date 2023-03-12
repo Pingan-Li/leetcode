@@ -16,22 +16,22 @@
 
 namespace leetcode {
 TEST(convert_to_title, case_0) {
-  std::string result = convertToTitle(1);
+  std::string result = ConvertToTitle(1);
   std::string expect{"A"};
   EXPECT_EQ(result, expect);
 }
 TEST(convert_to_title, case_1) {
-  std::string result = convertToTitle(26);
+  std::string result = ConvertToTitle(26);
   std::string expect{"Z"};
   EXPECT_EQ(result, expect);
 }
 TEST(convert_to_title, case_2) {
-  std::string result = convertToTitle(27);
+  std::string result = ConvertToTitle(27);
   std::string expect{"AA"};
   EXPECT_EQ(result, expect);
 }
 TEST(convert_to_title, case_3) {
-  std::string result = convertToTitle(2147483647);
+  std::string result = ConvertToTitle(2147483647);
   std::string expect{"FXSHRXW"};
   EXPECT_EQ(result, expect);
 }

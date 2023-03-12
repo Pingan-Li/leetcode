@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-void deleteNode(ListNode *node);
+void DeleteNode(ListNode *node);
 
 }  // namespace leetcode
 

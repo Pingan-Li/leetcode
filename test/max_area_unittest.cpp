@@ -17,19 +17,19 @@
 namespace leetcode {
 TEST(max_area, case_0) {
   std::vector<int> vector{1, 8, 6, 2, 5, 4, 8, 3, 7};
-  int result = maxArea(vector);
+  int result = MaxArea(vector);
   EXPECT_EQ(result, 49);
 }
 
 TEST(max_area, case_1) {
   std::vector<int> vector{1, 1};
-  int result = maxArea(vector);
+  int result = MaxArea(vector);
   EXPECT_EQ(result, 1);
 }
 
 TEST(max_area, case_2) {
   std::vector<int> vector{4, 3, 2, 1, 4};
-  int result = maxArea(vector);
+  int result = MaxArea(vector);
   EXPECT_EQ(result, 16);
 }
 
@@ -3416,7 +3416,7 @@ TEST(max_area, case_3) {
       9101, 5431,  4162, 1972, 5481, 9599, 3319,  3609,  9942, 4430, 1700, 7926,
       8064, 5269,  7824, 4386, 3696, 6984, 4126,  5660,  5716, 1124, 4043, 1510,
       5650, 9957,  6481, 1193, 7766, 2563};
-  int result = maxArea(vecotor);
+  int result = MaxArea(vecotor);
   EXPECT_EQ(result, 402471897);
 }
 }  // namespace leetcode

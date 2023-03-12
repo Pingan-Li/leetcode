@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *middleNode(ListNode *head);
+ListNode *MiddleNode(ListNode *head);
 
 }  // namespace leetcode
 

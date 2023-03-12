@@ -19,33 +19,33 @@
 namespace leetcode {
 TEST(delete_duplicates2, case_0) {
   std::vector<int> vecotr{};
-  ListNode *head = spawnList(vecotr);
-  printList(head);
-  ListNode *ret = deleteDuplicates2(head);
-  printList(ret);
+  ListNode *head = SpawnList(vecotr);
+  PrintList(head);
+  ListNode *ret = DeleteDuplicates2(head);
+  PrintList(ret);
 }
 
 TEST(delete_duplicates2, case_1) {
   std::vector<int> vecotr{1, 2, 2, 2, 2, 2, 2, 3};
-  ListNode *head = spawnList(vecotr);
-  printList(head);
-  ListNode *ret = deleteDuplicates2(head);
-  printList(ret);
+  ListNode *head = SpawnList(vecotr);
+  PrintList(head);
+  ListNode *ret = DeleteDuplicates2(head);
+  PrintList(ret);
 }
 
 TEST(delete_duplicates2, case_3) {
   std::vector<int> vecotr{1};
-  ListNode *head = spawnList(vecotr);
-  printList(head);
-  ListNode *ret = deleteDuplicates2(head);
-  printList(ret);
+  ListNode *head = SpawnList(vecotr);
+  PrintList(head);
+  ListNode *ret = DeleteDuplicates2(head);
+  PrintList(ret);
 }
 
 TEST(delete_duplicates2, case_4) {
   std::vector<int> vecotr{1};
-  ListNode *head = spawnList(vecotr);
-  printList(head);
-  ListNode *ret = deleteDuplicates2(head);
-  printList(ret);
+  ListNode *head = SpawnList(vecotr);
+  PrintList(head);
+  ListNode *ret = DeleteDuplicates2(head);
+  PrintList(ret);
 }
 }  // namespace leetcode

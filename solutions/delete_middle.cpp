@@ -11,7 +11,7 @@
 #include "solutions/delete_middle.h"
 
 namespace leetcode {
-ListNode *deleteMiddle(ListNode *head) {
+ListNode *DeleteMiddle(ListNode *head) {
   if (head && head->next) {
     ListNode *fast = head;
     ListNode *slow = head;

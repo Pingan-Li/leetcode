@@ -17,7 +17,7 @@
 
 namespace leetcode {
 
-std::string longestCommonPrefix(std::vector<std::string> &strs);
+std::string LongestCommonPrefix(std::vector<std::string> &strs);
 
 }  // namespace leetcode
 

@@ -17,11 +17,11 @@
 namespace leetcode {
 
 TEST(remove_elemenets, case_0) {
-  ListNode *head = spawnList(std::vector<int>{1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+  ListNode *head = SpawnList(std::vector<int>{1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
                                               1, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1});
-  printList(head);
-  ListNode *ret = removeElements(head, 1);
-  printList(ret);
+  PrintList(head);
+  ListNode *ret = RemoveElements(head, 1);
+  PrintList(ret);
 }
 
 }  // namespace leetcode

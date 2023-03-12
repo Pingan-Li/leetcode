@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-int lengthOfLongestSubstring(const std::string &string) {
+int LengthOfLongestSubstring(const std::string &string) {
   if (string.empty()) {
     return 0;
   } else {

@@ -18,10 +18,11 @@
 
 namespace leetcode {
 
-void recursiveGet(ListNode *head, std::vector<int> &vec);
-std::vector<int> reversePrint(ListNode *head);
+void RecursiveGet(ListNode *head, std::vector<int> &vec);
 
-std::vector<int> reversePrint2(ListNode *head);
+std::vector<int> ReversePrint(ListNode *head);
+
+std::vector<int> ReversePrint2(ListNode *head);
 
 }  // namespace leetcode
 

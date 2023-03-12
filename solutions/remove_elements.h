@@ -15,9 +15,9 @@
 #include "solutions/list_node.h"
 
 namespace leetcode {
-ListNode *removeElements(ListNode *head, int val);
+ListNode *RemoveElements(ListNode *head, int val);
 
-ListNode *removeElements2(ListNode *head, int val);
+ListNode *RemoveElements2(ListNode *head, int val);
 }  // namespace leetcode
 
 #endif  // LEETCODE_REMOVE_ELEMENTS_H_

@@ -15,7 +15,7 @@
 
 namespace leetcode {
 
-bool isPalindrome(ListNode *head) {
+bool IsPalindrome(ListNode *head) {
   std::vector<int> vector;
   while (head) {
     vector.push_back(head->val);

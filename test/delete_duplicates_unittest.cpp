@@ -19,10 +19,10 @@ namespace leetcode {
 TEST(delete_duplicates, case_0) {
   std::vector<int> vector{1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 4, 4, 4, 5, 5,
                           5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 8, 8, 9, 9};
-  ListNode *head = spawnList(vector);
-  printList(head);
-  deleteDuplicates(head);
-  printList(head);
+  ListNode *head = SpawnList(vector);
+  PrintList(head);
+  DeleteDuplicates(head);
+  PrintList(head);
 }
 
 }  // namespace leetcode

@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>> &mat,
+std::vector<std::vector<int>> MatrixReshape(std::vector<std::vector<int>> &mat,
                                             int r, int c) {
   std::size_t m = mat.size();
   std::size_t n = mat.front().size();

@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-int kthToLast(ListNode *head, int k);
+int KthToLast(ListNode *head, int k);
 
 }  // namespace leetcode
 

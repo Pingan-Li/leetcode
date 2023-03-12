@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-std::string convertToTitle(int columnNumber);
+std::string ConvertToTitle(int columnNumber);
 
 }  // namespace leetcode
 

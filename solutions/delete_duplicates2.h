@@ -16,7 +16,7 @@
 
 namespace leetcode {
 
-ListNode *deleteDuplicates2(ListNode *head);
+ListNode *DeleteDuplicates2(ListNode *head);
 
 }  // namespace leetcode
 

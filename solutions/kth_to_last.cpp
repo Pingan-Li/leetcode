@@ -13,7 +13,7 @@
 
 namespace leetcode {
 
-int kthToLast(ListNode *head, int k) {
+int KthToLast(ListNode *head, int k) {
   ListNode *fast = head;
   ListNode *slow = head;
   while (k--) {

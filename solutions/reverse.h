@@ -13,7 +13,9 @@
 #define REVERSE_H_
 
 namespace leetcode {
-int reverse(int x);
+
+int Reverse(int x);
+
 }  // namespace leetcode
 
 #endif  // REVERSE_H_

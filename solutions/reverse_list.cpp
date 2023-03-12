@@ -15,7 +15,7 @@ namespace leetcode {
 //
 //  prev -> curr -> next
 //
-ListNode *reverseList(ListNode *head) {
+ListNode *ReverseList(ListNode *head) {
   if (head && head->next) {
     ListNode *prev = nullptr;
     ListNode *curr = head;

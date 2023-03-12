@@ -12,7 +12,7 @@
 #include "solutions/max_area.h"
 
 namespace leetcode {
-int maxArea(std::vector<int> &height) {
+int MaxArea(std::vector<int> &height) {
   int maxArea{0};
   auto left = height.begin();
   auto right = height.end() - 1;

@@ -17,11 +17,11 @@
 #include "solutions/tree_node.h"
 
 namespace leetcode {
-std::vector<int> postOrderTraversal(TreeNode *root);
+std::vector<int> PostOrderTraversal(TreeNode *root);
 
-void recursivePostorderTraversal(TreeNode *node, std::vector<int> &ret);
+void RecursivePostorderTraversal(TreeNode *node, std::vector<int> &ret);
 
-std::vector<int> postOrderTraversal2(TreeNode *root);
+std::vector<int> PostOrderTraversal2(TreeNode *root);
 }  // namespace leetcode
 
 #endif  // LEETCODE_POST_ORDER_TRAVERSAL_H_
