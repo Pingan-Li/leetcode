@@ -556,3 +556,18 @@ executable("two_sum_unittest") {
     "gtest_main",
   ]
 }
+
+#=============================================================================#
+
+executable("sort_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/algorithms/sort_test.cc" ]
+
+  deps = [ "//algorithms:algorithms" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}

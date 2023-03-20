@@ -12,6 +12,7 @@
 #include "solutions/middle_node.h"
 
 namespace leetcode {
+
 ListNode *MiddleNode(ListNode *head) {
   ListNode *fast = head;
   ListNode *slow = head;
@@ -22,4 +23,5 @@ ListNode *MiddleNode(ListNode *head) {
   }
   return slow;
 }
+
 }  // namespace leetcode
