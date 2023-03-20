@@ -47,9 +47,6 @@ void SelectionSort(std::vector<T> &data, Comparator<T> const &comparator) {
       }
     }
     if (min_idx != i) {
-      // T min_val = data[min_idx];
-      // data[min_idx] = data[i];
-      // data[i] = min_val;
       std::swap(data[min_idx], data[i]);
     }
   }
@@ -62,9 +59,6 @@ void InsertionSort(std::vector<T> &data, Comparator<T> const &comparator) {
   }
   for (std::size_t i = 0; i < data.size(); ++i) {
     for (std::size_t j = i; j > 0 && (comparator(data[j], data[j - 1])); --j) {
-      // T tmp = data[j - 1];
-      // data[j - 1] = data[j];
-      // data[j] = tmp;
       std::swap(data[j], data[j - 1]);
     }
   }

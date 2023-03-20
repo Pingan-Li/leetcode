@@ -571,3 +571,19 @@ executable("sort_unittest") {
     "gtest_main",
   ]
 }
+
+executable("bag_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/datastructures/bag_unittest.cc" ]
+
+  deps = [ "//datastructures:datastructures" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
