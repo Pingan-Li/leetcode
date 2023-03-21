@@ -23,6 +23,26 @@ TEST(DynamicArray, case0) {
     ++count;
     ASSERT_EQ(dynamic_array.GetSize(), count);
   }
+
+  ASSERT_EQ(dynamic_array.Head(), 0);
+  ASSERT_EQ(dynamic_array.Tail(), 99);
+
+  dynamic_array[50] = 5050;
+  ASSERT_EQ(dynamic_array[50], 5050);
+
+  for (int i = 0; i < 100; ++i) {
+    std::cout << dynamic_array.Tail() << ", ";
+    dynamic_array.Remove();
+    --count;
+    ASSERT_EQ(dynamic_array.GetSize(), count);
+  }
+}
+
+TEST(DynamicArray, case1) {
+  DynamicArray<int> dynamic_array;
+  ASSERT_EQ(dynamic_array.IsEmpty(), true);
+  dynamic_array.Append(1);
+  ASSERT_EQ(dynamic_array.Head(), dynamic_array.Tail());
 }
 
 }  // namespace datastructures

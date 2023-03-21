@@ -2,7 +2,6 @@ shared_library("datastructures") {
   include_dirs = [ "//" ]
 
   sources = [
-    "bag.cc",
     "bag.h",
   ]
 }

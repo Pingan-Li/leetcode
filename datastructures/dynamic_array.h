@@ -28,6 +28,8 @@ class DynamicArray final {
 
   std::size_t GetSize() const { return size_; }
 
+  bool IsEmpty() { return size_ == 0; }
+
   void Append(T const& value) {
     if (IsFull()) {
       Expand();
@@ -35,7 +37,16 @@ class DynamicArray final {
     objects_[size_++] = value;
   }
 
-  bool IsFull() const { return size_ == capacity_; }
+  void Remove() {
+    --size_;
+    if (IsSparse()) {
+      Shrink();
+    }
+  }
+
+  T Head() const { return operator[](0); };
+
+  T Tail() const { return operator[](size_ - 1); };
 
   std::string ToString() const {
     std::stringstream sstream;
@@ -50,7 +61,14 @@ class DynamicArray final {
     return sstream.str();
   };
 
-  T operator[](std::size_t index) {
+  T const& operator[](std::size_t index) const {
+    if (index >= size_) {
+      std::abort();
+    }
+    return objects_[index];
+  };
+
+  T& operator[](std::size_t index) {
     if (index >= size_) {
       std::abort();
     }
@@ -58,12 +76,24 @@ class DynamicArray final {
   };
 
  private:
+  bool IsFull() const { return size_ == capacity_; }
+
   void Expand() {
     T* old = objects_;
     std::size_t old_capacity = capacity_;
     capacity_ <<= 1;
     objects_ = new T[capacity_];
     std::memcpy(objects_, old, old_capacity * sizeof(T));
+    delete[] old;
+  }
+
+  bool IsSparse() { return size_ < capacity_ >> 1; }
+
+  void Shrink() {
+    T* old = objects_;
+    capacity_ >>= 1;
+    objects_ = new T[capacity_];
+    std::memcpy(objects_, old, capacity_ * sizeof(T));
     delete[] old;
   }
 

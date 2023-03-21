@@ -13,22 +13,26 @@
 #define LEETCODE_ALGORITHMS_QUEUE_H_
 
 #include <cstddef>
+
+#include "datastructures/dynamic_array.h"
 namespace datastructures {
 template <typename T>
 class Queue {
  public:
-  void Enqueue(T const& v) {}
+  void Enqueue(T const& value) { dynamic_array_.Append(value); }
 
-  T Dequeue() {}
+  T Dequeue() {
+    T last = dynamic_array_.Tail();
+    dynamic_array_.Remove();
+    return last;
+  }
 
-  bool IsEmpty(){};
+  bool IsEmpty() { return dynamic_array_.GetSize() == 0; };
 
-  std::size_t Size() {}
+  std::size_t Size() { return dynamic_array_.GetSize(); }
 
  private:
-  T* items_;
-  std::size_t size_;
-  std::size_t capacity_;
+  DynamicArray<T> dynamic_array_;
 };
 }  // namespace datastructures
 
