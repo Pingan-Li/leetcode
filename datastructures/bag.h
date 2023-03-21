@@ -16,53 +16,25 @@
 #include <cstring>
 #include <iostream>
 
+#include "datastructures/dynamic_array.h"
+
 namespace datastructures {
 
 template <typename T>
 class Bag final {
  public:
-  Bag() : capacity_(4), items_(new T[4]), size_(0) {}
+  Bag() = default;
 
-  ~Bag() { delete[] items_; }
+  ~Bag() = default;
 
-  void Add(T const& item) {
-    if (IsFull()) {
-      Expand();
-    }
-    items_[size_++] = item;
-    Print();
-  }
+  void Add(T const& item) { dynamic_array_.Append(item); }
 
-  bool IsEmpty() { return size_ == 0; }
+  bool IsEmpty() { return dynamic_array_.GetSize() == 0; }
 
-  std::size_t Size() { return size_; }
+  std::size_t Size() { return dynamic_array_.GetSize(); }
 
  private:
-  bool IsFull() { return size_ == capacity_; }
-
-  void Expand() {
-    T* old_items = items_;
-    std::size_t old_capacity = capacity_;
-    capacity_ <<= 1;
-    items_ = new T[capacity_];
-    memcpy(items_, old_items, old_capacity * sizeof(T));
-    delete[] old_items;
-  }
-
-  void Print() {
-    std::cout << "[";
-    for (std::size_t i = 0; i < size_; ++i) {
-      std::cout << items_[i];
-      if (i + 1 < size_) {
-        std::cout << ", ";
-      }
-    }
-    std::cout << "]";
-  }
-
-  std::size_t capacity_;
-  T* items_;
-  std::size_t size_;
+  DynamicArray<T> dynamic_array_;
 };
 }  // namespace datastructures
 

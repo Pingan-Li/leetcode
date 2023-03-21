@@ -587,3 +587,20 @@ executable("bag_unittest") {
   cflags = [ "-fsanitize=address" ]
   ldflags = [ "-fsanitize=address" ]
 }
+
+
+executable("dynamic_array") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/datastructures/dynamic_array_unittest.cc" ]
+
+  deps = [ "//datastructures:datastructures" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
