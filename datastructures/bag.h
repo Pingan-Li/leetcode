@@ -14,6 +14,7 @@
 
 #include <cstddef>
 #include <cstring>
+#include <iostream>
 
 namespace datastructures {
 
@@ -29,6 +30,7 @@ class Bag final {
       Expand();
     }
     items_[size_++] = item;
+    Print();
   }
 
   bool IsEmpty() { return size_ == 0; }
@@ -45,6 +47,17 @@ class Bag final {
     items_ = new T[capacity_];
     memcpy(items_, old_items, old_capacity * sizeof(T));
     delete[] old_items;
+  }
+
+  void Print() {
+    std::cout << "[";
+    for (std::size_t i = 0; i < size_; ++i) {
+      std::cout << items_[i];
+      if (i + 1 < size_) {
+        std::cout << ", ";
+      }
+    }
+    std::cout << "]";
   }
 
   std::size_t capacity_;

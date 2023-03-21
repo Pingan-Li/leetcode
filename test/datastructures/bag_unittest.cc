@@ -35,4 +35,13 @@ TEST(bag, case2) {
   ASSERT_FALSE(bag.IsEmpty());
 }
 
+TEST(bag, case3) {
+  Bag<int> bag;
+  for (int i = 0; i < 100; ++i) {
+    bag.Add(i);
+  }
+  ASSERT_EQ(bag.Size(), 100);
+  ASSERT_FALSE(bag.IsEmpty());
+}
+
 }  // namespace datastructures
