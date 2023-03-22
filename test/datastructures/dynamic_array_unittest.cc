@@ -45,4 +45,17 @@ TEST(DynamicArray, case1) {
   ASSERT_EQ(dynamic_array.Head(), dynamic_array.Tail());
 }
 
+TEST(DynamicArray, case2) {
+  DynamicArray<int> dynamic_array;
+  ASSERT_EQ(dynamic_array.IsEmpty(), true);
+  dynamic_array.Append(1);
+  dynamic_array.Append(2);
+  dynamic_array.Append(3);
+  dynamic_array.Append(4);
+  dynamic_array.Append(5);
+  for (auto const& item : dynamic_array) {
+    std::cout << item << ", ";
+  }
+}
+
 }  // namespace datastructures

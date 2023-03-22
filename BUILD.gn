@@ -589,10 +589,26 @@ executable("bag_unittest") {
 }
 
 
-executable("dynamic_array") {
+executable("dynamic_array_unittest") {
   include_dirs = [ "//" ]
 
   sources = [ "//test/datastructures/dynamic_array_unittest.cc" ]
+
+  deps = [ "//datastructures:datastructures" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
+executable("queue_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/datastructures/queue_unittest.cc" ]
 
   deps = [ "//datastructures:datastructures" ]
 

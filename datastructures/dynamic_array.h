@@ -13,6 +13,7 @@
 #define LEETCODE_ALGORITHMS_DYNAMIC_H_
 
 #include <cstddef>
+#include <cstdlib>
 #include <cstring>
 #include <sstream>
 #include <string>
@@ -38,6 +39,9 @@ class DynamicArray final {
   }
 
   void Remove() {
+    if (0 == size_) {
+      std::abort();
+    }
     --size_;
     if (IsSparse()) {
       Shrink();
@@ -47,6 +51,14 @@ class DynamicArray final {
   T Head() const { return operator[](0); };
 
   T Tail() const { return operator[](size_ - 1); };
+
+  T* begin() { return objects_; }
+
+  T const* begin() const { return objects_; }
+
+  T* end() { return objects_ + size_; }
+
+  T const* end() const { return objects_ + size_; }
 
   std::string ToString() const {
     std::stringstream sstream;
