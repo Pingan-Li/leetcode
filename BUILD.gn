@@ -570,6 +570,9 @@ executable("sort_unittest") {
     "gtest",
     "gtest_main",
   ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
 }
 
 executable("bag_unittest") {
@@ -587,7 +590,6 @@ executable("bag_unittest") {
   cflags = [ "-fsanitize=address" ]
   ldflags = [ "-fsanitize=address" ]
 }
-
 
 executable("dynamic_array_unittest") {
   include_dirs = [ "//" ]
@@ -611,6 +613,22 @@ executable("queue_unittest") {
   sources = [ "//test/datastructures/queue_unittest.cc" ]
 
   deps = [ "//datastructures:datastructures" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
+executable("array_list_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/base/array_list_unittest.cc" ]
+
+  deps = [ "//base:base" ]
 
   libs = [
     "gtest",

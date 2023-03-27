@@ -1,0 +1,5 @@
+shared_library("base") {
+  include_dirs = [ "//" ]
+
+  sources = [ "exception.cc" ]
+}

@@ -58,4 +58,29 @@ TEST(DynamicArray, case2) {
   }
 }
 
+class A {
+ public:
+  A() { std::cout << "A()" << std::endl; }
+
+  A(A const& other) {
+    (void)other;
+    std::cout << "copy!";
+  }
+
+  A(A&& other) {
+    (void)other;
+    std::cout << "move!";
+  }
+};
+
+class B {
+ public:
+  A a;
+};
+
+TEST(DynamicArray, case3) {
+  B b;
+  B bb = std::move(b);
+}
+
 }  // namespace datastructures

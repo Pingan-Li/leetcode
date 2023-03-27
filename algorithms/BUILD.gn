@@ -3,6 +3,6 @@ shared_library("algorithms") {
 
   sources = [
     "sort.cc",
-    "vector_helper.cc",
+    "helper.cc",
   ]
 }

@@ -9,7 +9,7 @@
  *
  */
 
-#include "algorithms/vector_helper.h"
+#include "algorithms/helper.h"
 
 #include <algorithm>
 #include <cstddef>

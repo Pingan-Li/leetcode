@@ -17,8 +17,6 @@ namespace algorithms {
 
 void SpawnRandomVector(std::vector<int>& data, std::size_t nelem);
 
-}
-
 template <typename T>
 void Print(std::vector<T> const& data) {
   std::cout << "[";
@@ -31,4 +29,5 @@ void Print(std::vector<T> const& data) {
 
   std::cout << "]" << std::endl;
 }
+}  // namespace algorithms
 #endif

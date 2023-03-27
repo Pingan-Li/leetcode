@@ -35,7 +35,7 @@ class LessThanOrEqual : public Comparator<T> {
 };
 
 template <typename T>
-class GreatThan : public Comparator<T> {
+class GreaterThan : public Comparator<T> {
  public:
   bool operator()(T const& lhs, T const& rhs) const override {
     return lhs > rhs;
@@ -43,7 +43,7 @@ class GreatThan : public Comparator<T> {
 };
 
 template <typename T>
-class GreatThanOrEqual : public Comparator<T> {
+class GreaterThanOrEqual : public Comparator<T> {
  public:
   bool operator()(T const& lhs, T const& rhs) const override {
     return lhs >= rhs;
