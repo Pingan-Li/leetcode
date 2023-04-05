@@ -557,6 +557,19 @@ executable("two_sum_unittest") {
   ]
 }
 
+executable("longest_palindrome_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/longest_palindrome_unittest.cc" ]
+
+  deps = [ "//solutions:solutions" ]
+
+  libs = [
+    "gtest",
+    "gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
@@ -580,8 +593,6 @@ executable("bag_unittest") {
 
   sources = [ "//test/datastructures/bag_unittest.cc" ]
 
-  deps = [ "//datastructures:datastructures" ]
-
   libs = [
     "gtest",
     "gtest_main",
@@ -595,9 +606,6 @@ executable("dynamic_array_unittest") {
   include_dirs = [ "//" ]
 
   sources = [ "//test/datastructures/dynamic_array_unittest.cc" ]
-
-  deps = [ "//datastructures:datastructures" ]
-
   libs = [
     "gtest",
     "gtest_main",
@@ -611,8 +619,6 @@ executable("queue_unittest") {
   include_dirs = [ "//" ]
 
   sources = [ "//test/datastructures/queue_unittest.cc" ]
-
-  deps = [ "//datastructures:datastructures" ]
 
   libs = [
     "gtest",

@@ -523,6 +523,13 @@ TEST(QuickSortDesc, case4) {
   ASSERT_TRUE(std::is_sorted(data.begin(), data.end(), GreaterThan<int>{}));
 }
 
+TEST(InplaceMergeSort, case0) {
+  std::vector<int> data{5, 9, 1, 8, 2, 7, 3, 6, 4};
+  algorithms::MergeSort(data);
+  Print(data);
+  ASSERT_TRUE(std::is_sorted(data.begin(), data.end()));
+}
+
 void Heck() {
   int nCount = 0;
   int x = 99;

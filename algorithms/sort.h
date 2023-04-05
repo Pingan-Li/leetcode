@@ -14,9 +14,12 @@
 
 #include <algorithm>
 #include <cstddef>
+#include <iostream>
+#include <memory>
 #include <vector>
 
 #include "algorithms/comparator.h"
+#include "algorithms/helper.h"
 
 namespace algorithms {
 
@@ -245,6 +248,44 @@ void QuickSort(Iterator first, Iterator last, DescendingTag tag) {
 template <typename Container>
 void QuickSort(Container &container, DescendingTag tag) {
   QuickSort(container.begin(), container.end() - 1, tag);
+}
+
+template <typename Container>
+void InplaceMerge(Container &container, Container &auxiliary, std::size_t lo,
+                  std::size_t mid, std::size_t hi, AscendingTag = {}) {
+  std::size_t i = lo;
+  std::size_t j = mid + 1;
+  // Important.
+  for (std::size_t k = lo; k <= hi; ++k) {
+    auxiliary[k] = container[k];
+  }
+  for (std::size_t k = lo; k <= hi; ++k) {
+    if (i > mid)
+      container[k] = auxiliary[j++];
+    else if (j > hi)
+      container[k] = auxiliary[i++];
+    else if (auxiliary[j] < auxiliary[i])
+      container[k] = auxiliary[j++];
+    else
+      container[k] = auxiliary[i++];
+  }
+}
+
+template <typename Container>
+void Sort(Container &container, Container &auxiliary, std::size_t lo,
+          std::size_t hi, AscendingTag = {}) {
+  if (hi <= lo) return;
+  std::size_t mid = lo + (hi - lo) / 2;
+  Sort(container, auxiliary, lo, mid);
+  Sort(container, auxiliary, mid + 1, hi);
+  InplaceMerge(container, auxiliary, lo, mid, hi);
+}
+
+template <typename Container>
+void MergeSort(Container &container, AscendingTag = {}) {
+  Container auxiliary;
+  auxiliary.resize(container.size());
+  Sort(container, auxiliary, 0, container.size() - 1);
 }
 
 }  // namespace algorithms

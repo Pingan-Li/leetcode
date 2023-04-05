@@ -16,9 +16,9 @@
 #include <cstring>
 #include <iostream>
 
-#include "datastructures/dynamic_array.h"
+#include "algorithms/dynamic_array.h"
 
-namespace datastructures {
+namespace algorithms {
 
 template <typename T>
 class Bag final {
@@ -36,6 +36,6 @@ class Bag final {
  private:
   DynamicArray<T> dynamic_array_;
 };
-}  // namespace datastructures
+}  // namespace algorithms
 
 #endif

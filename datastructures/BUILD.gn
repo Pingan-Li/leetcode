@@ -1,7 +1,0 @@
-shared_library("datastructures") {
-  include_dirs = [ "//" ]
-
-  sources = [
-    "bag.h",
-  ]
-}

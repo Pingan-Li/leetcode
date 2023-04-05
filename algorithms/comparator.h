@@ -11,6 +11,7 @@
 
 #ifndef LEETCODE_ALGORITHMS_COMPARATOR_H_
 #define LEETCODE_ALGORITHMS_COMPARATOR_H_
+
 namespace algorithms {
 template <typename T>
 class Comparator {

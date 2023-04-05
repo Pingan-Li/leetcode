@@ -14,8 +14,9 @@
 
 #include <cstddef>
 
-#include "datastructures/dynamic_array.h"
-namespace datastructures {
+#include "algorithms/dynamic_array.h"
+
+namespace algorithms {
 template <typename T>
 class Queue {
  public:
@@ -34,6 +35,6 @@ class Queue {
  private:
   DynamicArray<T> dynamic_array_;
 };
-}  // namespace datastructures
+}  // namespace algorithms
 
 #endif

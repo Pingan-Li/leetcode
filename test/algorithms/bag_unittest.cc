@@ -9,11 +9,11 @@
  *
  */
 
-#include "datastructures/bag.h"
+#include "algorithms/bag.h"
 
 #include <gtest/gtest.h>
 
-namespace datastructures {
+namespace algorithms {
 TEST(Bag, case0) {
   Bag<int> bag;
   ASSERT_EQ(bag.Size(), 0);
@@ -44,4 +44,4 @@ TEST(bag, case3) {
   ASSERT_FALSE(bag.IsEmpty());
 }
 
-}  // namespace datastructures
+}  // namespace algorithms

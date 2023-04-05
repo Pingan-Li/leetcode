@@ -14,8 +14,6 @@
 
 #include "base/list.h"
 
-namespace base {
-    
-}
+namespace base {}
 
 #endif

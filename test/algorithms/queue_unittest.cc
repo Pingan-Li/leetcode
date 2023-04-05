@@ -9,11 +9,11 @@
  *
  */
 
-#include "datastructures/queue.h"
+#include "algorithms/queue.h"
 
 #include "gtest/gtest.h"
 
-namespace datastructures {
+namespace algorithms {
 TEST(Queue, case0) {
   Queue<int> queue;
   for (int i = 0; i < 10; ++i) {
@@ -24,4 +24,4 @@ TEST(Queue, case0) {
     std::cout << queue.Dequeue() << ", ";
   }
 }
-}  // namespace datastructures
+}  // namespace algorithms

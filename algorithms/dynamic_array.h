@@ -18,7 +18,7 @@
 #include <sstream>
 #include <string>
 
-namespace datastructures {
+namespace algorithms {
 template <typename T>
 class DynamicArray final {
  public:

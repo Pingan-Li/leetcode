@@ -46,6 +46,8 @@ shared_library("solutions") {
     "//solutions/list_node.h",
     "//solutions/longest_common_prefix.cpp",
     "//solutions/longest_common_prefix.h",
+    "//solutions/longest_palindrome.cc",
+    "//solutions/longest_palindrome.h",
     "//solutions/matrix_reshape.cpp",
     "//solutions/matrix_reshape.h",
     "//solutions/max_area.cpp",
