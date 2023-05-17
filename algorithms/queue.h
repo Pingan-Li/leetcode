@@ -20,7 +20,7 @@ namespace algorithms {
 template <typename T>
 class Queue {
  public:
-  void Enqueue(T const& value) { dynamic_array_.Append(value); }
+  void Enqueue(T const& value) { dynamic_array_.PushBack(value); }
 
   T Dequeue() {
     T last = dynamic_array_.Tail();

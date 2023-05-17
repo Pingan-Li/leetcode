@@ -591,7 +591,7 @@ executable("sort_unittest") {
 executable("bag_unittest") {
   include_dirs = [ "//" ]
 
-  sources = [ "//test/datastructures/bag_unittest.cc" ]
+  sources = [ "//test/algorithms/bag_unittest.cc" ]
 
   libs = [
     "gtest",
@@ -605,7 +605,7 @@ executable("bag_unittest") {
 executable("dynamic_array_unittest") {
   include_dirs = [ "//" ]
 
-  sources = [ "//test/datastructures/dynamic_array_unittest.cc" ]
+  sources = [ "//test/algorithms/dynamic_array_unittest.cc" ]
   libs = [
     "gtest",
     "gtest_main",
@@ -618,7 +618,7 @@ executable("dynamic_array_unittest") {
 executable("queue_unittest") {
   include_dirs = [ "//" ]
 
-  sources = [ "//test/datastructures/queue_unittest.cc" ]
+  sources = [ "//test/algorithms/queue_unittest.cc" ]
 
   libs = [
     "gtest",
@@ -632,7 +632,7 @@ executable("queue_unittest") {
 executable("array_list_unittest") {
   include_dirs = [ "//" ]
 
-  sources = [ "//test/base/array_list_unittest.cc" ]
+  sources = [ "//test/algorithms/array_list_unittest.cc" ]
 
   deps = [ "//base:base" ]
 

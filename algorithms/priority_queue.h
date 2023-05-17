@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef LEETCODE_BASE_PRIORITY_QUEUE_H_
-#define LEETCODE_BASE_PRIORITY_QUEUE_H_
+#ifndef LEETCODE_ALGORITHMS_PRIORITY_QUEUE_H_
+#define LEETCODE_ALGORITHMS_PRIORITY_QUEUE_H_
 
 #include <cstddef>
 namespace base {

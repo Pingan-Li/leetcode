@@ -15,6 +15,7 @@
 #include <cstddef>
 #include <cstdlib>
 #include <cstring>
+#include <memory>
 #include <sstream>
 #include <string>
 
@@ -26,17 +27,33 @@ class DynamicArray final {
       : capacity_(capacity), size_(0), objects_(new T[capacity]){};
 
   ~DynamicArray() { delete[] objects_; }
-
-  std::size_t GetSize() const { return size_; }
-
-  bool IsEmpty() { return size_ == 0; }
-
-  void Append(T const& value) {
+  // Adding a element in the back.
+  void PushBack(T const& value) {
     if (IsFull()) {
       Expand();
     }
     objects_[size_++] = value;
   }
+  // Adding A element in the position of index.
+  void Insert(std::size_t index, T const& value) {
+    if (IsFull()) {
+      Expand();
+    }
+    if (index >  size_) {
+      
+    }
+  }
+
+  // S
+  T PopBack() {
+    T tmp = objects_[--size_];
+    objects_[size_].~T();
+    return tmp;
+  }
+
+  std::size_t GetSize() const { return size_; }
+
+  bool IsEmpty() { return size_ == 0; }
 
   void Remove() {
     if (0 == size_) {
@@ -52,13 +69,13 @@ class DynamicArray final {
 
   T Tail() const { return operator[](size_ - 1); };
 
-  T* begin() { return objects_; }
+  // T* begin() { return objects_; }
 
-  T const* begin() const { return objects_; }
+  // T const* begin() const { return objects_; }
 
-  T* end() { return objects_ + size_; }
+  // T* end() { return objects_ + size_; }
 
-  T const* end() const { return objects_ + size_; }
+  // T const* end() const { return objects_ + size_; }
 
   std::string ToString() const {
     std::stringstream sstream;
@@ -113,6 +130,6 @@ class DynamicArray final {
   std::size_t size_;
   T* objects_;
 };
-}  // namespace datastructures
+}  // namespace algorithms
 
 #endif

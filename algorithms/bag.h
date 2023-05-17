@@ -12,10 +12,6 @@
 #ifndef LEETCODE_DATASTRUCTURES_BAG_H
 #define LEETCODE_DATASTRUCTURES_BAG_H
 
-#include <cstddef>
-#include <cstring>
-#include <iostream>
-
 #include "algorithms/dynamic_array.h"
 
 namespace algorithms {
@@ -27,7 +23,7 @@ class Bag final {
 
   ~Bag() = default;
 
-  void Add(T const& item) { dynamic_array_.Append(item); }
+  void Add(T const& item) { dynamic_array_.PushBack(item); }
 
   bool IsEmpty() { return dynamic_array_.GetSize() == 0; }
 

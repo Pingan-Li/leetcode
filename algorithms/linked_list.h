@@ -12,7 +12,7 @@
 #ifndef LEETCODE_BASE_ITERATOR_H_
 #define LEETCODE_BASE_ITERATOR_H_
 
-#include "base/list.h"
+#include "algorithms/list.h"
 
 namespace base {}
 

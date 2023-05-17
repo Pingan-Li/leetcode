@@ -16,7 +16,7 @@
 namespace base {
 
 char const kIndexOutOfRangeException[] =
-    "IndexOutOfRangeException: current index is out of range!";
+    "IndexOutOfRangeException: The current index is out of range!";
 
 Exception::Exception() noexcept = default;
 

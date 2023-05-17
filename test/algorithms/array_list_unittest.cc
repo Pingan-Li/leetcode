@@ -9,7 +9,7 @@
  *
  */
 
-#include "base/array_list.h"
+#include "algorithms/array_list.h"
 
 #include <cstddef>
 #include <vector>
@@ -79,11 +79,19 @@ class TestObject {
 };
 
 TEST(array_list, vector) {
-  TestObject object[5];
-  std::cout << "heck!\n";
-  object[2] = {};
-  object[2] = {};
-  object[2] = {};
-  std::cout << "heck!\n";
+  // TestObject object[5];
+  // std::cout << "heck!\n";
+  // object[2] = {};
+  // object[2] = {};
+  // object[2] = {};
+  // std::cout << "heck!\n";
+  TestObject object1;
+  TestObject object2 = object1;
+  object2 = object1;
+  object2 = object1;
+  object2 = object1;
+  object2 = object1;
+  object2 = object1;
+  object2 = object1;
 }
 }  // namespace base
