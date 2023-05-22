@@ -17,22 +17,30 @@ namespace base {
 template <typename T>
 class Stack {
  public:
+  /**
+   * @brief Construct a new Stack object
+   *
+   * @param stack_capacity The capacity of stack.
+   */
   explicit Stack(std::size_t stack_capacity)
       : data_(new T[stack_capacity]), capa_(stack_capacity), size_(0) {}
 
   virtual ~Stack() { delete[] data_; }
 
-  void Push(T const& t) {
+  bool Push(T const& t) {
     if (IsFull()) {
-      Expand();
+      return false;
     }
     data_[size_++] = t;
+    return true;
   }
 
-  T Pop() {
-    T temp = data_[size_ - 1];
-    data_[--size_].~T();
-    return temp;
+  bool Pop(T& out) {
+    if (IsEmpty()) {
+      return false;
+    }
+    out = data_[--size_];
+    return true;
   }
 
   bool IsEmpty() const noexcept { return size_ == 0; }
@@ -42,8 +50,9 @@ class Stack {
   std::size_t Size() const noexcept { return size_; }
 
  private:
+  // TODO
   void Expand() {}
-
+  // TODO
   void Shrink() {}
 
   T* data_;

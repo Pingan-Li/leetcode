@@ -10,22 +10,39 @@
  */
 
 #include <glog/logging.h>
-#include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
+#include <new>
 #include <vector>
 
 #include "base/probe.h"
 #include "base/stack.h"
 
 namespace base {
-TEST(Stack, case_1) {
-  // google::InitGoogleLogging("stack_tests");
-  // std::cout << FLAGS_log_dir << std::endl;
-  // Stack<Probe> stack{8};
-  std::vector<Probe> vec{94124};
-  //   Probe probe{};
-  //   stack.Push(probe);
-  //   ASSERT_EQ(1, stack.Size());
+TEST(Stack, case_0) {
+  Stack<int> stack{10};
+  for (int i = 0; i < 10; ++i) {
+    LOG(INFO) << "Push = " << i;
+    bool result = stack.Push(i);
+    ASSERT_TRUE(result);
+    ASSERT_EQ(i + 1, stack.Size());
+  }
+  int value{-1};
+  for (int i = 0; i < 10; ++i) {
+    bool result = stack.Pop(value);
+    LOG(INFO) << "Pop = " << value;
+    ASSERT_TRUE(result);
+    ASSERT_EQ(9 - i, stack.Size());
+  }
 }
 }  // namespace base
+
+int main(int argc, char** argv) {
+  testing::InitGoogleTest(&argc, argv);
+  google::InitGoogleLogging(argv[0]);
+  FLAGS_logtostderr = 1;
+  FLAGS_colorlogtostderr = 1;
+  int result = RUN_ALL_TESTS();
+  google::ShutdownGoogleLogging();
+  return result;
+}

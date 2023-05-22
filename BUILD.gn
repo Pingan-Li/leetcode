@@ -654,7 +654,6 @@ executable("stack_tests") {
 
   libs = [
     "gtest",
-    "gtest_main",
     "glog",
   ]
 
