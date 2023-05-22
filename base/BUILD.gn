@@ -1,5 +1,10 @@
 shared_library("base") {
   include_dirs = [ "//" ]
 
-  sources = [ "exception.cc" ]
+  sources = [
+    "exception.cc",
+    "probe.cc",
+  ]
+
+  libs = [ "glog" ]
 }

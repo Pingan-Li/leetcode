@@ -11,6 +11,8 @@
 
 #include "algorithms/dynamic_array.h"
 
+#include <execinfo.h>
+
 #include <vector>
 
 #include "gtest/gtest.h"
@@ -61,8 +63,17 @@ TEST(DynamicArray, case2) {
 }
 
 TEST(DynamicArray, case3) {
-  std::vector<int> vec;
-  std::cout << vec.front();
+  void *buffer[4] = {0};
+  auto name = backtrace_symbols(buffer, 4);
+  std::ignore = name;
+  for (int i = 0; i < 4; ++i) {
+    printf("called by %p\n", buffer[i]);
+  }
 }
+
+// TEST(DynamicArray, case4) {
+//   std::vector<int> vec;
+//   std::cout << vec.front();
+// }
 
 }  // namespace algorithms
