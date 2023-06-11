@@ -13,6 +13,7 @@
 
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
+#include <tuple>
 
 namespace leetcode {
 TEST(merge_k_sorted_lists, case_0) {
@@ -33,5 +34,6 @@ TEST(merge_k_sorted_lists, case_0) {
 TEST(merge_k_sorted_lists, case_1) {
   std::vector<ListNode *> lists;
   ListNode *ret = MergeKSortedLists(lists);
+  std::ignore = ret;
 }
 }  // namespace leetcode
