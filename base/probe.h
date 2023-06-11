@@ -11,6 +11,8 @@
 
 #ifndef BASE_PROBE_H_
 #define BASE_PROBE_H_
+
+#include <cstddef>
 namespace base {
 class Probe {
  public:
@@ -26,7 +28,12 @@ class Probe {
 
   Probe& operator=(Probe&& other);
 
+  static std::size_t ConstructorInvokeCount();
+
+  static std::size_t DestructorInvokeCount();
+
  private:
 };
 }  // namespace base
+
 #endif
