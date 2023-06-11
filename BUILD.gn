@@ -660,3 +660,35 @@ executable("stack_tests") {
   cflags = [ "-fsanitize=address" ]
   ldflags = [ "-fsanitize=address" ]
 }
+
+executable("stack2_tests") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/base/stack2_tests.cc" ]
+
+  deps = [ "//base:base" ]
+
+  libs = [
+    "gtest",
+    "glog",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
+executable("linked_list_tests") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//test/base/linked_list_tests.cc" ]
+
+  deps = [ "//base:base" ]
+
+  libs = [
+    "gtest",
+    "glog",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
