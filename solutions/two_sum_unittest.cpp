@@ -9,12 +9,10 @@
  *
  */
 
-#include "solutions/two_sum.h"
-
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include <vector>
+
+#include "solutions/two_sum.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(two_sum, case_0) {

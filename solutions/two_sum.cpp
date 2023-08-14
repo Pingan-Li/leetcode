@@ -11,25 +11,19 @@
 
 #include "solutions/two_sum.h"
 
+#include <unordered_map>
 namespace leetcode {
 
 std::vector<int> TwoSum(std::vector<int> &nums, int target) {
-  std::vector<int> ret;
-  bool found{false};
-  for (std::size_t i = 0; i < nums.size(); ++i) {
-    for (std::size_t j = i + 1; j < nums.size(); ++j) {
-      if (target == nums[i] + nums[j]) {
-        ret.push_back(i);
-        ret.push_back(j);
-        found = true;
-        break;
-      }
-    }
-    if (found) {
-      break;
+  std::unordered_map<int, int> hashmap;
+  for (int i = 0; i < nums.size(); ++i) {
+    auto iter = hashmap.find(target - nums[i]);
+    if (iter != hashmap.end()) {
+      return {iter->second, i};
+    } else {
+      hashmap[nums[i]] = i;
     }
   }
-  return ret;
+  return {};
 }
-
-}  // namespace leetcode
+} // namespace leetcode
