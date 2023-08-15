@@ -8,15 +8,15 @@
  * @copyright Copyright (c) 2021
  *
  */
- 
+
 #include "solutions/add_two_numbers.h"
 
 #include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(add_two_numers, case_0) {
-  std::vector vec1{9};
-  std::vector vec2{9};
+  std::vector vec1{1, 2, 3, 4, 5};
+  std::vector vec2{6, 7, 8, 9, 0};
   auto list1 = SpawnList(vec1);
   auto list2 = SpawnList(vec2);
   PrintList(list1);
