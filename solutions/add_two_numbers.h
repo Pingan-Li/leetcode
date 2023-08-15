@@ -18,6 +18,6 @@ namespace leetcode {
 
 ListNode *AddTwoNumbers(ListNode *l1, ListNode *l2);
 
-}  // namespace leetcode
+} // namespace leetcode
 
-#endif  // ADD_TWO_NUMBERS_H_
+#endif // ADD_TWO_NUMBERS_H_

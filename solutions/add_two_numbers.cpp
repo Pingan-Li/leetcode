@@ -12,67 +12,66 @@
 #include "solutions/add_two_numbers.h"
 
 namespace leetcode {
+
 ListNode *AddTwoNumbers(ListNode *l1, ListNode *l2) {
-  if (nullptr == l1) {
+  if (!l1) {
     return l2;
   }
-
-  if (nullptr == l2) {
+  if (!l2) {
     return l1;
   }
 
-  ListNode *head = new ListNode();
-  int sum{0};
-  bool is_overflow{false};
-  auto iter_result = head;
-  auto iter1 = l1;
-  auto iter2 = l2;
-  while (iter1 && iter2) {
-    iter_result->next = new ListNode;
-    if (is_overflow) {
-      sum = iter1->val + iter2->val + 1;
+  auto node1 = l1;
+  auto node2 = l2;
+  auto result = new ListNode(0, nullptr);
+  auto current = result;
+  int sum = 0;
+  bool overflow = false;
+
+  while (node1 && node2) {
+    if (overflow) {
+      sum = node1->val + node2->val + 1;
+      overflow = false;
     } else {
-      sum = iter1->val + iter2->val;
+      sum = node1->val + node2->val;
     }
+
     if (sum > 9) {
-      iter_result->next->val = sum - 10;
-      is_overflow = true;
+      current->val = sum - 10;
+      overflow = true;
     } else {
-      iter_result->next->val = sum;
-      is_overflow = false;
+      current->val = sum;
+      overflow = false;
     }
-    iter_result = iter_result->next;
-    iter1 = iter1->next;
-    iter2 = iter2->next;
+
+    node1 = node1->next;
+    node2 = node2->next;
+    current->next = new ListNode(0, nullptr);
+    current = current->next;
   }
-  if (iter1 == nullptr && iter2 == nullptr) {
-    if (is_overflow) {
-      iter_result->next = new ListNode{1};
-      is_overflow = false;
-    }
-  } else {
-    auto iter3 = (iter1 == nullptr ? iter2 : iter1);
-    while (iter3) {
-      iter_result->next = new ListNode;
-      if (is_overflow) {
-        sum = iter3->val + 1;
-      } else {
-        sum = iter3->val;
-      }
-      if (sum > 9) {
-        is_overflow = true;
-        iter_result->next->val = sum - 10;
-      } else {
-        is_overflow = false;
-        iter_result->next->val = sum;
-      }
-      iter_result = iter_result->next;
-      iter3 = iter3->next;
-    }
-    if (is_overflow) {
-      iter_result->next = new ListNode{1, nullptr};
-    }
+
+  // make l1 always be the longer list.
+  if (!node1) {
+    node1 = node2;
   }
-  return head->next;
+
+  while (node1) {
+    if (overflow) {
+      sum = node1->val + 1;
+    } else {
+      sum = node1->val;
+    }
+
+    if (sum > 9) {
+      current->val = sum - 10;
+      overflow = true;
+    } else {
+      current->val = sum;
+      overflow = false;
+    }
+    current->next = new ListNode(0, nullptr);
+    current = current->next;
+  }
+  return result;
 }
-}  // namespace leetcode
+} // namespace leetcode

@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2021
  *
  */
+ 
 #include "solutions/add_two_numbers.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(add_two_numers, case_0) {
@@ -41,4 +41,4 @@ TEST(add_two_numers, case_3) {
   PrintList(ret);
 }
 
-}  // namespace leetcode
+} // namespace leetcode
