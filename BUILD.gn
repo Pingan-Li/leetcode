@@ -231,18 +231,29 @@ executable("add_two_numbers_unittest") {
 #   ]
 # }
 
-# executable("length_of_last_word_unittest") {
-#   include_dirs = [ "//" ]
+executable("length_of_last_word_unittest") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/length_of_last_word_unittest.cpp" ]
+  sources = [ "//solutions/length_of_last_word_unittest.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+executable("length_of_longest_substring_unittest") {
+  include_dirs = [ "//" ]
+
+  sources = [ "//solutions/length_of_longest_substring_unittest.cpp" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("longest_common_prefix_unittest") {
 #   include_dirs = [ "//" ]

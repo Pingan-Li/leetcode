@@ -11,34 +11,35 @@
 
 #include "solutions/length_of_longest_substring.h"
 
+#include <cstddef>
 #include <set>
 
 namespace leetcode {
 
-int LengthOfLongestSubstring(const std::string &string) {
-  if (string.empty()) {
+int LengthOfLongestSubstring(const std::string &s) {
+  if (s.empty()) {
     return 0;
-  } else {
-    int maxLen{1};
-    std::set<char> charSet;
-    for (auto iter = string.begin(); iter != string.end(); ++iter) {
-      int currLen{1};
-      charSet.insert(*iter);
-      for (auto iter2 = iter + 1; iter2 != string.end(); ++iter2) {
-        auto pair = charSet.insert(*iter2);
-        if (pair.second) {
-          ++currLen;
-        } else {
-          break;
-        }
-      }
-      if (maxLen < currLen) {
-        maxLen = currLen;
-      }
-      charSet.clear();
-    }
-    return maxLen;
   }
+
+  int max_length = 1;
+  std::set<char> char_set;
+  for (std::size_t i = 0; i < s.size(); ++i) {
+    int curr_len = 1;
+    char_set.insert(s.at(i));
+    for (std::size_t j = i + 1; j < s.size(); ++j) {
+      auto pair = char_set.insert(s.at(j));
+      if (pair.second) {
+        ++curr_len;
+      } else {
+        break;
+      }
+    }
+    if (max_length < curr_len) {
+      max_length = curr_len;
+    }
+    char_set.clear();
+  }
+  return max_length;
 }
 
-}  // namespace leetcode
+} // namespace leetcode
