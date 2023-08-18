@@ -437,18 +437,17 @@ executable("length_of_longest_substring_unittest") {
 #   ]
 # }
 
-# executable("remove_nth_from_end_unittest") {
-#   include_dirs = [ "//" ]
+executable("remove_nth_from_end_unittest") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/remove_nth_from_end_unittest.cpp" ]
+  sources = [ "//solutions/remove_nth_from_end_unittest.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
-
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("reverse_list_unittest") {
 #   include_dirs = [ "//" ]
