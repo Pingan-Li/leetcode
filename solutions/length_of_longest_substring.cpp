@@ -11,8 +11,9 @@
 
 #include "solutions/length_of_longest_substring.h"
 
-#include <cstddef>
-#include <set>
+#include <algorithm>
+#include <iostream>
+#include <unordered_map>
 
 namespace leetcode {
 
@@ -20,24 +21,14 @@ int LengthOfLongestSubstring(const std::string &s) {
   if (s.empty()) {
     return 0;
   }
-
-  int max_length = 1;
-  std::set<char> char_set;
-  for (std::size_t i = 0; i < s.size(); ++i) {
-    int curr_len = 1;
-    char_set.insert(s.at(i));
-    for (std::size_t j = i + 1; j < s.size(); ++j) {
-      auto pair = char_set.insert(s.at(j));
-      if (pair.second) {
-        ++curr_len;
-      } else {
-        break;
+  int size = s.size();
+  int max_length = 0;
+  std::unordered_map<char, int> skip_map;
+  for (int slow = 0, fast = 0; fast < size; ++fast) {
+    if (skip_map[s[fast]]++ != 0)
+      while (skip_map[s[slow++]]-- == 1) {
       }
-    }
-    if (max_length < curr_len) {
-      max_length = curr_len;
-    }
-    char_set.clear();
+    max_length = std::max(max_length, fast - slow + 1);
   }
   return max_length;
 }

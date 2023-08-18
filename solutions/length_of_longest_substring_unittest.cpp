@@ -16,7 +16,7 @@
 namespace leetcode {
 
 TEST(length_of_longest_substring, case_0) {
-  std::string str{"a"};
+  std::string str{"aaa"};
   int result = LengthOfLongestSubstring(str);
   int expect = 1;
   EXPECT_EQ(result, expect);
@@ -37,7 +37,7 @@ TEST(length_of_longest_substring, case_3) {
 }
 
 TEST(length_of_longest_substring, case_4) {
-  std::string str{"aaaaaa"};
+  std::string str{"aaaaa"};
   int result = LengthOfLongestSubstring(str);
   int expect = 1;
   EXPECT_EQ(result, expect);

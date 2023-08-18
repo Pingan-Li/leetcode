@@ -11,8 +11,7 @@
 
 #include "solutions/length_of_last_word.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(length_of_last_word, case_0) {
