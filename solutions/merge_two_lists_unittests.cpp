@@ -8,10 +8,12 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+
 
 #include "solutions/merge_two_lists.h"
+
+#include "testing/googletest/include/gtest/gtest.h"
+
 
 namespace leetcode {
 TEST(merge_two_lists, case_0) {

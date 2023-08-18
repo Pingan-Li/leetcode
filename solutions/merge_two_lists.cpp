@@ -13,6 +13,22 @@
 
 namespace leetcode {
 ListNode *MergeTwoLists(ListNode *list1, ListNode *list2) {
+  ListNode dummy;
+  ListNode *iter = &dummy;
+
+  while (list1 && list2) {
+    if (list1->val < list2->val) {
+      iter->next = list1;
+      list1 = list1->next;
+    } else {
+      iter->next = list2;
+      list2 = list2->next;
+    }
+    iter = iter->next;
+  }
+  iter->next = list1 ? list1 : list2;
+  return dummy.next;
+
   //   ListNode *dummy = new ListNode;
   //   ListNode *iter = dummy;
   //   while (list1 != nullptr && list2 != nullptr) {
@@ -29,31 +45,33 @@ ListNode *MergeTwoLists(ListNode *list1, ListNode *list2) {
   //   return dummy->next;
   //------------------MEMORY_LEAK----------------------//
   // dummy is not deleted.
-  if (list1 && list2) {
-    ListNode *real;
-    ListNode *iter;
-    if (list1->val < list2->val) {
-      real = list1;
-      list1 = list1->next;
-    } else {
-      real = list2;
-      list2 = list2->next;
-    }
-    iter = real;
-    while (list1 && list2) {
-      if (list1->val < list2->val) {
-        iter->next = list1;
-        list1 = list1->next;
-      } else {
-        iter->next = list2;
-        list2 = list2->next;
-      }
-      iter = iter->next;
-    }
-    iter->next = ((list1) ? list1 : list2);
-    return real;
-  }
-  return list1 ? list1 : list2;
+
+  // if (list1 && list2) {
+  //   ListNode *real;
+  //   ListNode *iter;
+  //   if (list1->val < list2->val) {
+  //     real = list1;
+  //     list1 = list1->next;
+  //   } else {
+  //     real = list2;
+  //     list2 = list2->next;
+  //   }
+  //   iter = real;
+  //   while (list1 && list2) {
+  //     if (list1->val < list2->val) {
+  //       iter->next = list1;
+  //       list1 = list1->next;
+  //     } else {
+  //       iter->next = list2;
+  //       list2 = list2->next;
+  //     }
+  //     iter = iter->next;
+  //   }
+  //   iter->next = ((list1) ? list1 : list2);
+  //   return real;
+  // }
+  // return list1 ? list1 : list2;
+  //---------------OLD SYTLE---------------------//
 }
 
-}  // namespace leetcode
+} // namespace leetcode

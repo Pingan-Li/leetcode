@@ -333,18 +333,17 @@ executable("length_of_longest_substring_unittest") {
 #   ]
 # }
 
-# executable("merge_two_lists_unittests") {
-#   include_dirs = [ "//" ]
+executable("merge_two_lists_unittests") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/merge_two_lists_unittests.cpp" ]
+  sources = [ "//solutions/merge_two_lists_unittests.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
-
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("merge_unittest") {
 #   include_dirs = [ "//" ]
