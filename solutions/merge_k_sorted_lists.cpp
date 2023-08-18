@@ -10,10 +10,38 @@
  */
 
 #include "solutions/merge_k_sorted_lists.h"
+#include "solutions/list_node.h"
+#include <vector>
 
 namespace leetcode {
 
-ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2);
+ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2) {
+  ListNode dummy;
+  ListNode *iter = &dummy;
+
+  while (list1 && list2) {
+    if (list1->val < list2->val) {
+      iter->next = list1;
+      list1 = list1->next;
+    } else {
+      iter->next = list2;
+      list2 = list2->next;
+    }
+    iter = iter->next;
+  }
+  iter->next = list1 ? list1 : list2;
+  return dummy.next;
+}
+
+ListNode *Merge(std::vector<ListNode *> &lists, int left, int right) {
+  if (left == right)
+    return lists[left];
+  if (left > right)
+    return nullptr;
+  int mid = (right + left) >> 1;
+  return MergeTwoSortedLists(Merge(lists, left, mid),
+                             Merge(lists, mid + 1, right));
+}
 /**
  * @brief needs optimization.
  *
@@ -22,44 +50,35 @@ ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2);
  */
 
 ListNode *MergeKSortedLists(std::vector<ListNode *> &lists) {
-  ListNode *merged;
-  if (lists.empty()) {
-    merged = nullptr;
-  } else {
-    merged = lists.front();
-    for (std::size_t index = 1; index < lists.size(); ++index) {
-      merged = MergeTwoSortedLists(merged, lists[index]);
-    }
-  }
-  return merged;
+    return Merge(lists, 0, lists.size() - 1);
 }
 
-ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2) {
-  if (list1 && list2) {
-    ListNode *real;
-    ListNode *iter;
-    if (list1->val < list2->val) {
-      real = list1;
-      list1 = list1->next;
-    } else {
-      real = list2;
-      list2 = list2->next;
-    }
-    iter = real;
-    while (list1 && list2) {
-      if (list1->val < list2->val) {
-        iter->next = list1;
-        list1 = list1->next;
-      } else {
-        iter->next = list2;
-        list2 = list2->next;
-      }
-      iter = iter->next;
-    }
-    iter->next = ((list1) ? list1 : list2);
-    return real;
-  }
-  return list1 ? list1 : list2;
-}
+// ListNode *MergeTwoSortedLists(ListNode *list1, ListNode *list2) {
+//   if (list1 && list2) {
+//     ListNode *real;
+//     ListNode *iter;
+//     if (list1->val < list2->val) {
+//       real = list1;
+//       list1 = list1->next;
+//     } else {
+//       real = list2;
+//       list2 = list2->next;
+//     }
+//     iter = real;
+//     while (list1 && list2) {
+//       if (list1->val < list2->val) {
+//         iter->next = list1;
+//         list1 = list1->next;
+//       } else {
+//         iter->next = list2;
+//         list2 = list2->next;
+//       }
+//       iter = iter->next;
+//     }
+//     iter->next = ((list1) ? list1 : list2);
+//     return real;
+//   }
+//   return list1 ? list1 : list2;
+// }
 
-}  // namespace leetcode
+} // namespace leetcode

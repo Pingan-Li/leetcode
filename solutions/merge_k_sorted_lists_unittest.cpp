@@ -11,9 +11,7 @@
 
 #include "solutions/merge_k_sorted_lists.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-#include <tuple>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(merge_k_sorted_lists, case_0) {
@@ -36,4 +34,4 @@ TEST(merge_k_sorted_lists, case_1) {
   ListNode *ret = MergeKSortedLists(lists);
   std::ignore = ret;
 }
-}  // namespace leetcode
+} // namespace leetcode
