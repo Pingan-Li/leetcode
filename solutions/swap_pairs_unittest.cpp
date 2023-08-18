@@ -9,10 +9,9 @@
  *
  */
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include "solutions/swap_pairs.h"
+
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(swap_paris, case_0) {
@@ -39,4 +38,4 @@ TEST(swap_paris, case_2) {
   PrintList(ret);
 }
 
-}  // namespace leetcode
+} // namespace leetcode

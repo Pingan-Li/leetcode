@@ -525,18 +525,17 @@ executable("remove_nth_from_end_unittest") {
 #   ]
 # }
 
-# executable("swap_paris_unittest") {
-#   include_dirs = [ "//" ]
+executable("swap_pairs_unittest") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/swap_paris_unittest.cpp" ]
+  sources = [ "//solutions/swap_pairs_unittest.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
-
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("title_to_number_unittest") {
 #   include_dirs = [ "//" ]
