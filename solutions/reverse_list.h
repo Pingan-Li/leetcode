@@ -18,6 +18,6 @@ namespace leetcode {
 
 ListNode *ReverseList(ListNode *head);
 
-}  // namespace leetcode
+} // namespace leetcode
 
-#endif  // LEETCODE_REVERSE_LIST_H_
+#endif // LEETCODE_REVERSE_LIST_H_

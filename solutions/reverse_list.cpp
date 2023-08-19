@@ -10,26 +10,41 @@
  */
 
 #include "solutions/reverse_list.h"
+#include "solutions/list_node.h"
 
 namespace leetcode {
 //
 //  prev -> curr -> next
 //
+//  prev <- curr <- next
+//
 ListNode *ReverseList(ListNode *head) {
-  if (head && head->next) {
-    ListNode *prev = nullptr;
-    ListNode *curr = head;
-    ListNode *next;
-    while (curr) {
-      next = curr->next;
-      curr->next = prev;
-      prev = curr;
-      curr = next;
-    }
-    return prev;
-  } else {
-    return head;
+  ListNode *prev = nullptr;
+  ListNode *curr = head;
+  ListNode *next = nullptr;
+  while (curr) {
+    next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
   }
+  // prev-> curr(nullptr)
+  return prev;
+
+  // if (head && head->next) {
+  //   ListNode *prev = nullptr;
+  //   ListNode *curr = head;
+  //   ListNode *next;
+  //   while (curr) {
+  //     next = curr->next;
+  //     curr->next = prev;
+  //     prev = curr;
+  //     curr = next;
+  //   }
+  //   return prev;
+  // } else {
+  //   return head;
+  // }
 }
 
-}  // namespace leetcode
+} // namespace leetcode

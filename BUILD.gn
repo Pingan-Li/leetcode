@@ -447,18 +447,17 @@ executable("remove_nth_from_end_unittest") {
   ]
 }
 
-# executable("reverse_list_unittest") {
-#   include_dirs = [ "//" ]
+executable("reverse_list_unittest") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/reverse_list_unittest.cpp" ]
+  sources = [ "//solutions/reverse_list_unittest.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
-
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("reverse_print_unittest") {
 #   include_dirs = [ "//" ]
