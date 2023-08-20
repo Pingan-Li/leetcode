@@ -36,18 +36,17 @@ executable("add_two_numbers_unittest") {
 #   ]
 # }
 
-# executable("delete_duplicates_unittest") {
-#   include_dirs = [ "//" ]
+executable("delete_duplicates_unittest") {
+  include_dirs = [ "//" ]
 
-#   sources = [ "//test/solutions/delete_duplicates_unittest.cpp" ]
+  sources = [ "//solutions/delete_duplicates_unittest.cpp" ]
 
-#   deps = [ "//solutions:solutions" ]
-
-#   libs = [
-#     "gtest",
-#     "gtest_main",
-#   ]
-# }
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 # executable("delete_duplicates2_unittest") {
 #   include_dirs = [ "//" ]

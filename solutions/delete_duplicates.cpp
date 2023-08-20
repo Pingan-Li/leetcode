@@ -13,21 +13,21 @@
 
 namespace leetcode {
 ListNode *DeleteDuplicates(ListNode *head) {
-  if (head) {
-    ListNode *iter = head;
-    ListNode *temp = iter;
-    while (iter && iter->next) {
-      if (iter->val == iter->next->val) {
-        temp = iter->next;
-        iter->next = temp->next;
-        delete temp;
-      } else {
-        iter = iter->next;
-      }
-    }
-    return head;
-  } else {
+  if (!head) {
     return nullptr;
   }
+
+  ListNode *iter = head;
+  ListNode *temp = iter;
+  while (iter && iter->next) {
+    if (iter->val == iter->next->val) {
+      temp = iter->next;
+      iter->next = temp->next;
+      delete temp;
+    } else {
+      iter = iter->next;
+    }
+  }
+  return head;
 }
-}  // namespace leetcode
+} // namespace leetcode
