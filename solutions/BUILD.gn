@@ -36,6 +36,8 @@ source_set("solutions_sources") {
     "in_order_traversal.h",
     "is_palindrome.cpp",
     "is_palindrome.h",
+    "is_palindrome2.cc",
+    "is_palindrome2.h",
     "kth_to_last.cpp",
     "kth_to_last.h",
     "length_of_last_word.cpp",

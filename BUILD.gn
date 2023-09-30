@@ -705,3 +705,13 @@ executable("multi_thread_1114_tests") {
     "//testing:gtest_main",
   ]
 }
+
+executable("is_palindrome2_tests") {
+  sources = [ "solutions/is_palindrome2_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
