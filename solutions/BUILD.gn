@@ -64,6 +64,8 @@ source_set("solutions_sources") {
     "merge_two_lists.h",
     "middle_node.cpp",
     "middle_node.h",
+    "multi_thread_1114.cc",
+    "multi_thread_1114.h",
     "odd_even_list.cpp",
     "odd_even_list.h",
     "post_order_traversal.cpp",

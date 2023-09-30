@@ -9,6 +9,7 @@
  *
  */
 #include "solutions/longest_common_prefix.h"
+#include <cstdint>
 
 namespace leetcode {
 
@@ -41,4 +42,4 @@ std::string LongestCommonPrefix(std::vector<std::string> &strs) {
   }
 }
 
-}  // namespace leetcode
+} // namespace leetcode
