@@ -715,3 +715,13 @@ executable("is_palindrome2_tests") {
     "//testing:gtest_main",
   ]
 }
+
+executable("is_subsequnce_tests") {
+  sources = [ "solutions/is_subsequence_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}

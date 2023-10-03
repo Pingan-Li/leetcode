@@ -38,6 +38,8 @@ source_set("solutions_sources") {
     "is_palindrome.h",
     "is_palindrome2.cc",
     "is_palindrome2.h",
+    "is_subsequence.cc",
+    "is_subsequence.h",
     "kth_to_last.cpp",
     "kth_to_last.h",
     "length_of_last_word.cpp",
