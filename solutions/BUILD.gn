@@ -52,6 +52,8 @@ source_set("solutions_sources") {
     "longest_common_prefix.h",
     "longest_palindrome.cc",
     "longest_palindrome.h",
+    "majority_element.cc",
+    "majority_element.h",
     "matrix_reshape.cpp",
     "matrix_reshape.h",
     "max_area.cpp",
