@@ -11,38 +11,10 @@
 
 #include "solutions/merge.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
-TEST(merge, case_0) {
-  std::vector<int> nums1{1, 3, 5, 7, 9};
-  std::vector<int> nums2{2, 4, 6, 8, 10};
-  Merge(nums1, 5, nums2, 5);
-  for (auto iter = nums1.begin(); iter != nums1.end(); ++iter) {
-    std::cout << *iter;
-  }
-}
-
-TEST(merge, case_1) {
-  std::vector<int> nums1{1, 3, 5, 7, 9};
-  std::vector<int> nums2{};
-  Merge(nums1, 5, nums2, 0);
-  for (auto iter = nums1.begin(); iter != nums1.end(); ++iter) {
-    std::cout << *iter;
-  }
-}
-
-TEST(merge, case_2) {
-  std::vector<int> nums1{1, 3, 5, 7, 9};
-  std::vector<int> nums2{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-  Merge(nums1, 5, nums2, nums2.size());
-  for (auto iter = nums1.begin(); iter != nums1.end(); ++iter) {
-    std::cout << *iter;
-  }
-}
-
-TEST(merge, case_3) {
+TEST(merge, Case0) {
   std::vector<int> nums1{1, 2, 3, 0, 0, 0};
   std::vector<int> nums2{2, 5, 6};
   Merge(nums1, 3, nums2, 3);
@@ -50,4 +22,22 @@ TEST(merge, case_3) {
     std::cout << *iter;
   }
 }
-}  // namespace leetcode
+
+TEST(merge, Case1) {
+  std::vector<int> nums1{1, 2, 3, 0, 0, 0};
+  std::vector<int> nums2{1, 1, 1};
+  Merge(nums1, 3, nums2, 3);
+  for (auto iter = nums1.begin(); iter != nums1.end(); ++iter) {
+    std::cout << *iter;
+  }
+}
+
+TEST(merge, Case2) {
+  std::vector<int> nums1{1, 1, 1, 0, 0, 0};
+  std::vector<int> nums2{1, 1, 1};
+  Merge(nums1, 3, nums2, 3);
+  for (auto iter = nums1.begin(); iter != nums1.end(); ++iter) {
+    std::cout << *iter;
+  }
+}
+} // namespace leetcode
