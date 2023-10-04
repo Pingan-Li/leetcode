@@ -2,6 +2,8 @@ source_set("solutions_sources") {
   include_dirs = [ "//" ]
 
   sources = [
+    "add_binary.cc",
+    "add_binary.h",
     "add_two_numbers.cpp",
     "add_two_numbers.h",
     "contains_duplicate.cpp",
@@ -82,6 +84,8 @@ source_set("solutions_sources") {
     "remove_duplicate_nodes.h",
     "remove_duplicates.cc",
     "remove_duplicates.h",
+    "remove_element.cc",
+    "remove_element.h",
     "remove_elements.cpp",
     "remove_elements.h",
     "remove_nth_from_end.cpp",

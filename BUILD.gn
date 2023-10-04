@@ -744,3 +744,23 @@ executable("remove_duplicates_tests") {
     "//testing:gtest_main",
   ]
 }
+
+executable("remove_element_tests") {
+  sources = [ "solutions/remove_element_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
+executable("add_binary_tests") {
+  sources = [ "solutions/add_binary_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
