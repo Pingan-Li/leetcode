@@ -84,6 +84,8 @@ source_set("solutions_sources") {
     "remove_duplicate_nodes.h",
     "remove_duplicates.cc",
     "remove_duplicates.h",
+    "remove_duplicates2.cc",
+    "remove_duplicates2.h",
     "remove_element.cc",
     "remove_element.h",
     "remove_elements.cpp",

@@ -745,6 +745,16 @@ executable("remove_duplicates_tests") {
   ]
 }
 
+executable("remove_duplicates2_tests") {
+  sources = [ "solutions/remove_duplicates2_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 executable("remove_element_tests") {
   sources = [ "solutions/remove_element_tests.cc" ]
 

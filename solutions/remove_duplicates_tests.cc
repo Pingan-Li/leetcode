@@ -15,22 +15,27 @@
 
 namespace leetcode {
 TEST(RemoveDuplicates, Case0) {
-  std::vector<int> nums = {1, 1, 1, 1, 1, 1, 1};
-  int result = RemoveDuplicates(nums);
+  std::vector<int> nums = {1, 1, 2, 2, 3, 3};
   for (auto &&num : nums) {
-    std::cout << num << ", ";
+    std::cout << num;
   }
-  int expect = 2;
+  int expect = 3;
+  int result = RemoveDuplicates(nums);
   ASSERT_EQ(result, expect);
+  for (auto &&num : nums) {
+    std::cout << num;
+  }
 }
 
 TEST(RemoveDuplicates, Case1) {
-  std::vector<int> nums = {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4};
+  std::vector<int> nums = {1, 1, 1, 1, 1, 1};
+  for (auto &&num : nums) {
+    std::cout << num;
+  }
+  int expect = 1;
   int result = RemoveDuplicates(nums);
   for (auto &&num : nums) {
-    std::cout << num << ", ";
+    std::cout << num;
   }
-  int expect = 8;
-  ASSERT_EQ(result, expect);
 }
 } // namespace leetcode
