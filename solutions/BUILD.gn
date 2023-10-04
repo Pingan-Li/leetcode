@@ -80,6 +80,8 @@ source_set("solutions_sources") {
     "pre_order_traversal.h",
     "remove_duplicate_nodes.cpp",
     "remove_duplicate_nodes.h",
+    "remove_duplicates.cc",
+    "remove_duplicates.h",
     "remove_elements.cpp",
     "remove_elements.h",
     "remove_nth_from_end.cpp",

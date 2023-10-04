@@ -735,3 +735,13 @@ executable("majority_element_tests") {
     "//testing:gtest_main",
   ]
 }
+
+executable("remove_duplicates_tests") {
+  sources = [ "solutions/remove_duplicates_tests.cc" ]
+
+  deps = [
+    "//solutions:solutions_sources",
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
