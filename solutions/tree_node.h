@@ -15,13 +15,13 @@
 namespace leetcode {
 
 struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
+  int val = 0;
+  TreeNode *left = nullptr;
+  TreeNode *right = nullptr;
   TreeNode();
   TreeNode(int x);
   TreeNode(int x, TreeNode *left, TreeNode *right);
 };
 
-}  // namespace leetcode
-#endif  // LEETCODE_TREE_NODE_H_
+} // namespace leetcode
+#endif // LEETCODE_TREE_NODE_H_
