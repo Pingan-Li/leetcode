@@ -11,18 +11,18 @@
 
 #include "solutions/max_profit.h"
 
-#include <climits>
+#include <limits>
 
 namespace leetcode {
 
 int MaxProfit(std::vector<int> &prices) {
-  int lowestPrice = INT_MAX;
-  int higestProfit = 0;
-  for (auto p : prices) {
-    higestProfit = std::max(higestProfit, p - lowestPrice);
-    lowestPrice = std::min(p, lowestPrice);
+  int lowest_price = std::numeric_limits<int>::max();
+  int highest_profit = 0;
+  for (auto price : prices) {
+    highest_profit = std::max(highest_profit, price - lowest_price);
+    lowest_price = std::min(price, lowest_price);
   }
-  return higestProfit;
+  return highest_profit;
 }
 
-}  // namespace leetcode
+} // namespace leetcode
