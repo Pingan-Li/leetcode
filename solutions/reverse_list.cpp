@@ -28,23 +28,38 @@ ListNode *ReverseList(ListNode *head) {
     prev = curr;
     curr = next;
   }
-  // prev-> curr(nullptr)
+  // prev -> curr(nullptr)
   return prev;
-
-  // if (head && head->next) {
-  //   ListNode *prev = nullptr;
-  //   ListNode *curr = head;
-  //   ListNode *next;
-  //   while (curr) {
-  //     next = curr->next;
-  //     curr->next = prev;
-  //     prev = curr;
-  //     curr = next;
-  //   }
-  //   return prev;
-  // } else {
-  //   return head;
-  // }
 }
 
+ListNode *ReverseListSolutionImplA::ReverseList(ListNode *head) {
+  if (head && head->next) {
+    ListNode *prev = nullptr;
+    ListNode *curr = head;
+    ListNode *next;
+    while (curr) {
+      next = curr->next;
+      curr->next = prev;
+      prev = curr;
+      curr = next;
+    }
+    return prev;
+  } else {
+    return head;
+  }
+}
+
+ListNode *ReverseListSolutionImplB::ReverseList(ListNode *head) {
+  ListNode *prev = nullptr;
+  ListNode *curr = head;
+  ListNode *next = nullptr;
+  while (curr) {
+    next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
+  }
+  // prev -> curr(nullptr)
+  return prev;
+}
 } // namespace leetcode

@@ -18,6 +18,20 @@ namespace leetcode {
 
 ListNode *ReverseList(ListNode *head);
 
+class ReverseListSolution {
+public:
+  virtual ListNode *ReverseList(ListNode *head) = 0;
+};
+
+class ReverseListSolutionImplA : public ReverseListSolution {
+public:
+  ListNode *ReverseList(ListNode *head) override;
+};
+
+class ReverseListSolutionImplB : public ReverseListSolution {
+public:
+  ListNode *ReverseList(ListNode *head) override;
+};
 } // namespace leetcode
 
 #endif // LEETCODE_REVERSE_LIST_H_

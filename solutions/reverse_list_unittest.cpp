@@ -12,9 +12,17 @@
 #include "solutions/reverse_list.h"
 
 #include "testing/googletest/include/gtest/gtest.h"
+#include <memory>
 
 namespace leetcode {
-TEST(reverse_list, case_0) {
+class ReverseListSolutionTestHelper : public testing::Test {
+public:
+  void SetUp() override {
+    solution = std::make_unique<ReverseListSolutionImplA>();
+  }
+  std::unique_ptr<ReverseListSolution> solution;
+};
+TEST_F(ReverseListSolutionTestHelper, Case0) {
   std::vector<int> vec{1, 2, 3, 4, 5};
   ListNode *head = SpawnList(vec);
   PrintList(head);
@@ -22,12 +30,12 @@ TEST(reverse_list, case_0) {
   PrintList(ret);
 }
 
-TEST(reverse_list, case_1) {
+TEST_F(ReverseListSolutionTestHelper, Case1) {
   ListNode *ret = ReverseList(nullptr);
   PrintList(ret);
 }
 
-TEST(reverse_list, case_2) {
+TEST_F(ReverseListSolutionTestHelper, Case2) {
   std::vector<int> vec{1, 2};
   ListNode *head = SpawnList(vec);
   PrintList(head);

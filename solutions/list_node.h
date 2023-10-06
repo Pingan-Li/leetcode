@@ -20,8 +20,8 @@
 
 namespace leetcode {
 struct ListNode {
-  int val;
-  ListNode *next;
+  int val = 0;
+  ListNode *next = nullptr;
   ListNode();
   ListNode(int x);
   ListNode(int x, ListNode *next);
@@ -36,6 +36,6 @@ std::size_t FreeList(ListNode *head);
 bool Equal(const ListNode *list1, const ListNode *list2);
 
 std::size_t Length(const ListNode *list);
-}  // namespace leetcode
+} // namespace leetcode
 
-#endif  // LIST_NODE_H_
+#endif // LIST_NODE_H_
