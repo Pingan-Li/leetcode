@@ -22,11 +22,12 @@ ListNode::ListNode(int x, ListNode *next) : val(x), next(next) {}
 
 void PrintList(const ListNode *head) {
   if (head != nullptr) {
+    std::cout << "[ ";
     while (head) {
       std::cout << head->val << " ";
       head = head->next;
     }
-    std::cout << std::endl;
+    std::cout << "]\n";
   }
 }
 
@@ -81,4 +82,4 @@ size_t Length(const ListNode *list) {
   return 0;
 }
 
-}  // namespace leetcode
+} // namespace leetcode

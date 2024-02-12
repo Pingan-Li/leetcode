@@ -19,9 +19,8 @@ void RecursiveGet(ListNode *head, std::vector<int> &vec) {
     // then push.
     vec.push_back(head->val);
     return;
-  } else {
-    return;
   }
+  return;
 }
 std::vector<int> ReversePrint(ListNode *head) {
   std::vector<int> ret;
@@ -41,4 +40,4 @@ std::vector<int> ReversePrint2(ListNode *head) {
     return {};
   }
 }
-}  // namespace leetcode
+} // namespace leetcode

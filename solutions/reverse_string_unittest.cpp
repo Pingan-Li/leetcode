@@ -9,20 +9,19 @@
  *
  */
 
-#include "solutions/reverse_string.h"
-
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include <iostream>
 #include <vector>
+
+#include "base/auxiliary.h"
+#include "solutions/reverse_string.h"
+#include "testing/googletest/include/gtest/gtest.h"
+
 namespace leetcode {
-TEST(reverse_string, case_0) {
+TEST(ReverseString, Case0) {
   std::vector<char> s{'a', 'b', 'c'};
   ReverseString(s);
-  for (auto ch : s) {
-    std::cout << ch << ',';
-  }
-  std::cout << '\n';
+  base::Print(s.begin(), s.end());
 }
-}  // namespace leetcode
+
+TEST(Revers)
+} // namespace leetcode

@@ -32,6 +32,8 @@ source_set("solutions_sources") {
     "get_intersection_node.h",
     "get_kth_from_end.cpp",
     "get_kth_from_end.h",
+    "group_anagrams.h",
+    "group_anagrams.cc",
     "has_cycle.cpp",
     "has_cycle.h",
     "in_order_traversal.cpp",

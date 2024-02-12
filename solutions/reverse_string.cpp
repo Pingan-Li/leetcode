@@ -14,17 +14,14 @@
 namespace leetcode {
 
 void ReverseString(std::vector<char> &s) {
-  std::size_t index{0};
-  std::size_t rIndex{s.size() - 1};
-  std::size_t mid{s.size() / 2};
-  char temp;
-  while (index < mid) {
-    temp = s[index];
-    s[index] = s[rIndex];
-    s[rIndex] = temp;
-    ++index;
-    --rIndex;
+  if (s.empty()) {
+    return;
+  }
+  std::size_t i = 0;
+  std::size_t j = s.size() - 1;
+  while (i < j) {
+    std::swap(s[i++], s[j--]);
   }
 }
 
-}  // namespace leetcode
+} // namespace leetcode
