@@ -9,11 +9,12 @@
  *
  */
 
+#include "solutions/reverse_string.h"
+
 #include <iostream>
 #include <vector>
 
 #include "base/auxiliary.h"
-#include "solutions/reverse_string.h"
 #include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
@@ -23,5 +24,4 @@ TEST(ReverseString, Case0) {
   base::Print(s.begin(), s.end());
 }
 
-TEST(Revers)
-} // namespace leetcode
+}  // namespace leetcode

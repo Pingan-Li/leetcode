@@ -18,5 +18,5 @@ namespace leetcode {
 
 ListNode *SwapPairs(ListNode *head);
 
-} // namespace leetcode
-#endif // LEETCODE_SWAP_PAIRS_H_
+}  // namespace leetcode
+#endif  // LEETCODE_SWAP_PAIRS_H_

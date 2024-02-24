@@ -38,4 +38,4 @@ TEST(swap_paris, case_2) {
   PrintList(ret);
 }
 
-} // namespace leetcode
+}  // namespace leetcode

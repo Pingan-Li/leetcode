@@ -11,8 +11,6 @@
 
 #include "algorithms/sort.h"
 
-#include <gtest/gtest.h>
-
 #include <algorithm>
 #include <cstring>
 #include <iostream>
@@ -20,6 +18,7 @@
 
 #include "algorithms/comparator.h"
 #include "algorithms/helper.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace algorithms {
 

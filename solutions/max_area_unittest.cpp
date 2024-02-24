@@ -11,8 +11,7 @@
 
 #include "solutions/max_area.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(max_area, case_0) {

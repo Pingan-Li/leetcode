@@ -11,8 +11,7 @@
 
 #include "solutions/convert_to_title.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(convert_to_title, case_0) {

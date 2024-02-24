@@ -24,8 +24,7 @@ namespace leetcode {
 //
 // m -> 1 -> 0 -> 2
 ListNode *SwapPairs(ListNode *head) {
-  if (!head)
-    return nullptr;
+  if (!head) return nullptr;
 
   ListNode mock(0, head);
   ListNode *curr = &mock;
@@ -58,4 +57,4 @@ ListNode *SwapPairs(ListNode *head) {
   // }
 }
 
-} // namespace leetcode
+}  // namespace leetcode

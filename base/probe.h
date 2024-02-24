@@ -14,7 +14,7 @@
 
 #include <cstddef>
 namespace base {
-class Probe {
+class __attribute__((visibility("default"))) Probe {
  public:
   Probe();
 
@@ -31,8 +31,6 @@ class Probe {
   static std::size_t ConstructorInvokeCount();
 
   static std::size_t DestructorInvokeCount();
-
- private:
 };
 }  // namespace base
 

@@ -11,8 +11,7 @@
 
 #include "solutions/contains_duplicate.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(contains_duplicate, case_0) {

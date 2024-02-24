@@ -11,9 +11,7 @@
 
 #include "solutions/split_list_to_parts.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
+#include "testing/googletest/include/gtest/gtest.h"
 namespace leetcode {
 TEST(split_list_to_parts, case_0) {
   ListNode *head = SpawnList(std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});

@@ -15,6 +15,7 @@
 
 #include <cstddef>
 #include <tuple>
+
 static std::size_t g_constructor_invoke_count{0};
 static std::size_t g_destructor_invoke_count{0};
 

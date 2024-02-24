@@ -11,8 +11,8 @@
 
 #include "solutions/detect_cycle.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
+
 namespace leetcode {
 TEST(detect_cycle, case_0) {}
 }  // namespace leetcode

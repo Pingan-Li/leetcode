@@ -10,9 +10,7 @@
  */
 #include "solutions/max_sub_array.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
+#include "testing/googletest/include/gtest/gtest.h"
 namespace leetcode {
 TEST(max_sub_array, case_0) {
   std::vector<int> vector{-2, 1, -3, 4, -1, 2, 1, -5, 4};

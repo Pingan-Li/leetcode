@@ -11,8 +11,7 @@
 
 #include "solutions/title_to_number.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(title_to_number, case_0) { std::cout << TitleToNumber("Z"); }

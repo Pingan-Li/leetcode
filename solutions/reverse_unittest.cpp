@@ -11,10 +11,9 @@
 
 #include "solutions/reverse.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include <iostream>
+
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(reverse, case_0) {

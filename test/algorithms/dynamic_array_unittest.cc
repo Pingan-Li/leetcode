@@ -15,7 +15,7 @@
 
 #include <vector>
 
-#include "gtest/gtest.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace algorithms {
 

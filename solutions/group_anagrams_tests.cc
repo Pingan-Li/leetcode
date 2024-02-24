@@ -10,9 +10,6 @@
  */
 
 #include "solutions/group_anagrams.h"
-
 #include "testing/googletest/include/gtest/gtest.h"
 
-TEST(GroupAnagrams, Case0) {
-    
-}>
+TEST(GroupAnagrams, Case0) {}

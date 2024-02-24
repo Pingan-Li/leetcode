@@ -9,9 +9,10 @@
  *
  */
 
+#include "solutions/two_sum.h"
+
 #include <vector>
 
-#include "solutions/two_sum.h"
 #include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {

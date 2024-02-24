@@ -11,8 +11,7 @@
 
 #include "solutions/str_str.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(str_str, case_0) {

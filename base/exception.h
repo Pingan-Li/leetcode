@@ -16,7 +16,7 @@
 
 namespace base {
 
-class Exception {
+class __attribute__((visibility("default"))) Exception {
  public:
   Exception() noexcept;
 
@@ -33,7 +33,8 @@ class Exception {
   virtual std::string Message() const noexcept = 0;
 };
 
-class IndexOutOfRangeException : public Exception {
+class __attribute__((visibility("default"))) IndexOutOfRangeException
+    : public Exception {
  public:
   IndexOutOfRangeException(std::size_t index, std::size_t range) noexcept;
 

@@ -11,8 +11,7 @@
 
 #include "solutions/remove_duplicate_nodes.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(remove_duplicate_nodes, case_0) {

@@ -10,13 +10,13 @@
  */
 
 #include <glog/logging.h>
-#include <gtest/gtest.h>
 
 #include <chrono>
 #include <cstddef>
 
 #include "base/probe.h"
 #include "base/stack2.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace base {
 

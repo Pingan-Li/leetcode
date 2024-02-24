@@ -26,4 +26,4 @@ std::vector<int> TwoSum(std::vector<int> &nums, int target) {
   }
   return {};
 }
-} // namespace leetcode
+}  // namespace leetcode

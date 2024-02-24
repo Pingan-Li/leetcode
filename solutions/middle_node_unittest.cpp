@@ -11,8 +11,7 @@
 
 #include "solutions/middle_node.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace leetcode {
 TEST(middle_node_unittest, case_0) {

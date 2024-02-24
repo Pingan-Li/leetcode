@@ -10,7 +10,6 @@
  */
 
 #include <glog/logging.h>
-#include <gtest/gtest.h>
 
 #include <chrono>
 #include <new>
@@ -18,6 +17,7 @@
 
 #include "base/probe.h"
 #include "base/stack.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace base {
 

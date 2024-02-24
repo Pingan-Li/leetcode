@@ -15,18 +15,10 @@
 #include <vector>
 
 #include "base/exception.h"
-#include "gtest/gtest.h"
+#include "testing/googletest/include/gtest/gtest.h"
 
 namespace base {
 
-// class ArrayListFixture : public testing::Test {
-//  protected:
-//   void SetUp() override {}
-
-//   void TearDown() override {}
-// };
-
-// TEST_F(ArrayListFixture, Constrctor) {}
 TEST(array_list, empty_array_list) {
   ArrayList<int> array_list;
   ASSERT_EQ(array_list.IsEmpty(), true);
