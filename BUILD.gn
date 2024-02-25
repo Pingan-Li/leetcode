@@ -663,6 +663,20 @@ executable("fib") {
   ]
 }
 
+executable("tribonacci") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/tribonacci_tests.cc",
+    "solutions/dp/tribonacci.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
