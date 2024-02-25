@@ -691,6 +691,20 @@ executable("min_cost_climbing_stairs") {
   ]
 }
 
+executable("rob") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/rob.cc",
+    "solutions/dp/rob_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
