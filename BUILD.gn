@@ -653,8 +653,8 @@ executable("fib") {
   include_dirs = [ "//" ]
 
   sources = [
-    "solutions/dp/fib_tests.cc",
     "solutions/dp/fib.cc",
+    "solutions/dp/fib_tests.cc",
   ]
 
   deps = [
@@ -667,8 +667,22 @@ executable("tribonacci") {
   include_dirs = [ "//" ]
 
   sources = [
-    "solutions/dp/tribonacci_tests.cc",
     "solutions/dp/tribonacci.cc",
+    "solutions/dp/tribonacci_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
+executable("min_cost_climbing_stairs") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/min_cost_climbing_stairs.cc",
+    "solutions/dp/min_cost_climbing_stairs_tests.cc",
   ]
 
   deps = [

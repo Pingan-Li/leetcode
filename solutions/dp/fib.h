@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef SOLUTIONS_DP_CLIMB_STAIRS_H_
-#define SOLUTIONS_DP_CLIMB_STAIRS_H_
+#ifndef SOLUTIONS_DP_FIB_H_
+#define SOLUTIONS_DP_FIB_H_
 namespace leetcode {
 class Solution {
  public:
