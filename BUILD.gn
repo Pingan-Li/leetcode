@@ -624,6 +624,21 @@ executable("invert_tree_tests") {
   ]
 }
 
+# DP
+executable("climb_stairs") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/climb_stairs.cc",
+    "solutions/dp/climb_stairs_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 executable("group_anagrams") {
   sources = [ "solutions/group_anagrams_tests.cc" ]
 
