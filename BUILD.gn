@@ -705,6 +705,23 @@ executable("rob") {
   ]
 }
 
+executable("delete_and_earn") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/delete_and_earn.cc",
+    "solutions/dp/delete_and_earn_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
