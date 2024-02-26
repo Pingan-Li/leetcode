@@ -15,7 +15,7 @@
 #include "solutions/dp/delete_and_earn.h"
 #include "testing/googletest/include/gtest/gtest.h"
 
-class DeleteAndEarnText : public testing::Test {
+class DeleteAndEarnTest : public testing::Test {
  public:
   void SetUp() override {
     solution_ = std::make_unique<leetcode::SolutionImpl>();
@@ -24,7 +24,7 @@ class DeleteAndEarnText : public testing::Test {
   std::unique_ptr<leetcode::Solution> solution_;
 };
 
-TEST_F(DeleteAndEarnText, Case0) {
+TEST_F(DeleteAndEarnTest, Case0) {
   std::vector<int> nums{3, 4, 2};
 
   auto result = solution_->DeleteAndEarn(nums);
@@ -33,7 +33,7 @@ TEST_F(DeleteAndEarnText, Case0) {
   ASSERT_EQ(result, answer);
 }
 
-TEST_F(DeleteAndEarnText, Case1) {
+TEST_F(DeleteAndEarnTest, Case1) {
   std::vector<int> nums{2, 2, 3, 3, 3, 4};
 
   auto result = solution_->DeleteAndEarn(nums);
@@ -42,7 +42,7 @@ TEST_F(DeleteAndEarnText, Case1) {
   ASSERT_EQ(result, answer);
 }
 
-TEST_F(DeleteAndEarnText, Case2) {
+TEST_F(DeleteAndEarnTest, Case2) {
   std::vector<int> nums{3, 1};
 
   auto result = solution_->DeleteAndEarn(nums);
@@ -51,7 +51,7 @@ TEST_F(DeleteAndEarnText, Case2) {
   ASSERT_EQ(result, answer);
 }
 
-TEST_F(DeleteAndEarnText, Case3) {
+TEST_F(DeleteAndEarnTest, Case3) {
   std::vector<int> nums{1};
 
   auto result = solution_->DeleteAndEarn(nums);

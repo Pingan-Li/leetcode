@@ -722,6 +722,20 @@ executable("delete_and_earn") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("unique_paths") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/unique_paths.cc",
+    "solutions/dp/unique_paths_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
