@@ -736,6 +736,21 @@ executable("unique_paths") {
   ]
 }
 
+executable("min_path_sum") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/min_path_sum.cc",
+    "solutions/dp/min_path_sum_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
+
 #=============================================================================#
 
 executable("sort_unittest") {
