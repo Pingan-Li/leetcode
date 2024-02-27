@@ -778,6 +778,20 @@ executable("longest_consecutive") {
   ]
 }
 
+executable("two_sum") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/two_sum.cc",
+    "solutions/hot100/two_sum_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
