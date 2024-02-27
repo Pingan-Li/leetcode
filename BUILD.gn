@@ -750,6 +750,19 @@ executable("min_path_sum") {
   ]
 }
 
+executable("unique_paths_with_obstacles") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/dp/unique_paths_with_obstacles.cc",
+    "solutions/dp/unique_paths_with_obstacles_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 
 #=============================================================================#
 
