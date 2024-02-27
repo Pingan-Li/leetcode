@@ -792,6 +792,19 @@ executable("two_sum") {
   ]
 }
 
+executable("move_zeroes") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/move_zeroes.cc",
+    "solutions/hot100/move_zeroes_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
 #=============================================================================#
 
 executable("sort_unittest") {
