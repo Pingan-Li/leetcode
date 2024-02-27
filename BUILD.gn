@@ -764,6 +764,20 @@ executable("unique_paths_with_obstacles") {
   ]
 }
 
+executable("longest_consecutive") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/longest_consecutive.cc",
+    "solutions/hot100/longest_consecutive_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
