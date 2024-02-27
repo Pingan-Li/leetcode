@@ -20,7 +20,7 @@ int SolutionImpl::UniquePathsWithObstacles(
   if (obstacle_grid.empty()) return 0;
 
   auto m = obstacle_grid.size();
-  auto n = obstacle_grid.size();
+  auto n = obstacle_grid.front().size();
 
   std::vector<int> r(n, 0);
   std::vector<std::vector<int>> dp;
@@ -28,24 +28,19 @@ int SolutionImpl::UniquePathsWithObstacles(
     dp.push_back(r);
   }
 
-  bool blocked = false;
-  for (auto i = 0; i < m; ++i) {
-    if (obstacle_grid[i][0] == 1) blocked = true;
-    if (blocked) {
+  dp[0][0] = obstacle_grid[0][0] == 1 ? 0 : 1;
+  for (auto i = 1; i < m; ++i) {
+    if (obstacle_grid[i][0] == 1)
       dp[i][0] = 0;
-    } else {
-      dp[i][0] = 1;
-    }
+    else
+      dp[i][0] = dp[i - 1][0];
   }
 
-  blocked = false;
-  for (auto j = 0; j < n; ++j) {
-    if (obstacle_grid[0][j] == 1) blocked = true;
-    if (blocked) {
+  for (auto j = 1; j < n; ++j) {
+    if (obstacle_grid[0][j] == 1)
       dp[0][j] = 0;
-    } else {
-      dp[0][j] = 1;
-    }
+    else
+      dp[0][j] = dp[0][j - 1];
   }
 
   for (auto i = 1; i < m; ++i) {

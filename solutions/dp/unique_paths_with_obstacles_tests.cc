@@ -41,3 +41,39 @@ TEST_F(UniquePathsWithObstaclesTest, Case1) {
 
   EXPECT_EQ(result, answer);
 }
+
+TEST_F(UniquePathsWithObstaclesTest, Case2) {
+  std::vector<std::vector<int>> obstacle_grid{{0}};
+
+  auto result = solution_->UniquePathsWithObstacles(obstacle_grid);
+  auto answer = 1;
+
+  EXPECT_EQ(result, answer);
+}
+
+TEST_F(UniquePathsWithObstaclesTest, Case3) {
+  std::vector<std::vector<int>> obstacle_grid{{1}};
+
+  auto result = solution_->UniquePathsWithObstacles(obstacle_grid);
+  auto answer = 0;
+
+  EXPECT_EQ(result, answer);
+}
+
+TEST_F(UniquePathsWithObstaclesTest, Case4) {
+  std::vector<std::vector<int>> obstacle_grid{{0, 1}};
+
+  auto result = solution_->UniquePathsWithObstacles(obstacle_grid);
+  auto answer = 0;
+
+  EXPECT_EQ(result, answer);
+}
+
+TEST_F(UniquePathsWithObstaclesTest, Case5) {
+  std::vector<std::vector<int>> obstacle_grid{{1, 0}};
+
+  auto result = solution_->UniquePathsWithObstacles(obstacle_grid);
+  auto answer = 0;
+
+  EXPECT_EQ(result, answer);
+}
