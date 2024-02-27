@@ -805,6 +805,21 @@ executable("move_zeroes") {
     "//testing:gtest_main",
   ]
 }
+
+executable("max_area") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/max_area.cc",
+    "solutions/hot100/max_area_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
