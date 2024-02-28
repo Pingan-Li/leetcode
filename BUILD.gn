@@ -820,6 +820,21 @@ executable("max_area") {
   ]
 }
 
+executable("is_unique") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/is_unique.cc",
+    "solutions/cci/is_unique_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
+
 #=============================================================================#
 
 executable("sort_unittest") {
