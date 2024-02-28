@@ -820,6 +820,20 @@ executable("max_area") {
   ]
 }
 
+executable("three_sum") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/three_sum.cc",
+    "solutions/hot100/three_sum_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 executable("is_unique") {
   include_dirs = [ "//" ]
 
@@ -833,7 +847,6 @@ executable("is_unique") {
     "//testing:gtest_main",
   ]
 }
-
 
 #=============================================================================#
 
