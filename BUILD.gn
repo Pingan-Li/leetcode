@@ -848,6 +848,20 @@ executable("is_unique") {
   ]
 }
 
+executable("check_permutation") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/check_permutation.cc",
+    "solutions/cci/check_permutation_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
