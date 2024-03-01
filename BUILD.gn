@@ -862,6 +862,20 @@ executable("check_permutation") {
   ]
 }
 
+executable("replace_splaces") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/replace_spaces.cc",
+    "solutions/cci/replace_spaces_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
