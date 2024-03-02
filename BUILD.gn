@@ -876,6 +876,20 @@ executable("replace_splaces") {
   ]
 }
 
+executable("can_permute_palindrome") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/can_permute_palindrome.cc",
+    "solutions/cci/can_permute_palindrome_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
