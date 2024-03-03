@@ -890,6 +890,20 @@ executable("can_permute_palindrome") {
   ]
 }
 
+executable("one_edit_away") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/one_edit_away.cc",
+    "solutions/cci/one_edit_away_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
