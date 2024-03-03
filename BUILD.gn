@@ -932,6 +932,20 @@ executable("rotate") {
   ]
 }
 
+executable("set_zeroes") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/set_zeroes.cc",
+    "solutions/cci/set_zeroes_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
