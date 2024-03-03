@@ -946,6 +946,20 @@ executable("set_zeroes") {
   ]
 }
 
+executable("is_fliped_string") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/is_fliped_string.cc",
+    "solutions/cci/is_fliped_string_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
