@@ -904,6 +904,20 @@ executable("one_edit_away") {
   ]
 }
 
+executable("compress_string") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/compress_string.cc",
+    "solutions/cci/compress_string_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
