@@ -960,6 +960,21 @@ executable("is_fliped_string") {
   ]
 }
 
+executable("remove_duplicate_nodes") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/list_node.cpp",
+    "solutions/cci/remove_duplicate_nodes.cc",
+    "solutions/cci/remove_duplicate_nodes_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
