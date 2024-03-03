@@ -918,6 +918,20 @@ executable("compress_string") {
   ]
 }
 
+executable("rotate") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/rotate.cc",
+    "solutions/cci/rotate_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
