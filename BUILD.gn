@@ -964,9 +964,24 @@ executable("remove_duplicate_nodes") {
   include_dirs = [ "//" ]
 
   sources = [
-    "solutions/list_node.cpp",
     "solutions/cci/remove_duplicate_nodes.cc",
     "solutions/cci/remove_duplicate_nodes_tests.cc",
+    "solutions/list_node.cpp",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+}
+
+executable("partition") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/partition.cc",
+    "solutions/cci/partition_tests.cc",
+    "solutions/list_node.cpp",
   ]
 
   deps = [

@@ -21,24 +21,22 @@ ListNode::ListNode(int x) : val(x), next(nullptr) {}
 ListNode::ListNode(int x, ListNode *next) : val(x), next(next) {}
 
 void PrintList(const ListNode *head) {
-  if (head != nullptr) {
-    std::cout << "[ ";
-    while (head) {
-      std::cout << head->val << " ";
-      head = head->next;
-    }
-    std::cout << "]\n";
+  std::cout << "[ ";
+  while (head) {
+    std::cout << head->val << " ";
+    head = head->next;
   }
+  std::cout << "]\n";
 }
 
 ListNode *SpawnList(const std::vector<int> &elements) {
-  ListNode *head = new ListNode;
-  ListNode *iter = head;
+  ListNode head;
+  ListNode *iter = &head;
   for (const auto &e : elements) {
     iter->next = new ListNode(e);
     iter = iter->next;
   }
-  return head->next;
+  return head.next;
 }
 
 size_t FreeList(ListNode *head) {
@@ -82,4 +80,4 @@ size_t Length(const ListNode *list) {
   return 0;
 }
 
-} // namespace leetcode
+}  // namespace leetcode
