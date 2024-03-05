@@ -990,6 +990,23 @@ executable("partition") {
   ]
 }
 
+executable("triple_in_one") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/triple_in_one.cc",
+    "solutions/cci/triple_in_one_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
