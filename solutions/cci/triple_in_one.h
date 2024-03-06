@@ -13,7 +13,6 @@
 #define SOLUTIONS_CCI_TRIPLE_IN_ONE_H_
 
 #include <cstring>
-#include <iomanip>
 #include <iostream>
 
 namespace leetcode {

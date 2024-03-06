@@ -1007,6 +1007,23 @@ executable("triple_in_one") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("min_stack") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/min_stack.cc",
+    "solutions/cci/min_stack_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
