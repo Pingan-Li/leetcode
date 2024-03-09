@@ -1059,6 +1059,24 @@ executable("my_queue") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("add_two_numbers") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/add_two_numbers.cc",
+    "solutions/cci/add_two_numbers_tests.cc",
+    "solutions/list_node.cpp",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
