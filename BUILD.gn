@@ -1129,6 +1129,22 @@ executable("sorted_stack") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("ways_to_step") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/ways_to_step.cc",
+    "solutions/cci/ways_to_step_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
 
 #=============================================================================#
 
