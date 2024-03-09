@@ -1077,6 +1077,24 @@ executable("add_two_numbers") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("detect_cycle") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/detect_cycle.cc",
+    "solutions/cci/detect_cycle_tests.cc",
+    "solutions/list_node.cpp",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
