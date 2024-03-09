@@ -1095,6 +1095,23 @@ executable("detect_cycle") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("set_of_stacks") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/set_of_stacks.cc",
+    "solutions/cci/set_of_stacks_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
