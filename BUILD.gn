@@ -1042,6 +1042,23 @@ executable("sorted_array_to_bst") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("my_queue") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/my_queue.cc",
+    "solutions/cci/my_queue_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
