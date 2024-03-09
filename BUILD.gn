@@ -1024,6 +1024,24 @@ executable("min_stack") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("sorted_array_to_bst") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/sorted_array_to_bst.cc",
+    "solutions/cci/sorted_array_to_bst_tests.cc",
+    "solutions/tree_node.cpp",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
