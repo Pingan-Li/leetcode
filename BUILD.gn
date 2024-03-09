@@ -1112,6 +1112,24 @@ executable("set_of_stacks") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("sorted_stack") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/sorted_stack.cc",
+    "solutions/cci/sorted_stack_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
+
 #=============================================================================#
 
 executable("sort_unittest") {
