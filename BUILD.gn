@@ -1197,6 +1197,23 @@ executable("lru_cache") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("top_k") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/top_k.cc",
+    "solutions/top_k_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
