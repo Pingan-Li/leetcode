@@ -1180,6 +1180,23 @@ executable("words_frequency") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("lru_cache") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/hot100/lru_cache.cc",
+    "solutions/hot100/lru_cache_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  # cflags = [ "-fsanitize=address" ]
+  # ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
