@@ -1163,6 +1163,23 @@ executable("path_with_obstacles") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("words_frequency") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/words_frequency.cc",
+    "solutions/cci/words_frequency_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
