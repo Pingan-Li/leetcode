@@ -1146,6 +1146,23 @@ executable("ways_to_step") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("path_with_obstacles") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/path_with_obstacles.cc",
+    "solutions/cci/path_with_obstacles_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
