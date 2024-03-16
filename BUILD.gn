@@ -1248,6 +1248,23 @@ executable("lru_cache_tests") {
   ldflags = [ "-fsanitize=address" ]
 }
 
+executable("smallest_difference_tests") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/smallest_difference.cc",
+    "solutions/cci/smallest_difference_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
