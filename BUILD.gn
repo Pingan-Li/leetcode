@@ -1214,6 +1214,23 @@ executable("top_k") {
   # ldflags = [ "-fsanitize=address" ]
 }
 
+executable("animal_shelf_tests") {
+  include_dirs = [ "//" ]
+
+  sources = [
+    "solutions/cci/animal_shelf.cc",
+    "solutions/cci/animal_shelf_tests.cc",
+  ]
+
+  deps = [
+    "//testing:gtest",
+    "//testing:gtest_main",
+  ]
+
+  cflags = [ "-fsanitize=address" ]
+  ldflags = [ "-fsanitize=address" ]
+}
+
 #=============================================================================#
 
 executable("sort_unittest") {
