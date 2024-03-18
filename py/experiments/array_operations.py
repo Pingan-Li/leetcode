@@ -37,7 +37,32 @@ def insert_at(array: list, index: int, data: int) -> Result:
     return Result.OK
 
 
-class ArrayOperationsTest(unittest.TestCase):
+def merge_arrays(array_a: list, array_b: list, merged: list):
+    a = 0
+    b = 0
+    while a < len(array_a) or b < len(array_b):
+        if a >= len(array_a):
+            current = array_b[b]
+            b += 1
+        elif b >= len(array_b):
+            current = array_a[a]
+            a += 1
+        else:
+            if array_a[a] < array_b[b]:
+                current = array_a[a]
+                a += 1
+            else:
+                current = array_b[b]
+                b += 1
+        merged.append(current)
+
+
+def merge_arrays_inplace(array_a: list, array_b: list):
+    index_a = 0
+    index_b = 0
+
+
+class ArrayRemovalTest(unittest.TestCase):
     def test_remove_at_front(self):
         array = list(range(10))
         remove_at(array, 0)
@@ -62,6 +87,9 @@ class ArrayOperationsTest(unittest.TestCase):
             remove_at(array, index_to_remove)
             self.assertEqual(array, expectation)
             print("Round = {}".format(r))
+
+
+class ArrayInsertionTest(unittest.TestCase):
 
     def test_insert_at_back(self):
         array = list(range(5))
@@ -89,5 +117,35 @@ class ArrayOperationsTest(unittest.TestCase):
             print("Round = {}".format(r))
 
 
+class ArrayMergingTest(unittest.TestCase):
+
+    def test_merge_arrays(self):
+        a = [1,]
+        b = [0, 2, 4, 6, 8]
+        merged = list()
+        merge_arrays(a, b, merged)
+        expectation = [0, 1, 2, 4, 6, 8]
+        self.assertEqual(merged, expectation)
+
+    def test_merge_arrays_stress(self):
+        limit = 1000000
+        round = 1000
+        for r in range(round):
+            array_size_a = random.randint(0, limit)
+            array_size_b = random.randint(0, limit)
+            array_a = [random.randint(0, limit) for i in range(array_size_a)]
+            array_b = [random.randint(0, limit) for i in range(array_size_b)]
+            array_a.sort()
+            array_b.sort()
+            expectation = array_a + array_b
+            expectation.sort()
+            result = []
+            merge_arrays(array_a, array_b, result)
+            self.assertEqual(result, expectation)
+            print("Round {} finished.".format(r))
+
+
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(ArrayMergingTest("test_merge_arrays_stress"))
+    unittest.TextTestRunner().run(suite)
