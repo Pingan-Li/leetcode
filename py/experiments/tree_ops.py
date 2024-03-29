@@ -22,7 +22,7 @@ class Visitor:
 
 def pre_order(root: Node, visitor: Visitor):
     if not root:
-        return list()
+        return
 
     current = root
     stack = [current]
@@ -36,9 +36,25 @@ def pre_order(root: Node, visitor: Visitor):
             current = stack.pop()
 
 
+def pre_order2(root: Node, visitor: Visitor):
+    if not root:
+        return
+    stack = list()
+    stack.append(root)
+    node = root
+
+    while stack:
+        node = stack.pop()
+        visitor(node)
+        if node.r:
+            stack.append(node.r)
+        if node.l:
+            stack.append(node.l)
+
+
 def in_order(root: Node, visitor: Visitor):
     if root is None:
-        return list()
+        return
 
     current = root
     stack = list()
@@ -52,9 +68,25 @@ def in_order(root: Node, visitor: Visitor):
             current = current.r
 
 
-def post_order(root: Node, visitor: Visitor) -> list:
+def in_order2(root: Node, visitor: Visitor):
     if not root:
-        return list()
+        return
+
+    stack = list()
+    node = root
+    while stack or node:
+        if node:
+            stack.append(node)
+            node = node.l
+        else:
+            node = stack.pop()
+            visitor(node)
+            node = node.r
+
+
+def post_order(root: Node, visitor: Visitor):
+    if not root:
+        return
     current = root
     main_stack = list()
     right_child_stack = list()
@@ -75,7 +107,7 @@ def post_order(root: Node, visitor: Visitor) -> list:
                 current = None
 
 
-def post_order2(root: Node, visistor: Visitor) -> list:
+def post_order2(root: Node, visistor: Visitor):
     current = root
     main_stack = list()
     main_stack.append(current)
@@ -115,7 +147,19 @@ class TreeTransversalTest(unittest.TestCase):
         self.assertEqual([node.v for node in visitor.nodes],
                          self.preorder_result)
 
+    def test_preorder2_transveral(self):
+        visitor = Visitor()
+        pre_order2(self.tree_root, visitor)
+        self.assertEqual([node.v for node in visitor.nodes],
+                         self.preorder_result)
+
     def test_inorder_transveral(self):
+        visitor = Visitor()
+        in_order(self.tree_root, visitor)
+        self.assertEqual([node.v for node in visitor.nodes],
+                         self.inorder_result)
+
+    def test_inorder2_transveral(self):
         visitor = Visitor()
         in_order(self.tree_root, visitor)
         self.assertEqual([node.v for node in visitor.nodes],
